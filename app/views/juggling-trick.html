@@ -1,17 +1,265 @@
-{% extends "layouts/main.html" %}
 
-{% block pageTitle %}
-  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en" class="govuk-template">
+  <head>
+    <meta charset="utf-8">
+    <title>15. Deliver a sustainable service | Digital service manual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#1d70b8">
 
-{% block containerStart %}
-  {{ govukBackLink({
-    text: "Back",
-    href: "javascript:window.history.back()"
-  }) }}
-{% endblock %}
 
-{% block content %}
+
+  
+  
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Defra Digital service manual">
+  <meta property="og:title" content="15. Deliver a sustainable service | Defra Digital service manual">
+  <meta property="og:description" content="Tools, guidance and support to help you design, build and operate successful services for Defra.">
+  <meta property="og:url" content="http://digital.defra.gov.uk/sustainability">
+  <meta property="og:image" content="http://digital.defra.gov.uk/public/images/social-share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Defra Digital service manual — green banner with crown icon">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="15. Deliver a sustainable service | Defra Digital service manual">
+  <meta name="twitter:description" content="Tools, guidance and support to help you design, build and operate successful services for Defra.">
+  <meta name="twitter:image" content="http://digital.defra.gov.uk/public/images/social-share.png">
+  <meta name="twitter:image:alt" content="Defra Digital service manual — green banner with crown icon">
+
+  
+  <link rel="icon" href="/public/images/favicon.svg" type="image/svg+xml">
+  
+  <link rel="icon" sizes="48x48" href="/public/images/favicon.ico">
+  
+  <link rel="apple-touch-icon" href="/public/images/apple-touch-icon.png">
+
+  </head>
+
+
+  <body class="govuk-template__body">
+    <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
+<div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on the Defra digital service manual" data-gtm-container-id="GTM-MJSVHHXS" hidden>
+
+  <div class="govuk-cookie-banner__message govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-cookie-banner__heading govuk-heading-m">Cookies on the Defra digital service manual</h2>
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">We use some essential cookies to make this service work.</p>
+          <p class="govuk-body">We'd also like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-button-group">
+      <form method="post" action="/cookies/accept">
+        <input type="hidden" name="returnUrl" value="/sustainability">
+        <button type="submit" class="govuk-button" data-module="govuk-button" name="cookies" value="accept">
+          Accept analytics cookies
+        </button>
+      </form>
+      <form method="post" action="/cookies/reject">
+        <input type="hidden" name="returnUrl" value="/sustainability">
+        <button type="submit" class="govuk-button" data-module="govuk-button" name="cookies" value="reject">
+          Reject analytics cookies
+        </button>
+      </form>
+      <a class="govuk-link" href="/cookies">View cookies</a>
+    </div>
+  </div>
+
+  <div class="govuk-cookie-banner__message govuk-width-container" role="alert" tabindex="-1" hidden>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">You've accepted analytics cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-button-group">
+      <button type="button" class="govuk-button" data-module="govuk-button">
+        Hide cookie message
+      </button>
+    </div>
+  </div>
+
+  <div class="govuk-cookie-banner__message govuk-width-container" role="alert" tabindex="-1" hidden>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">You've rejected analytics cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-button-group">
+      <button type="button" class="govuk-button" data-module="govuk-button">
+        Hide cookie message
+      </button>
+    </div>
+  </div>
+
+</div>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJSVHHXS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+        <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+
+    
+
+<header class="defra-header">
+  <div class="defra-header__inner">
+    <div class="defra-header__brand-group">
+      <img
+        src="/public/images/defra-logo.svg"
+        alt=""
+        role="presentation"
+        class="defra-header__logo"
+      />
+      <a href="/" class="defra-header__service-name">
+        <span class="govuk-visually-hidden">Department for Environment, Food and Rural Affairs: </span>Digital service manual
+      </a>
+    </div>
+<form
+  class="defra-header-search defra-header-search--nhs"
+  role="search"
+  action="/search"
+  method="get">
+  <div class="defra-header-search__wrapper" id="search-autocomplete-container">
+    <label class="defra-header-search__label" for="defra-search">
+      Search
+    </label>
+    <input
+      class="govuk-input defra-header-search__input"
+      id="defra-search"
+      name="q"
+      type="search"
+      autocomplete="off">
+  </div>
+  <button
+    class="defra-header-search__button"
+    type="submit"
+    aria-label="Search Defra digital content">
+    <svg class="defra-header-search__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <circle cx="7" cy="7" r="5" stroke-width="2"></circle>
+      <line x1="10.5" y1="10.5" x2="14" y2="14" stroke-width="2"></line>
+    </svg>
+  </button>
+</form>
+
+  </div>
+</header>
+<nav class="defra-service-navigation" aria-label="Service navigation" data-module="defra-service-navigation">
+  <div class="defra-service-navigation__inner">
+    <button type="button" class="defra-service-navigation__toggle js-service-navigation-toggle" aria-controls="service-navigation-list" aria-expanded="false" hidden>
+      Menu
+    </button>
+    <ul class="defra-service-navigation__list" id="service-navigation-list">
+      <li class="defra-service-navigation__item">
+        <a class="defra-service-navigation__link" href="/">
+          Home
+        </a>
+      </li>
+      <li class="defra-service-navigation__item">
+        <a class="defra-service-navigation__link" href="/service-assessments">
+          Service assessments
+        </a>
+      </li>
+      <li class="defra-service-navigation__item">
+        <a class="defra-service-navigation__link" aria-current="page" href="/sustainability">
+          Sustainability
+        </a>
+      </li>
+      <li class="defra-service-navigation__item">
+        <a class="defra-service-navigation__link" href="/accessibility">
+          Accessibility
+        </a>
+      </li>
+      <li class="defra-service-navigation__item">
+        <a class="defra-service-navigation__link" href="/security">
+          Security
+        </a>
+      </li>
+      <li class="defra-service-navigation__item">
+        <a class="defra-service-navigation__link" href="/service-manual#your-role">
+          Your role at Defra
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<main class="govuk-main-wrapper app-main-wrapper" id="main-content">
+
+
+
+
+  <span class="govuk-caption-m">Action</span>    <h1 class="govuk-heading-xl">3b. Optimise data storage and management</h1>
+    <p class="govuk-body">All services must meet the 14 points of the cross-government <a href="https://www.gov.uk/service-manual/service-standard" target="_blank" rel="noreferrer noopener" class="govuk-link">GOV.UK service standard</a>. Due to Defra's role in protecting the environment, services must also meet an additional 15th point about sustainability.</p>
+  
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+<div class="govuk-grid-row">
+  
+  <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">Contents of this page</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/sustainability" aria-current="page">
+        How to deliver on this action
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/sustainability/objectives">
+        Defra&#39;s six objectives
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/sustainability/process">
+        Assess risks and record sustainability actions
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+<h2 class="govuk-heading-l">How to deliver on this action</h2>
+    <p class="govuk-body">All services must meet the 14 points of the cross-government <a href="https://www.gov.uk/service-manual/service-standard" target="_blank" rel="noreferrer noopener" class="govuk-link">GOV.UK service standard</a>. Due to Defra's role in protecting the environment, services must also meet an additional 15th point about sustainability.</p>
+<h2 class="govuk-heading-m">What this standard is about</h2>
+<p class="govuk-body">This standard covers the social and environmental risks your service may create and the steps you should take to reduce them.</p>
+<h2 class="govuk-heading-m">Why it's important</h2>
+<p class="govuk-body">Defra's services aim to bring tangible environmental benefits to our society – from improving water quality to boosting the nation's resilience to flooding. Benefits can also come from replacing existing processes that are relatively resource intensive with more lightweight and modern equivalents.</p>
+<p class="govuk-body">The use of technology for government services also contributes to climate change and other sustainability risks. This can include:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li><strong>energy use</strong> that contributes to warming greenhouse gases</li>
+<li><strong>hardware manufacturing</strong> (mining and processing) that leads to water scarcity, resource depletion, and biodiversity loss</li>
+<li><strong>supply chains</strong> with unintended social impacts, such as labour exploitation</li>
+</ul>
+<p class="govuk-body">You can <a href="https://www.gov.uk/government/publications/defra-digital-sustainability-strategy-2025-to-2030" target="_blank" rel="noreferrer noopener" class="govuk-link">read more about the environmental impacts and Defra's 5 year digital sustainability strategy</a> on GOV.UK (opens in a new tab).</p>
+<h2 class="govuk-heading-m">What you need to do</h2>
+<p class="govuk-body">Service teams should design, develop, and operate their services to be as sustainable as possible. For information on how to do this throughout your service's lifecycle, <a href="https://greenerservices.github.io/" target="_blank" rel="noreferrer noopener" class="govuk-link">read the greener service principles guidance</a>. The greener service principles are under review and updated guidance will be available later this year.</p>
+<p class="govuk-body">You will also need to set out your approach in a sustainability statement.</p>
+<p class="govuk-body">A sustainability statement should lay out what actions have been taken, and those that are planned, against the <a href="/sustainability/objectives" class="govuk-link">6 objectives in Defra's digital sustainability strategy</a>.</p>
+<h2 class="govuk-heading-m">Where to find out more on sustainability</h2>
+<p class="govuk-body">For information about sustainability and artificial intelligence, read <a href="/interruption-card?targetUrl=https%3A%2F%2Fdefra.sharepoint.com%2F%3Aw%3A%2Ft%2FTeam740%2FESn6XK_adQRJurJYDXe_c6YBfU63gFpOVGQiaNoCvQgV8A%3Fe%3DBi9U2s" class="govuk-link">Defra's AI sustainability guidance</a>.</p>
+
+<div class="defra-support-box">
+  <h2 class="govuk-heading-m">Get support</h2>
+  <p class="govuk-body">The <strong>Sustainable IT Team</strong> can help you understand these risks and draft your statement.</p>
+  <ul class="govuk-list">
+    <li>Email: <a href="mailto:sustainableICT@defra.gov.uk" class="govuk-link">sustainableICT@defra.gov.uk</a></li>
+  </ul>
+</div>
+
+  </div>
+</div>
+        </main>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
@@ -28,13 +276,152 @@
           for examples]
         </p>
 
-        {{ govukButton({
-          text: "Continue"
-        }) }}
-
       </form>
 
     </div>
   </div>
 
-{% endblock %}
+  <div class="govuk-tabs" data-module="govuk-tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+      <a class="govuk-tabs__tab" href="#past-day">
+        Past day
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-week">
+        Past week
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-month">
+        Past month
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-year">
+        Past year
+      </a>
+    </li>
+  </ul>
+  <div class="govuk-tabs__panel" id="past-day">
+    <h2 class="govuk-heading-l">Past day</h2>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Case manager</th>
+          <th scope="col" class="govuk-table__header">Cases opened</th>
+          <th scope="col" class="govuk-table__header">Cases closed</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">David Francis</td>
+          <td class="govuk-table__cell">3</td>
+          <td class="govuk-table__cell">0</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Paul Farmer</td>
+          <td class="govuk-table__cell">1</td>
+          <td class="govuk-table__cell">0</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Rita Patel</td>
+          <td class="govuk-table__cell">2</td>
+          <td class="govuk-table__cell">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+    <h2 class="govuk-heading-l">Past week</h2>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Case manager</th>
+          <th scope="col" class="govuk-table__header">Cases opened</th>
+          <th scope="col" class="govuk-table__header">Cases closed</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">David Francis</td>
+          <td class="govuk-table__cell">24</td>
+          <td class="govuk-table__cell">18</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Paul Farmer</td>
+          <td class="govuk-table__cell">16</td>
+          <td class="govuk-table__cell">20</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Rita Patel</td>
+          <td class="govuk-table__cell">24</td>
+          <td class="govuk-table__cell">27</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+    <h2 class="govuk-heading-l">Past month</h2>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Case manager</th>
+          <th scope="col" class="govuk-table__header">Cases opened</th>
+          <th scope="col" class="govuk-table__header">Cases closed</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">David Francis</td>
+          <td class="govuk-table__cell">98</td>
+          <td class="govuk-table__cell">95</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Paul Farmer</td>
+          <td class="govuk-table__cell">122</td>
+          <td class="govuk-table__cell">131</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Rita Patel</td>
+          <td class="govuk-table__cell">126</td>
+          <td class="govuk-table__cell">142</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+    <h2 class="govuk-heading-l">Past year</h2>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Case manager</th>
+          <th scope="col" class="govuk-table__header">Cases opened</th>
+          <th scope="col" class="govuk-table__header">Cases closed</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">David Francis</td>
+          <td class="govuk-table__cell">1380</td>
+          <td class="govuk-table__cell">1472</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Paul Farmer</td>
+          <td class="govuk-table__cell">1129</td>
+          <td class="govuk-table__cell">1083</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Rita Patel</td>
+          <td class="govuk-table__cell">1539</td>
+          <td class="govuk-table__cell">1265</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

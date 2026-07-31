@@ -1,55 +1,50 @@
 {% extends "layouts/main.html" %}
 
-{% block pageTitle %}
-  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
-{% endblock %}
-
-{% block containerStart %}
-  {{ govukBackLink({
-    text: "Back",
-    href: "javascript:window.history.back()"
-  }) }}
-{% endblock %}
-
 {% block content %}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <form class="form" action="/juggling-trick" method="post">
 
-   {% from "govuk/components/radios/macro.njk" import govukRadios %}
+  <ul class="defra-tile-grid defra-tile-grid--half">
+      <li>
+        <div class="defra-tile">
+          <span class="govuk-caption-m">Guidance</span>
+          <h2 class="govuk-heading-m defra-tile__title">
+            <a href="/service-manual" class="defra-tile__link">Digital service manual</a>
+          </h2>
+          <p class="govuk-body defra-tile__body">Deliver services using Defra's standards and guidance.</p>
+        </div>
+      </li>
 
-{{ govukRadios({
-  name: "how-many-balls",
-  fieldset: {
-    legend: {
-      text: "How many balls can you juggle?",
-      isPageHeading: true,
-      classes: "govuk-fieldset__legend--l"
-    }
-  },
-  items: [
-    {
-      value: "3 or more",
-      text: "3 or more"
-    },
-    {
-      value: "1 or 2",
-      text: "1 or 2"
-    },
-    {
-      value: "None - I cannot juggle",
-      text: "None - I cannot juggle"
-    }
-  ]
-}) }}
+      <li>
+        <div class="defra-tile">
+          <span class="govuk-caption-m">Standard</span>
+          <h2 class="govuk-heading-m defra-tile__title">
+            <a href="/delivery-groups" class="defra-tile__link">Delivery groups</a>
+          </h2>
+          <p class="govuk-body defra-tile__body">Learn how delivery groups support your work across Defra.</p>
+        </div>
+      </li>
+    </ul>
 
-        {{ govukButton({
-          text: "Continue"
-        }) }}
+    <ul class="defra-tile-grid defra-tile-grid--half govuk-!-margin-top-2">
+      <li>
+        <div class="defra-tile">
+          <span class="govuk-caption-m">Resources</span>
+          <h2 class="govuk-heading-m defra-tile__title">
+            <a href="/ai-toolkit" class="defra-tile__link">AI digital toolkit</a>
+          </h2>
+          <p class="govuk-body defra-tile__body">Adopt AI responsibly with guidance, tools and patterns.</p>
+        </div>
+      </li>
+    </ul>
 
-      </form>
+<div class="app-coming-soon">
+      <h2 class="govuk-heading-m">Coming soon</h2>
+      <p class="govuk-body">We are adding more guidance soon. Contact us to suggest content.</p>
+      <a href="mailto:AICapabilityAndEnablement@defra.gov.uk" class="govuk-button">Contact us</a>
+    </div>
 
     </div>
   </div>

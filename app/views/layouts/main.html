@@ -4,3 +4,185 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 #}
 
 {% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+
+{% block stylesheets %}
+  {{ super() }}
+  <link href="/public/css/application.3844fd2.min.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="/public/javascripts/application.7f5b04c.min.js"></script>
+{% endblock %}
+
+{% block govukFooter %}
+ <footer class="defra-footer" role="contentinfo">
+  <div class="govuk-width-container">
+    <div class="defra-footer__meta">
+      <div class="defra-footer__meta-item">
+        <ul class="defra-footer__inline-list">
+          <li class="defra-footer__inline-list-item">
+            <a class="defra-footer__link" href="https://www.gov.uk/help/privacy-notice">Privacy</a>
+          </li>
+          <li class="defra-footer__inline-list-item">
+            <a class="defra-footer__link" href="/cookies">Cookies</a>
+          </li>
+          <li class="defra-footer__inline-list-item">
+            <a class="defra-footer__link" href="/accessibility-statement">Accessibility statement</a>
+          </li>
+        </ul>
+      </div>
+      <div class="defra-footer__meta-item">
+        <span class="defra-footer__licence-description">
+          Maintained by the AI Capability and Enablement team at Defra. If you've got a question or want to feed back, <a class="defra-footer__link" href="mailto:AICapabilityAndEnablement@defra.gov.uk">get in touch</a>.
+        </span>
+      </div>
+      <div class="defra-footer__meta-item">
+        <span class="defra-footer__licence-description">
+          All content is available under the
+          <a class="defra-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}
+
+{% block govukHeader %}
+<body class="govuk-template__body">
+    <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
+<div class="govuk-cookie-banner" data-nosnippet role="region" aria-label="Cookies on the Defra digital service manual" data-gtm-container-id="GTM-MJSVHHXS" hidden>
+
+  <div class="govuk-cookie-banner__message govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-cookie-banner__heading govuk-heading-m">Cookies on the Defra digital service manual</h2>
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">We use some essential cookies to make this service work.</p>
+          <p class="govuk-body">We'd also like to use analytics cookies so we can understand how you use the service and make improvements.</p>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-button-group">
+      <form method="post" action="/cookies/accept">
+        <input type="hidden" name="returnUrl" value="/">
+        <button type="submit" class="govuk-button" data-module="govuk-button" name="cookies" value="accept">
+          Accept analytics cookies
+        </button>
+      </form>
+      <form method="post" action="/cookies/reject">
+        <input type="hidden" name="returnUrl" value="/">
+        <button type="submit" class="govuk-button" data-module="govuk-button" name="cookies" value="reject">
+          Reject analytics cookies
+        </button>
+      </form>
+      <a class="govuk-link" href="/cookies">View cookies</a>
+    </div>
+  </div>
+
+  <div class="govuk-cookie-banner__message govuk-width-container" role="alert" tabindex="-1" hidden>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">You've accepted analytics cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-button-group">
+      <button type="button" class="govuk-button" data-module="govuk-button">
+        Hide cookie message
+      </button>
+    </div>
+  </div>
+
+  <div class="govuk-cookie-banner__message govuk-width-container" role="alert" tabindex="-1" hidden>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-cookie-banner__content">
+          <p class="govuk-body">You've rejected analytics cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-button-group">
+      <button type="button" class="govuk-button" data-module="govuk-button">
+        Hide cookie message
+      </button>
+    </div>
+  </div>
+
+</div>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJSVHHXS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+        <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+
+    
+
+<header class="defra-header">
+  <div class="defra-header__inner">
+    <div class="defra-header__brand-group">
+      <img
+        src="/public/images/defra-logo.svg"
+        alt=""
+        role="presentation"
+        class="defra-header__logo"
+      />
+      <a href="/" class="defra-header__service-name">
+        <span class="govuk-visually-hidden">Department for Environment, Food and Rural Affairs: </span>Digital Defra
+      </a>
+    </div>
+<form
+  class="defra-header-search defra-header-search--nhs"
+  role="search"
+  action="/search"
+  method="get">
+  <div class="defra-header-search__wrapper" id="search-autocomplete-container">
+    <label class="defra-header-search__label" for="defra-search">
+      Search
+    </label>
+    <input
+      class="govuk-input defra-header-search__input"
+      id="defra-search"
+      name="q"
+      type="search"
+      autocomplete="off">
+  </div>
+  <button
+    class="defra-header-search__button"
+    type="submit"
+    aria-label="Search Defra digital content">
+    <svg class="defra-header-search__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <circle cx="7" cy="7" r="5" stroke-width="2"></circle>
+      <line x1="10.5" y1="10.5" x2="14" y2="14" stroke-width="2"></line>
+    </svg>
+  </button>
+</form>
+
+  </div>
+</header>
+<nav class="defra-service-navigation" aria-label="Main navigation" data-module="defra-service-navigation">
+  <div class="defra-service-navigation__inner">
+    <button type="button" class="defra-service-navigation__toggle js-service-navigation-toggle" aria-controls="main-navigation-list" aria-expanded="false" hidden>
+      Menu
+    </button>
+    <ul class="defra-service-navigation__list" id="main-navigation-list">
+      <li class="defra-service-navigation__item">
+        <a class="defra-service-navigation__link" href="/service-manual">
+          Digital service manual
+        </a>
+      </li>
+      <li class="defra-service-navigation__item">
+        <a class="defra-service-navigation__link" href="/delivery-groups">
+          Delivery groups
+        </a>
+      </li>
+      <li class="defra-service-navigation__item">
+        <a class="defra-service-navigation__link" href="/ai-toolkit">
+          AI digital toolkit
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+{% endblock %}
