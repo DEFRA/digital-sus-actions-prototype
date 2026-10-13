@@ -24,7 +24,7 @@
   <p class="app-subnav__header">In this section</p>
   <ul class="app-subnav__list">
     <li class="app-subnav__item">
-      <a class="app-subnav__link" href="/2N/software.html">
+      <a class="app-subnav__link" href="/3N/data.html">
         3. Data
       </a>
     </li>
@@ -37,18 +37,18 @@
       </a>
     </li>
     <li class="app-subnav__item">
-       <a class="app-subnav__link app-subnav__link--current" href="/3N/3b.html" aria-current="page">
+       <a class="app-subnav__link" href="/3N/3b.html">
         3b. Optimise data storage
       </a>
     </li>
         <li class="app-subnav__item">
-      <a class="app-subnav__link" href="/3N/3c.html">
+      <a class="app-subnav__link app-subnav__link--current" href="/3N/3c.html" aria-current="page">
         3c. Optimise data for transit
       </a>
     </li>
           <li class="app-subnav__item">
       <a class="app-subnav__link" href="/3N/3d.html">
-        3d. Balance security and sustainability
+        3d. Balance data security and sustainability
       </a>
     </li>
   </ul>
@@ -66,7 +66,10 @@
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(i) Use ap</h2>
+<h2 class="govuk-heading-m">(i) Compress data for transit</h2>
+
+<p>Compressing data for transit means reducing the file size or bit-rate of digital information before sending it across a network.</p>
+<p>Compression can help reduce network load and energy consumption.</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -76,8 +79,7 @@
   </summary>
   <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
-      <li><a href="https://sustainablewebdesign.org/has-the-design-team-set-a-page-weight-budget/" class="govuk-link">Has the Design Team Set A Page Weight Budget?</a> Sustainable Web Design</li>
-      <li><a href="https://www.wholegraindigital.com/blog/how-to-page-weight-budget/" class="govuk-link">How to Set a Page Weight Budget</a> Wholegrain Digital</li>
+      <li><a href="https://patterns.greensoftware.foundation/development/data-handling/compress-transmitted-data/" class="govuk-link">Compress transmitted data,</a> Green Software Foundation</li>
 </details>
 
 
@@ -89,21 +91,34 @@
   </summary>
   <div class="govuk-details__text">
     <h3 class="govuk-heading-s">Co-benefits</h3>
-    <p class="govuk-body">Alongside sustainability impact, moving data to slower storage tiers brings co-benefits in terms of:</p>
+    <p class="govuk-body">Alongside sustainability impact, compressing data for transit brings co-benefits in terms of:</p>
     <ul class="govuk-list govuk-list--bullet">
-       <li>Cost: 'Cold' or archive storage tiers are usually cheaper that warmer ones</li>
-      <li>Speed: Transitioning data between tiers over time supports general good practice for data lifecyle management</li>
-      </ul>
+       <li>Cost: Reduced network usage can lead to cost savings</li>
+    </ul>
 
       <h3 class="govuk-heading-s">Trade-offs</h3>
           <p class="govuk-body">Potential trade-offs may include:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Speed: 'Cold' or archive storage tiers mean slower access times for data</li>
-      <li>Complexity: Moving data between tiers requires lifecyle policies to be defined and managed carefully</li>
-      </ul>
+      <li>Compression introduces additional CPU overhead for encoding and decoding</li>
+    </ul>
       </div>
 </details>
 
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(ii) Enable consumption of data from primary source</h2>
+
+<p>Consuming data from its primary source means accessing data from where it was first generated.</p>
+<p>This approach means we can access the most up-to-date information without the need for any intermediary processing or transformation, in turn reducing energy use from data processing, duplicate data storage and replication, and network transmission.</p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(iii) Use efficient network protocols</h2>
+
+<p>A network protocol is a set of rules that define how data is exchanged between devices on a network.</p>
+<p>Using efficient protocols like UDP based HTTP3 or QUIC can help reduce retransmissions.</p>
 
     </div>
 

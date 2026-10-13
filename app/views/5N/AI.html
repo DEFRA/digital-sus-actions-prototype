@@ -1,0 +1,169 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">5. Artificial Intelligence</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/5N/AI.html" aria-current="page">
+        5. Artificial Intelligence
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">Sustainability actions</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/5N/5a.html">
+        5a. Be clear on the need and readiness for AI use
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/5N/5b.html">
+        5b. Choose the lowest energy AI model that meets your needs
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/5N/5c.html">
+        5c. Take a sustainable approach to training AI models
+      </a>
+    </li>
+            <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/5N/5c.html">
+        5d. Take a sustainable approach to operating AI models
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-xl">5. Artificial Intelligence</h1>
+
+  <p class="govuk-body-l">While Artificial Intelligence (AI) technologies can bring a wide range of benefits when used as part of digital services and other projects, they also have significant environmental impacts of their own. 
+  <p class="govuk-body-l">There are a range of actions we can take to determine whether AI is right for a project and then to reduce the environmental impacts coming from the training and use of these technologies.</p>
+
+  <p>Look at GARTNER docs on AI and metrics and things - need to make sure that getting all of that content in! in DOWNLOADsa folder on Mac</p>
+  <p>AI.gov.uk - https://ai.gov.uk/knowledge-hub/how-to/ethics-building-ai/</p>
+  <p>https://ai.gov.uk/knowledge-hub/how-to/principles/</p>
+
+  <p>For persona use of AI, there are pages such as this, and then also guidance in Ddfra https://ai.gov.uk/knowledge-hub/how-to/experiment-with-prompts/</p>
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+
+<h2 class="govuk-heading-m" id="susimpact">Artificial Intelligence and sustainability</h2>
+<p class="govuk-body-m">Artificial Intelligence (AI) technologies have a range of sustainability costs, but can also bring about benefits.</p>
+<p>The 'direct impact', the environmental costs of AI can include things like:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>significant energy use associated with the training and operation of AI</li>
+<li>intense water demand for cooling the infrastructure (in data centres) used by AI</li>
+<li>impacts from the mining, processing, manufacture and distribution required for the hardware used for AI models to run, as well as electronic waste produced when the hardware is disposed of</li>
+<li>social impacts in terms of biases, exclusion and the impacts of training data filtering</li>
+</ul>
+
+<h2 class="govuk-heading-m">Assessing progress against this theme</h2>
+
+<p>PowerBI and measuriung carbon etc! https://app.powerbi.com/view?r=eyJrIjoiZjVmOTI0MmMtY2U2Mi00ZTE2LTk2MGYtY2ZjNDMzODZkMjlmIiwidCI6IjQyNmQyYThkLTljY2QtNDI1NS04OTNkLTA2ODZhMzJjMTY4ZCIsImMiOjF9</p>
+
+<p>For web pages</p>
+
+<p>Software Carbon Intensity (SCI) for Web</p>
+<p></p>
+
+<p>1. Using page weights as a proxy for carbon</p>
+<p>There are a number of methods, , that take the weight (in bytes) of web pages and uses this to estimate the carbon emissions from the transfer of this data to the end user.
+This means taking data transfer as an proxy indicator for total resource usage, and using this number to extrapolate energy usage as a fraction of the energy used by the total internet system.
+A number of online webpage carbon footprint calculators use these methods. This 'data transfer' approach is more appropriate for standalone websites rather than complex services, as it focused on the front end and does not consider what is going on on the ‘back end’, with hosting and databases for example.
+</p>
+<p>Links > such as the ‘Sustainable Web Design Model’</p>
+
+
+
+<p>2. Page-weight as a carbon proxy
+A method that converts bytes to energy, then to carbon and splits those estimates across data centres, networks and devices.
+
+3. SCI - Software Carbon Intensity standard (ISO/IEC 21031)
+An international standard for software. It looks at energy, the carbon intensity of the electricity and embodied carbon, per unit of use. 
+
+4. SCI For Web
+The same standard, implemented with high fidelity specifically for web and fed with component level data from your own infrastructure and vendors.</p>
+
+<p>The SCI for web https://greensoftware.foundation/standards/sci-web/</p>
+
+
+<p>FOR DATA - Data movement: If the column is frequently queried, pulled across networks, or processed in ETL (Extract, Transform, Load) pipelines, include the energy of data transfer:
+\(\text{Transfer\ Emissions}=\text{Data\ Transferred\ (GB)}\times \text{Energy\ Intensity\ (kWh/GB)}\times \text{Grid\ Carbon\ Intensity\ (gCO}_{2}\text{e/kWh)}\)
+(Standard network energy intensity models follow guidelines such as the Sustainable Web Design methodology)</p>
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

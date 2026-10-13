@@ -24,7 +24,7 @@
   <p class="app-subnav__header">In this section</p>
   <ul class="app-subnav__list">
     <li class="app-subnav__item">
-      <a class="app-subnav__link" href="/2N/software.html">
+      <a class="app-subnav__link" href="/3N/data.html">
         3. Data
       </a>
     </li>
@@ -48,7 +48,7 @@
     </li>
           <li class="app-subnav__item">
       <a class="app-subnav__link" href="/3N/3d.html">
-        3d. Balance security and sustainability
+        3d. Balance data security and sustainability
       </a>
     </li>
   </ul>
@@ -145,13 +145,10 @@ Reduce "dark data" (unnecessary stored data) to lower storage energy.</p>
       <h3 class="govuk-heading-s">Trade-offs</h3>
           <p class="govuk-body">Potential trade-offs may include:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Speed: 'Cold' or archive storage tiers mean slower access times for data</li>
-      <li>Complexity: Moving data between tiers requires lifecyle policies to be defined and managed carefully</li>
+      <li>Energy use: If there is data that needs to be frequently compressed and decompressed, this could contribute to increases in energy consumption </li>
       </ul>
       </div>
 </details>
-
-
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -159,10 +156,22 @@ Reduce "dark data" (unnecessary stored data) to lower storage energy.</p>
 
 <h2 class="govuk-heading-m">(iii) Choose the right data formats</h2>
 
+<p class="govuk-body">Different file formats offer varying levels of compression and efficiency for data storage, which in turn impact data storage volumes and energy consumption.</p>
+<p>Particularly when large volumes of data are involved, consider use of more efficient data formats.</p>
+<p class="govuk-body">For example, Parquet files are a more efficient way to store large datasets than Comma Separated Values (CSV), leading to smaller file sizes, as well as being optimised for analytical queries.</p>
 
-<p class="govuk-body">Different formats for data storage offer varying levels of compression and efficiency.</p>
-<p>More efficient encoding and compression can lower data storage volumes and energy consumption.</p>
-<p class="govuk-body">For example, Parquet is a better way to store large datasets than Comma Separated Values (CSV). It uses less space, and is faster and more efficient.</p>
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://dev.to/hiteshchawla/what-to-use-parquet-or-csv-3bp7/" class="govuk-link">Parquet or CSV?</a> Dev.to</li>
+</details>
+
+
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -184,7 +193,31 @@ Reduce "dark data" (unnecessary stored data) to lower storage energy.</p>
   <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
       <li><a href="https://learn.microsoft.com/en-us/windows-server/storage/data-deduplication/overview/" class="govuk-link">Data deduplication overview,</a> Microsoft</li>
+      <li><a href="https://www.oracle.com/uk/data-deduplication/" class="govuk-link">What is data deduplication? Methods and benefits,</a> Oracle</li>
     </ul>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, deduplicating data brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Data Quality: Deduplicating improves data quality and integrity</li>
+      <li>Performance: Reducing data transfer and backup volumes improves performance and reduces backup times</li>
+      <li>Cost: Removing duplicate data the costs associated with data storage</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Complexity: Deduplication can introduce additional complexity in implementation, especially across distributed systems</li>
+      </ul>
+      </div>
 </details>
 
 
@@ -193,8 +226,30 @@ Reduce "dark data" (unnecessary stored data) to lower storage energy.</p>
 
 <h2 class="govuk-heading-m">(v) Apply best practice for database indexing</h2>
 
-
 <p class="govuk-body">A database index is a structure that improves the speed of data retrieval and optimises database performance.</p>
+<p>Appropriate database indexing improves query efficiency, reducing the number of full-table scans and with it energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, applying best practice for database indexing brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Cost: Reducing the load on database infrastructure can lower costs</li>
+      <li>Scalability: More efficient access patterns, enabling better scalability</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Storage: Indexes require additional storage, so creating multiple database indexes adds to overall data volumes</li>
+      </ul>
+      </div>
+</details>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -202,8 +257,30 @@ Reduce "dark data" (unnecessary stored data) to lower storage energy.</p>
 
 <h2 class="govuk-heading-m">(vi) Fit the data formatted to the expected query patterns</h2>
 
-
 <p class="govuk-body">Query patterns are reusable templates for structuring queries to solve recurring problems efficiently.</p>
+<p>Aligning data structures with how queries are executed reduces inefficient queries and processing, leading to lower energy consumption.</p>
+
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, fitting data to expected query patterns brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Performance: Improved performance and responsiveness for common operations</li>
+    </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Storage: Requires upfront data modelling and understanding of access patterns</li>
+      </ul>
+      </div>
+</details>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -211,10 +288,33 @@ Reduce "dark data" (unnecessary stored data) to lower storage energy.</p>
 
 <h2 class="govuk-heading-m">(vii) Create permissions and access plans that minimise the amount of data load per user</h2>
 
+<p>Permissions and access plans determine who can view, modify, or share data, ensuring security, compliance, and effective collaboration.</p>
 
-<p class="govuk-body">Create permissions and access plans that minimise the amount of data load per user based on their actual needs.</p>
+<p class="govuk-body">Create permissions and access plans that minimise the amount of data loaded and processed per user based on their actual needs.</p>
+<p>This approach serves to reduce network usage and energy consumption.</p>
 
-<p>Move away from access model per service/product to be built, and instead data level service created that creates access across all services based on data need per role. This brings benefit in terms of re-use of permission model, fewer touchpoints from service desks (tickets, actions, document required), tighter compliance to GDPR and fewer loads on pages for data they dont need.</p>
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, permissions and access plans that minimise data load per user bring co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Performance: Limiting unneccessary data transfer improves performance</li>
+      <li>Security: Enhancing security and privacy by enforcing least-privilege access to data</li>
+    </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Planning: Careful design of roles, permissions, and access patterns are required</li>
+      <li>Complexity: Added complexity in access control management and governance</li>
+      </ul>
+      </div>
+</details>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -222,10 +322,43 @@ Reduce "dark data" (unnecessary stored data) to lower storage energy.</p>
 
 <h2 class="govuk-heading-m">(viii) Utilise edge computing</h2>
 
-
 <p class="govuk-body">Edge computing means storing and processing data at the ‘edge’ of networks.</p>
-<p>This can mean it is much closer to the devices that produce it and the users who consume it, reducing network load and energy consumption.</p>
+<p>This can mean data is much closer to the devices that produce it and the users who consume it, reducing data transfer distances, network load and energy consumption.</p>
 
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.security.gov.uk/policy-and-guidance/government-cyber-security-policy-asset-management-policy-for-edge-devices/" class="govuk-link">Government cyber security policy: Asset management policy for edge devices,</a> UK Government Security</li>
+      <li><a href="https://objectbox.io/why-do-we-need-edge-computing-for-a-sustainable-future/" class="govuk-link">Why do we need Edge Computing for a sustainable future?,</a> ObjectBox</li>
+    </ul>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, processing data at the 'edge' brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Performance: Decreased latency by processing data closer to users or devices</li>
+    </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Complexity: Processing data at the edge introduces additional infrastructure</li>
+      <li>Management: Processing data at the edge requires careful management to ensure consistency, security, and data synchronisation</li>
+      </ul>
+      </div>
+</details>
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
