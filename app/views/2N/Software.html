@@ -1,0 +1,167 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">1. Journey & Experience</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/4N/Architecture.html" aria-current="page">
+        1. Journey & Experience
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">Sustainability actions</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/1N/1a.html">
+        1a. Design successful and appriopriately paced user journeys
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/1N/1b.html">
+        1b. Design lightweight digital pages, notifications and documents
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/1N/1c.html">
+        1c. Design for reduced and lower-impacting offline steps of services
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-xl">1. Journey & Experience</h1>
+
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell govuk-!-font-weight-bold">
+        Lead role families:
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Architecture
+        </strong>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell govuk-!-font-weight-bold">
+        Likely co-benefits
+      </td>
+      <td class="govuk-table__cell">
+        Cost: Lower costs coming the storage of data
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
+
+<h2 class="govuk-heading-m">Assessing progress against this theme</h2>
+
+
+<p>For web pages</p>
+
+<p>Software Carbon Intensity (SCI) for Web</p>
+<p></p>
+
+<p>1. Using page weights as a proxy for carbon</p>
+<p>There are a number of methods, , that take the weight (in bytes) of web pages and uses this to estimate the carbon emissions from the transfer of this data to the end user.
+This means taking data transfer as an proxy indicator for total resource usage, and using this number to extrapolate energy usage as a fraction of the energy used by the total internet system.
+A number of online webpage carbon footprint calculators use these methods. This 'data transfer' approach is more appropriate for standalone websites rather than complex services, as it focused on the front end and does not consider what is going on on the ‘back end’, with hosting and databases for example.
+</p>
+<p>Links > such as the ‘Sustainable Web Design Model’</p>
+
+
+
+<p>2. Page-weight as a carbon proxy
+A method that converts bytes to energy, then to carbon and splits those estimates across data centres, networks and devices.
+
+3. SCI - Software Carbon Intensity standard (ISO/IEC 21031)
+An international standard for software. It looks at energy, the carbon intensity of the electricity and embodied carbon, per unit of use. 
+
+4. SCI For Web
+The same standard, implemented with high fidelity specifically for web and fed with component level data from your own infrastructure and vendors.</p>
+
+<p>The SCI for web https://greensoftware.foundation/standards/sci-web/</p>
+
+
+<p>FOR DATA - Data movement: If the column is frequently queried, pulled across networks, or processed in ETL (Extract, Transform, Load) pipelines, include the energy of data transfer:
+\(\text{Transfer\ Emissions}=\text{Data\ Transferred\ (GB)}\times \text{Energy\ Intensity\ (kWh/GB)}\times \text{Grid\ Carbon\ Intensity\ (gCO}_{2}\text{e/kWh)}\)
+(Standard network energy intensity models follow guidelines such as the Sustainable Web Design methodology)</p>
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

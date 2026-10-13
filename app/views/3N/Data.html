@@ -1,0 +1,136 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">3. Data</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/2N/software.html">
+        3. Data
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">Sustainability actions</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/3N/3a.html" aria-current="page">
+        3a. Take a lean approach to data collection
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/3N/3b.html">
+        3b. Optimise data storage
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/3N/3c.html">
+        3c. Optimise data for transit
+      </a>
+    </li>
+          <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/3N/3d.html">
+        3d. Balance security and sustainability
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-xl">3. Data</h1>
+<p class="govuk-body-l">Data and all this</p>
+
+
+<h3 class="govuk-heading-m" id="model">Data stuff</h2>
+
+<p>‘Data is distinct pieces of information. When designing and running services you should make appropriate use of data to inform your choices and improve the experience for users.’ GOV.UK Service Manual, Designing With Data
+
+Digital data has environmental impacts coming from the energy required to process, store, transfer.
+
+Quality data is required for many purposes, whether montioring, business decisions or use of AI.
+
+Data and the SDGs - https://www.genevaenvironmentnetwork.org/resources/updates/data-digital-technology-and-the-environment/
+
+
+Reducing data storage cuts required infrastructure, power and data transfer.
+
+Studies have shown that 'dark data', that organisations capture but never use, have grown exponetially in recent years.
+
+https://volume.lboro.ac.uk/digital-waste-polluting-the-planet/ 
+
+Creating and storing Redundant, Obsolete or Trivial (ROT) data is another common trend and one that creates a huge additional drain on energy supply, both from on-the-grid and by diverting renewable energy supplies. To illustrate the magnitude of these wasteful digital practices, a recent article in the Journal of Business Strategy identifies as much as 55% of data stored by organisations may be dark data, while Forbes suggest ROT data in organisations may be as high as 33%. While there may be some overlap between ROT data and Dark Data, it is crucial to highlight the potential worst-case scenario: a staggering 88% of data stored by an organization could be irrelevant
+</p>
+
+
+<p>Establish user or organisational needs for data collection, identify if other services or projects, in your department or perhaps adjacent ones, have already collected the data that your service needs.  </p>
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

@@ -1,0 +1,405 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">2. Software</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/2N/software.html">
+        2. Software
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">Sustainability actions</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/2N/2a.html">
+        2a. Take a circular approach to software
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/2N/2b.html" aria-current="page">
+        2b. Develop energy-efficient software
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/2N/2c.html">
+        2c. Take an efficient software testing approach
+      </a>
+    </li>
+          <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/2N/2d.html">
+        2d. Build on DevOps best practices
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-xl">2b. Develop energy-efficient software</h1>
+  <p class="govuk-body-l">Energy-efficient software is that developed to deliver required functionality while reducing energy consumption as far as possible.</p>
+
+  <table class="govuk-table">
+  <thead class="govuk-table__head">
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell govuk-!-font-weight-bold">
+        Lead role families:
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Software
+        </strong>
+         <strong class="govuk-tag govuk-tag--green">
+          Architecture
+        </strong>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell govuk-!-font-weight-bold">
+        Likely co-benefits:
+      </td>
+      <td class="govuk-table__cell">
+        Cost: More efficient software uses fewer computing resources and can cut cloud computing and infrastructure costs<br>
+        User experience: Efficient software means pages load more quickly and work for users with older devices and limited bandwith<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
+
+<h2 class="govuk-heading-m" id="model">(i) Develop pages using progressive enhancement</h2>
+<p class="govuk-body">Progressive enhancement is a way of building websites and applications where base functionality and core content works in HyperText Markup Language (HTML) alone. Enhancements are then built on top of this base.</p>
+<p>Progressive enhancement reduces reliance on heavy JavaScript and client-side processing and so reduces energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li>GOV.UK Service Manual, <a href="https://www.gov.uk/service-manual/technology/using-progressive-enhancement/" class="govuk-link">Build a robust frontend using progressive enhancement</a></li>
+      <li>W3C, Web Sustainability Guidelines, <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements/" class="govuk-link">3.10 Ensure layouts work for different devices and requirements</a></li>
+    </ul>
+    </div>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability benefits, developing software for progressive enhancement brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Performance: Faster load times and reduced network usage, especially on low-bandwidth connections</li>
+      <li>Inclusivity: Services working on older devices, with assistive technologies and for users with poor network connections or limited data allowances.</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+      <p class="govuk-body">Trade-offs from developing software for progressive enhancement may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Development Time: Requiring additional design and development effort to separate core and enhanced functionality</li>
+      <li>Flexibility: Progressive enhancement may sometimes limit the use of complex, interactive front-end experiences as the default option</li>
+      </ul>
+      </div>
+</details>
+
+<p>See also: <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements/" class="govuk-link">1c. Design for lightweight digital pages</a></p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+<h2 class="govuk-heading-m" id="efficient">(ii) Optimise code</h2>
+<p class="govuk-body">Optimising code is the process of modifying software to improve its efficiency, without changing its functional behaviour.</p> 
+<p>Optimising improves resource efficiency (CPU, memory, network usage) and lowers energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <p>The <a href="https://www.w3.org/TR/web-sustainability-guidelines/" class="govuk-link">Web Sustainability Guidelines</a> detail a number of actions that can be taken to optimise code, focused on web development. These include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>3.2 <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code/" class="govuk-link">Minify and remove unused code</a></li>
+      <li>3.3 <a href="https://www.w3.org/TR/web-sustainability-guidelines/#modularize-bandwidth-heavy-components/" class="govuk-link">Modularize bandwidth-heavy components</a></li>
+      <li>3.4 <a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-redundancy-and-duplication-in-code/" class="govuk-link">Avoid redundancy and duplication in code</a></li>
+      <li>3.6 <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices/" class="govuk-link">Ensure code follows good semantic practices</a></li>
+      </ul>
+      </div>
+</details>
+
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Optimising code brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Performance: Faster execution times and reduced latency</li>
+      <li>Lower costs: Reduced infrastructure costs through more efficient compute usage</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+      <p class="govuk-body">Optimising code may bring trade-offs such as:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Development time: Optimising may mean additional engineering effort, profiling, and ongoing optimisation work</li>
+      <li>Re-use: Over-optimisation can reduce code readability, maintainability, and developer productivity</li>
+      </ul>
+      </div>
+</details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h2 class="govuk-heading-m" id="modality">(iii) Utilise server-side rendering where appropriate</h2>
+<p class="govuk-body">Server-side rendering (SSR) renders a web page on a server before sending it to the user’s browser. This is in contrast to client-side rendering (CSR), where the browser gets raw data from a server to generate content on the user's device.</p>
+<p>Server-side rendering can reduce network data transfer and lead to less JavaScript execution in the browser, and with it significant reductions in energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Green Software Foundation, <a href="https://patterns.greensoftware.foundation/development/web-performance/use-server-side-rendering/" class="govuk-link">Use server-side rendering for high-traffic pages</a></li>
+      </ul>
+      </div>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, server-side rendering can bring co-benefits such as:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Speed: Improved initial page load performance, especially on lower-powered devices</li>
+      <li>Accessibility and resilience: Content is available to users even if Javascript fails</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+      <p>Trade-offs from implementing server-side rendering may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Displaced energy consumption: Increased server-side compute load, potentially shifting energy consumption to backend infrastructure</li>
+      <li>Complexity: May introduce caching and scaling complexity to maintain performance at high traffic volumes</li>
+      </ul>
+      </div>
+</details>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h2 class="govuk-heading-m" id="modality">(iv) Utilise caching where possible</h2>
+<p class="govuk-body">Caching temporarily stores frequently accessed data in a designated area (the “cache”) to enable faster access to it. Caching can focus on:</p>
+   <ul class="govuk-list govuk-list--bullet">
+      <li>the browser</li>
+      <li>Content Delivery Networks (CDN)</li>
+      <li>Application Programming Interfaces (API)</li>
+      </ul>
+
+<p>Caching can reduce repeated data processing and transfer, leading to lower processing and energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Green Software Foundation, <a href="https://patterns.greensoftware.foundation/development/data-handling/cache-static-data/" class="govuk-link">Cache static data</a></li>
+    </ul>
+    </div>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, caching can bring co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>User experience: Faster page load times and API responses</li>
+      <li>Scalability: Better scalability through reduced loads on backend systems</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+      <p>Trade-offs from implementing caching may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Complexity: Caching layers (such as content delivery networks and distributed caches) introduce additional infrastructure to manage</li>
+      </ul>
+      </div>
+</details>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h2 class="govuk-heading-m" id="modality">(v) Utilise lazy loading</h2>
+<p class="govuk-body">Lazy loading delays the loading of resources on pages until they are needed, such as when users scroll to them.</p>
+<p>This approach reduces initial page load size and network transfer, and with it, lowers energy consumption.</p>
+ 
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Sustainable Web Design, <a href="https://sustainablewebdesign.org/guidelines/2-9-optimize-media-to-reduce-resource-use/" class="govuk-link">Optimize media to reduce resource use</a></li>
+      </ul>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, lazy loading brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Performance: Improved performance, with pages faster to load</li>
+      <li>Inclusivity: Improved experience for mobile users and low-bandwidth environments</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+       <p class="govuk-body">Lazy loading may also :</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Reduced control: Reduced control over performance, architecture, and energy efficiency</li>
+      <li>Dependencies: Potential dependency risks (external code quality, updates, licensing)</li>
+      </ul>
+      </div>
+</details>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h2 class="govuk-heading-m" id="modality">(vi) Use content delivery networks where appropriate</h2>
+<p class="govuk-body">Content delivery networks (CDNs) are a network of servers that cache static content and resources as close to users as possible.</p>
+<p>In some cases, content delivery networks can reduce the distance data travels and lowers network energy consumption.</p>
+ 
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Web Sustainability Guidelines, 4.10 <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial/" class="govuk-link">Use content delivery networks (CDNs) when beneficial</a></li>
+      </ul>
+      </div>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, using content delivery networks brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Performance: Serving content closer to users can lead to faster load times</li>
+      <li>Resilience: Enhanced resilience and availability through distributed infrastructure</li>
+      </ul>
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+        <p class="govuk-body">Trade-offs coming from using content delivery networks may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Duplication: Content duplication may lead to increase in overall footprint if poorly configured</li>
+      <li>Dependencies: Content Delivery Networks introduce an additional infrastructure layer and dependency on third-party providers</li>
+      </ul>
+      </div>
+</details>
+
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

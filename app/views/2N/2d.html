@@ -1,0 +1,257 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">2. Software</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/2N/software.html">
+        2. Software
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">Sustainability actions</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/2N/2a.html">
+        2a. Take a circular approach to software
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/2N/2b.html">
+        2b. Develop energy-efficient software
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/2N/2c.html">
+        2c. Take an efficient software testing approach
+      </a>
+    </li>
+          <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/2N/2d.html" aria-current="page">
+        2d. Build on DevOps best practices
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-xl">2d. Build on DevOps best practices</h1>
+        <p class="govuk-body-l">Efficient</p>
+
+  
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
+
+
+
+<h2 class="govuk-heading-m" id="model">(i) Optimise your logging and retention policy</h2>
+
+<p class="govuk-body">Check logging and retention policies are appropriate, and automate the deletion and archiving of usused and unneeded logs.</p>
+<p>Removing unused logs reduces data storage and lowers energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability benefits, optimising logging and retention brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Cost: Reducing storage volumes can lower infrastructure costs</li>
+      <li>Efficiency and observability: Having fewer logs to index, query, and analyse decreases data processing overhead, and improves system efficiency and observability by focusing on meaningful, high-value logs</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+      <p class="govuk-body">Trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Balancing sustainability with potential future data use: Risk of losing valuable diagnostic or audit information if retention policies are too aggressive</li>
+      <li>Upfront effort: Careful design of retention policies is required to ensure compliance, security, and incident response needs are met</li>
+      </ul>
+</details>
+
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+
+<h2 class="govuk-heading-m" id="efficient">(ii) Update libraries and dependencies only when necessary</h2>
+
+<p class="govuk-body">Consider how often libraries and dependencies are updated, and avoid daily or continual updates if they are not needed.</p> 
+<p>Removing unnecessary build, testing, and deployment cycles lowers compute usage and energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Reducing library and dependency updates brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Stability: Improved stability by avoiding excessive churn from frequent dependency changes</li>
+      <li>Control: Enabling more controlled, planned upgrades aligned to risk and value</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+      <p class="govuk-body">Trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Balancing priorities: A balance between efficiency, security patching, and maintainability needs to be found for updates. Infrequent updates may increase exposure to security vulnerabilities</li>
+      <li>Complexity: Larger, less frequent updates can introduce higher change risk and complexity</li>
+      </ul>
+</details>
+
+
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+
+<h2 class="govuk-heading-m" id="modality">(iii) Continue to optimise and refactor new code</h2>
+
+<p class="govuk-body">Refactoring is the process of restructuring code, without affecting its original functionality.</p>
+<p>Refactoring improves code efficiency over time and so reduces CPU, memory, and processing requirements.</p>
+
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, optimising and refactoring new code brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Performance: Enables continuous performance improvements without changing functionality</li>
+      <li>Maintainability: Reduced technical debt, leading to simpler, more maintainable systems and avoiding inefficient legacy patterns accumulating</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+      <p>Trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Delivery time: Ongoing engineering effort and prioritisation is required alongside feature delivery</li>
+      <li>Complexity: Poorly managed refactoring can introduce defects or regressions</li>
+      </ul>
+</details>
+
+
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+
+<h2 class="govuk-heading-m" id="modality">(iv) Schedule carbon-aware updates and other operational practices</h2>
+
+<p>Carbon-aware operations are those that run when the electricity mix is made up of a higher proportion of renewable and low-carbon sources.</p>
+<p>These can include software updates, as well as broader operational practices, such as batch jobs, background processing, and CI/CD (Continuous Integration and Continuous Delivery) workloads.</p>
+<p>Rather than patching immediately, where possible schedule carbon-aware updates and other operations to take advantage of low carbon electricity.</p>
+<p>See also 4. Architecture on </p>
+
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, scheduling carbon-aware updates brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Costs: Off-peak or flexible scheduling aligns with lower pricing models.</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Speed: Carbon-aware updates may delay updates or operations, impacting timeliness and responsiveness</li>
+      <li>Security: Critical updates (e.g. security patches, incident fixes) which must be applied immediately</li>
+      <li>Tooling: Additional tooling and scheduling capability may be reqired to integrate carbon intensity data into pipelines</li>
+      </ul>
+</details>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

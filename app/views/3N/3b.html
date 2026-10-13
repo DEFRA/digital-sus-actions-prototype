@@ -1,0 +1,281 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">3. Data</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/2N/software.html">
+        3. Data
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">Sustainability actions</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+       <a class="app-subnav__link" href="/3N/3a.html">
+        3a. Take a lean approach to data collection
+      </a>
+    </li>
+    <li class="app-subnav__item">
+       <a class="app-subnav__link app-subnav__link--current" href="/3N/3b.html" aria-current="page">
+        3b. Optimise data storage
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/3N/3c.html">
+        3c. Optimise data for transit
+      </a>
+    </li>
+          <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/3N/3d.html">
+        3d. Balance security and sustainability
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-xl">3b. Optimise data storage</h1>
+<p class="govuk-body-l">Ensuring that only data that has value for user needs or business requirements is captured, has not been captured elsewhere and opportunities for sharing are exploited reduces data stored and assoicated energy use.</p>
+<p>Services should take approaches to the organisation and storage of data that minimise environmental impact by optimising energy usage, reducing waste, and utilising efficient technologies.
+
+Reduce "dark data" (unnecessary stored data) to lower storage energy.</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(i) Use appropriate data storage tiers</h2>
+
+<p class="govuk-body">Storage tiers organise data into different levels of access based on how often it is used.</p>
+<p>These tiers are often referred to by ‘temperature’: ‘hot’ for high-performance, fast access storage for data that needs to be accessed often, and ‘cold’ for slower, cheaper storage options for data accessed less often.</p>
+<p class="govuk-body">Choosing slower ('cold') or archive storage tiers for data that is not accessed often or required instantly reduces energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://docs.cloud.google.com/architecture/framework/sustainability/optimize-storage/" class="govuk-link">Optimize data and storage for sustainability</a> Google Cloud Architecture Center</li>
+</details>
+
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, moving data to slower storage tiers brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+       <li>Cost: 'Cold' or archive storage tiers are usually cheaper that warmer ones</li>
+      <li>Data Management: Transitioning data between tiers over time supports general best practice for data lifecyle management</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Speed: 'Cold' or archive storage tiers mean slower access times for data</li>
+      <li>Complexity: Moving data between tiers requires lifecyle policies to be defined and managed carefully</li>
+      </ul>
+      </div>
+</details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(ii) Compress data</h2>
+
+<p>Data compression is the process of encoding, restructuring, or modifying data to reduce its file size.</p>
+<p>Compressing data, where appropriate, reduces the energy associated with both the storage and retrieval of that data.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://patterns.greensoftware.foundation/development/data-handling/compress-stored-data/" class="govuk-link">Compress stored data</a> Green Software Foundation</li>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, compressing data brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+       <li>Cost: Reducing data volumes reduces the costs associated with data storage</li>
+      <li>Performance: Compressing data means faster file transfer and application response times</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Speed: 'Cold' or archive storage tiers mean slower access times for data</li>
+      <li>Complexity: Moving data between tiers requires lifecyle policies to be defined and managed carefully</li>
+      </ul>
+      </div>
+</details>
+
+
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(iii) Choose the right data formats</h2>
+
+
+<p class="govuk-body">Different formats for data storage offer varying levels of compression and efficiency.</p>
+<p>More efficient encoding and compression can lower data storage volumes and energy consumption.</p>
+<p class="govuk-body">For example, Parquet is a better way to store large datasets than Comma Separated Values (CSV). It uses less space, and is faster and more efficient.</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(iv) Deduplicate stored data</h2>
+
+
+<p class="govuk-body">Data deduplication identifies and removes redundant copies of data in a storage system, saving on associated energy consumption.</p>
+
+<p>Identify redundant files or data blocks and replace the duplicates with references or pointers.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://learn.microsoft.com/en-us/windows-server/storage/data-deduplication/overview/" class="govuk-link">Data deduplication overview,</a> Microsoft</li>
+    </ul>
+</details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(v) Apply best practice for database indexing</h2>
+
+
+<p class="govuk-body">A database index is a structure that improves the speed of data retrieval and optimises database performance.</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(vi) Fit the data formatted to the expected query patterns</h2>
+
+
+<p class="govuk-body">Query patterns are reusable templates for structuring queries to solve recurring problems efficiently.</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(vii) Create permissions and access plans that minimise the amount of data load per user</h2>
+
+
+<p class="govuk-body">Create permissions and access plans that minimise the amount of data load per user based on their actual needs.</p>
+
+<p>Move away from access model per service/product to be built, and instead data level service created that creates access across all services based on data need per role. This brings benefit in terms of re-use of permission model, fewer touchpoints from service desks (tickets, actions, document required), tighter compliance to GDPR and fewer loads on pages for data they dont need.</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(viii) Utilise edge computing</h2>
+
+
+<p class="govuk-body">Edge computing means storing and processing data at the ‘edge’ of networks.</p>
+<p>This can mean it is much closer to the devices that produce it and the users who consume it, reducing network load and energy consumption.</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

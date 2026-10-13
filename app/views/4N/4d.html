@@ -1,0 +1,198 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">4. Architecture</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/4N/Architecture.html">
+        4. Architecture
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">Sustainability actions</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/4N/4a.html">
+        4a. Design for sustainable architectural patterns
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/4N/4b.html">
+        4b. Create and share common architectural components
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/4N/4c.html">
+        4c. Ensure cloud services are efficiently provisioned
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/4N/4d.html" aria-current="page">
+        4d. Shift cloud demand to match the availability of low carbon electricity
+      </a>
+    </li>
+            <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/4N/4e.html">
+        4e. Maximise efficiency in on-premises data centres
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-xl">4d. Shift cloud demand to match availability of low carbon electricity</h1>
+<p class="govuk-body-l">Being 'carbon aware' means scheduling and running cloud workloads at times and in places when more renewable energy is available on the electricity grid.</p>
+<p>The UK electricity grid’s carbon intensity varies with the time of day and weather conditions. There are also regional differences with the ‘mix’ of energy sources available varying significantly between parts of the country.
+
+‘Carbon aware’ digital services are able to respond to shifts in the carbon intensity of the electricity grid.
+</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://learn.greensoftware.foundation/carbon-awareness/" class="govuk-link">Carbon awareness,</a> Green Software Foundation</li>
+</details>
+
+
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell govuk-!-font-weight-bold">
+        Lead role families:
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--green">
+          Architecture
+        </strong>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell govuk-!-font-weight-bold">
+        Likely co-benefits
+      </td>
+      <td class="govuk-table__cell">
+        Cost: Lower costs coming the storage of data
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
+
+
+<h3 class="govuk-heading-m" id="model">(i) Shift workloads in time</h2>
+<p>The UK electricity grid tends to have its highest mix of renewable electricity late at night and early in the morning, as well as on bright, windy, days.</p>
+<p>Where possible, shift non-critical workloads (like AI training, batch processing, or data backups) to times when there is more renewable electricity available.</p>
+<p>This is often called ‘temporal demand shifting.’</p>
+<p>See also <a href="h" class="govuk-link">4a. Design for sustainable architectural patterns</a></p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more on this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://patterns.greensoftware.foundation/operations/carbon-aware-ai-scheduling/" class="govuk-link">Carbon aware AI scheduling,</a> Green Software Foundation</li>
+</details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(ii) Shift workload location</h2>
+<p>The proportion of renewable energy available on the electricty grid varies significantly between UK regions, depending on methods of local electricity generation and distribution between regions.</p>
+<p>Where possible, shift workloads from regions with a lower proportion of renewables available to one where they are higher.
+<p>This is often called ‘spatial demand shifting.’</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more on this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://dashboard.neso.energy/" class="govuk-link">Carbon Intensity Dashboard,</a> National Energy System Operator</li>
+</details>
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}
