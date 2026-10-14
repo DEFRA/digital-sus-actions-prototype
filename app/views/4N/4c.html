@@ -63,7 +63,15 @@
  <div class="govuk-grid-column-two-thirds">
 
   <h1 class="govuk-heading-xl">4c. Ensure cloud services are efficiently provisioned</h1>
-<p class="govuk-body-l">Taking advantage of the various ways to maximise the efficiency of cloud computing helps ensure that energy use is reduced as far as possible</p>
+<p class="govuk-body-l">Taking advantage of the various ways to maximise the efficiency of public cloud computing helps ensure that energy use is reduced as far as possible</p>
+<p>Efficient provisioning of Cloud services means optimising resource usage and reducing carbon footprint</p>
+
+<p>Read more</p>
+<p>Public cloud is a model where a third-party provider delivers computing resources over the public internet to multiple customers who share the same underlying hardware infrastructure</p>
+<p>https://www.gov.uk/government/publications/cloud-guide-for-the-public-sector/cloud-guide-for-the-public-sector</p>
+<p>'Cloud first' policy from 2013, https://www.gov.uk/guidance/government-cloud-first-policy/ 'Organisations who do not deploy in Public Cloud should ensure they can evidence the decision, business case and value for money behind their choice.'</p>
+<p>https://www.gov.uk/government/collections/cloud-technology-and-the-public-sector</p>
+
 <p>In general, Cloud technologies are energy-efficient and scalable, significantly reducing e-waste and carbon emissions.
 
 GreenOps is the practice of minimizing a cloud environment’s carbon footprint through the efficient use of cloud resources.</p>
@@ -113,7 +121,21 @@ Choosing software architecture such as serverless computing and other composable
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
 
 <h3 class="govuk-heading-m" id="model">(i) Apply appropriate tagging to resources</h2>
-<p>Tagging usage of cloud resources supports granular reporting and data-driven decision-making on how to reduce environmental impacts.</p>
+
+<p>Tagging is the practice of labelling usage of cloud resources such as virtual machines or databases.</p>
+<p>Consistent tagging allows teams to track actual resource usage and so supports data-driven decision-making and identification of waste reduction and optimisation opportunities.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging/" class="govuk-link">Define your tagging strategy</a> Microsoft Azure</li>
+      <li><a href="https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/what-are-tags.html/" class="govuk-link">What are tags?</a> Amazon Web Services</li>
+</details>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -123,12 +145,15 @@ Choosing software architecture such as serverless computing and other composable
   </summary>
   <div class="govuk-details__text">
     <h3 class="govuk-heading-s">Co-benefits</h3>
-    <p class="govuk-body">Alongside sustainability benefits, setting a page weight budget brings co-benefits in terms of:</p>
+    <p class="govuk-body">Alongside sustainability benefits, appropriately tagging cloud resources brings co-benefits in terms of:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Inclusivity: Budgets encourage close consideration of what is essential for users with small screen sizes or low bandwidth</li>
+      <li>Cost: Supports granular cost allocation and reporting, enabling improved financial decision-making</li>
+      <li>Governance: Enables tracking of workloads (by service team, environment) and improved accountability and governance</li>
+      <li>Automation: Enables automation, such as shutdowns or autoscaling to be put in place for tagged resources</li>
       </ul>
-</details>
 
+      </div>
+</details>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -136,20 +161,89 @@ Choosing software architecture such as serverless computing and other composable
 
 <h2 class="govuk-heading-m">(ii) Right-size services</h2>
 
+<p>Right-sizing means aligning cloud resources with the specific needs of individual workloads, applications, or services.</p>
+<p class="govuk-body">Monitoring workloads performance allows resources, like virtual machines and storage, to be 'right-sized' to match actual demand. This helps avoids over-provisioning of cloud resources and lowers energy consumption.</p>
 
-<p>Right-sizing means aligning cloud resources with the specific needs of individual workloads, applications, or services</p>
-<p class="govuk-body">Monitoring workloads performance allows resources, like virtual machines and storage, to be 'right-sized' to match actual demand.</p>
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://docs.cloud.google.com/architecture/framework/operational-excellence/manage-and-optimize-cloud-resources/" class="govuk-link">Manage and optimize cloud resources</a> Google Cloud</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/rightsize-to-maximize-your-cloud-investment-with-microsoft-azure/" class="govuk-link">Rightsize to maximize your cloud investment with Microsoft Azure</a> Microsoft Azure</li>
+      <li><a href="https://aws.amazon.com/aws-cost-management/aws-cost-optimization/right-sizing/" class="govuk-link">Right sizing</a> Amazon Web Services</li>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, right-sizing cloud resources brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Cost: Aligning resources with actual usage optimises infrastructure costs</li>
+      <li>Scaling: Enables more efficient scaling strategies to be put in place</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Operational process: Introduction of operational overhead for monitoring, alerting and tuning cloud usage</li>
+      </ul>
+      </div>
+</details>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-
-<h2 class="govuk-heading-m">(iii) Use auto-scaling</h2>
-
+<h2 class="govuk-heading-m">(iii) Use autoscaling</h2>
 
 <p>Autoscaling automatically adds or removes cloud computing resources, such as servers or processing power, to match real-time demand.</p>
-<p>Embracing ‘always available’ rather than 'always on', ensures that compute resources automatically scale to zero when not in use.</p>
+<p>Embracing ‘always available’ rather than 'always on', ensures that compute resources automatically scale to zero when not in use, reducing energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://patterns.greensoftware.foundation/operations/capacity-management/scale-down-unused-applications/" class="govuk-link">Scale down applications when not in use</a> Green Software Foundation</li>
+      <li><a href="https://www.ibm.com/think/topics/autoscaling/" class="govuk-link">What is auto scaling?</a> IBM</li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/architecture/best-practices/auto-scaling/" class="govuk-link">Autoscaling</a> Microsoft Azure</li>
+      <li><a href="https://aws.amazon.com/autoscaling/" class="govuk-link">AWS Auto Scaling</a> Amazon Web Services</li>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, autoscaling brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Cost: Aligning spend to usage can reduce cloud costs</li>
+      <li>Performance: Enhances performance and resilience by scaling to meet demand automatically</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Complexity: Increased operational complexity in defining scaling rules and thresholds, careful configuration required to avoid over-scaling or under-provisioning</li>
+      </ul>
+      </div>
+</details>
+
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -158,10 +252,45 @@ Choosing software architecture such as serverless computing and other composable
 
 <h2 class="govuk-heading-m">(iv) Use spot instances</h2>
 
+<p>Spot instances are surplus cloud computing resources that come about when there is spare capaciity on physical servers that are already running.<p>
+<p>Cloud providers rent out spot instances at significantly reduced prices.</p>
+<p>By improving data centre utilisation, spot instances increase the useful output per unit of energy expended and reduce the need for additional hardware to be used.</p>
+<p>Making use of spot instances requires workloads with flexible start and end times, such as batch processing or CI/CD pipelines. See action 4a. Design for sustainable patterns</p>
 
-<p>Spot instances are unused cloud capacity that can be used at reduced prices, helping cloud providers to improve data centre utilisation.</p>
-<p>Making use of spot instances requires workloads with flexible start and end times.</p>
-<p>See action 4a. Design for sustainable patterns</p>
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html/" class="govuk-link">Spot Instances</a> Amazon Web Services</li>
+      <li><a href="https://docs.cloud.google.com/compute/docs/instances/create-use-spot/" class="govuk-link">Create and use Spot VMs</a> Google Cloud</li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms/" class="govuk-link">Azure Spot Virtual Machines</a> Microsoft Azure</li>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, using spot instances brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Cost: Using spare cloud capacity at reduced rates serves to reduce costs</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Workload suitability: Spot instances are not suitable for critical, stateful, or latency-sensitive services</li>
+      </ul>
+      </div>
+</details>
+
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -169,44 +298,61 @@ Choosing software architecture such as serverless computing and other composable
 
 <h2 class="govuk-heading-m">(v) Use a service mesh only if needed</h2>
 
-
-<p>A service mesh is a dedicated infrastructure layer for handling service-to-service communication in microservices.</p>
+<p>A service mesh is a dedicated infrastructure layer for handling service-to-service communication between microservices.</p>
+<p>While service meshes can optimise traffic between microservices and reduce related energy consumption, they also add to energy use through extra compute and resource overhead.</p>
+<p>Consider carefully if a service mesh is required for your project or service. Service meshes are more likley to bring benefit for more complex services, and may be unnecessary for smaller systems or simpler architecture.</p>
+<p>See also 4a. Design for flexible workloads, point on microservices.</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
-      Further reading
+      Read more about implementing this point
     </span>
   </summary>
   <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
       <li><a href="https://patterns.greensoftware.foundation/catalog/cloud/evaluate-using-a-service-mesh/" class="govuk-link">Evaluate using a service mesh,</a> Green Software Foundation</li>
+      <li><a href="https://cloud.google.com/products/service-mesh/" class="govuk-link">Cloud service mesh</a> Google Cloud</li>
+      <li><a href="https://aws.amazon.com/what-is/service-mesh/" class="govuk-link">What is a service mesh?</a> Amazon Web Services</li>
 </details>
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-<h2 class="govuk-heading-m">(vi) Utilise appropriate caching</h2>
-
-
-<p>Caching temporarily stores frequently accessed data in a designated area (called a “cache”).</p>
-<p>This enables faster access to that data, and can reduce unnecessary data transfer, server load and energy consumption.</p>
-
-
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-
-
-<h2 class="govuk-heading-m">(vii) Move from rented Infrastructure to Platform and Serverless cloud services where appropriate</h2>
-
-
-<p>Serverless architecture means creating and running applications without having to manage infrastructure, enabling flexibility, scalability and higher efficiencies.</p>
-
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
-      Further reading
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, using a service mesh brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Consistency: Improved consistency and control over service-to-service interactions in large, distributed systems</li>
+      <li>Reliability: Improved reliability and resilience in complex microservice environments</li>
+      <li>Security: Advanced capabilities for microservice communication can enable enhanced security</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Complexity: Increased operational complexity coming from the need for configuration, debugging and policy management of service meshes</li>
+      <li>Latency: Adding latency due to extra network hops through the mesh layer</li>
+      </ul>
+      </div>
+</details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(vi) Move from rented infrastructure to platform and serverless models where appropriate</h2>
+
+<p>Serverless architecture means creating and running applications without the need to manage server infrastructure.</p>
+<p>Serverless computing reduces over-provisioning as it can scale down to zero when inactive, enabling higher efficiencies and reduced energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
     </span>
   </summary>
   <div class="govuk-details__text">
@@ -214,17 +360,29 @@ Choosing software architecture such as serverless computing and other composable
       <li><a href="https://patterns.greensoftware.foundation/architecture/technology-selection/use-serverless/" class="govuk-link">Use serverless cloud services,</a> Green Software Foundation</li>
 </details>
 
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, moving to serverless brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Effort: Reducing operational overhead (such as patching and scaling)</li>
+      <li>Peformance: Improved performance and scalability through platform-managed optimisation</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Flexibility: Serverless is not suitable for all workloads (e.g. highly specialised or latency-sensitive systems)</li>
+      </ul>
+      </div>
+</details>
+
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-
-<h2 class="govuk-heading-m">(viii) Remove unused assets</h2>
-
-
-
-<p>Review aged instances and decommission unused resources when these are no longer required.</p>
-
-
-
 
 
     </div>
