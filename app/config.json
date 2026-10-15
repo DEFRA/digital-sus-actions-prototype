@@ -1,6 +1,6 @@
 {
   "serviceName": "Digital Sustainability Actions",
-  
+  "useServiceNavigation": true,
   "plugins": {
     "govuk-frontend": {
       "rebrand": true

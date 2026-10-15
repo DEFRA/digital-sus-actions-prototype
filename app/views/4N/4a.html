@@ -62,41 +62,34 @@
 
  <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">4a. Design for sustainable architectural patterns</h1>
+  <h1 class="govuk-heading-xl">4a. Design for sustainable architectural patterns (mention circularity?) (design for modularity, portability and flexibility)</h1>
 
-<p class="govuk-body-l">Designing workloads to be flexible workloads enable the sustainable operation of a digital service, including porting workloads between cloud locations, running workloads when there is unused capacity or when the grid is greener</p>
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-
-<h2 class="govuk-heading-m">(i) Follow microservice patterns</h2>
-
-<p>A microservices architecture breaks applications into smaller, independent services.</p>
-<p>This approach enables the independent scaling of services, more efficient allocation of compute resources and reduced energy consumption.</p>
-
-<details class="govuk-details" data-module="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      Read more about implementing this point
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    <ul class="govuk-list govuk-list--bullet">
-      <li><a href="https://patterns.greensoftware.foundation/architecture/system-topology/scale-logical-components-independently/" class="govuk-link">Hybrid and portable</a> IBM Well-architected framework</li>
-</details>
+<p class="govuk-body-l">Where appropriate, designing for more modular architecture, and workloads that can be decoupled from underlying hardware and infrastructure, bringing benefits in terms of avoiding over-provisioning infrastructure 
+  
+  flexibile and portable means that we can maximise efficiencies for sustainability and cost benefit. and to be flexible workloads enable the sustainable operation of a digital service, including porting workloads between cloud locations, and enabling carbon-aware computing, and running workloads when there is unused capacity or when the grid is greener</p>
+<p>NB There may be constraints on how flexible workloads can be, and not appropraite for many types of workload.</p>
+<p>Defining modular design for architcture: a design approach that divides a system into independent, self-contained, and reusable units (modules) that interact through well-defined interfaces and protocols.</p>
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(ii) Design workloads for portability</h2>
+<p>Good stuff from DfE! https://deliver-good-services.education.gov.uk/guides/enterprise-architecture-principles/7-reuse-and-modularity</p>
 
-<p>Portable workloads are those where applications, data, and services can be decoupled from any single cloud provider or underlying infrastructure.</p> 
-<p>This allows workloads to be moved across public cloud, between computing environments with minimal code refactoring or configuration changes.</p>
+<h1>
+Modular Monoliths and Component Reuse, and also microservices, see WORD doc!
+</h1>
 
-<p>This could be between public and private cloud, on-premises or even between different providers</p> 
-<p>and workloads to be run when more low carbon electricity is available (or cheaper instances, stop instances etc?)</p>
 
-<p>Some actions that enable portability</p>
+<h2 class="govuk-heading-m">(i) Design for 'modular' architectural patterns over traditional monolithic systems</h2>
+
+<p>Traditional monolithic architecture is where an application is built, compiled, and deployed as a single, self-contained unit.</p>
+<p>More modular patterns, such as modular monoliths and microservice architectures, break monolithic systems down into separate components.</p>
+<p>These approaches enable sustainability benefits through:</p>
+
+     <ul class="govuk-list govuk-list--bullet">
+        <li>independent scaling of services, more efficient allocation of compute resources and reduced energy consumption</li>
+        <li>modularity aids the reuse of components, Using existing, proven, components saves on the resources associated with developing and testing these from scratch.</li>
+      </ul>
 
 <div class="app-table-container" data-table-label="Table"><table class="govuk-table">
 <thead class="govuk-table__head">
@@ -107,21 +100,100 @@
 </thead>
 <tbody class="govuk-table__body">
 <tr class="govuk-table__row">
-<td class="govuk-table__cell">Containerisation</td>
-<td class="govuk-table__cell">Containarised architecture means packaging software into self-contained units that can then run in any environment</td>
+<td class="govuk-table__cell">Modular monoliths</td>
+<td class="govuk-table__cell">A design pattern that structures a single, unified application into independent, loosely coupled logical modules</td>
 </tr>
 <tr class="govuk-table__row">
-<td class="govuk-table__cell">Orchestrate with Kubernetes</td>
-<td class="govuk-table__cell">External authentication and authorisation</td>
-</tr>
-<tr class="govuk-table__row">
-<td class="govuk-table__cell"></td>
-<td class="govuk-table__cell">Accessible forms that follow GOV.UK standards</td>
+<td class="govuk-table__cell">Microservice architecture</td>
+<td class="govuk-table__cell">A pattern that breaks applications into smaller, independent services. This helps with the build of composable and collaborative services, driven by events, commands and queries.</td>
 </tr>
 </tbody>
 </table>
 </div>
 
+<p>See also 'Serverless' and 'Resuse existing components'</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.ibm.com/think/topics/monolithic-architecture/" class="govuk-link">What is monolithic architecture?</a> IBM</li>
+      <li><a href="https://www.atlassian.com/microservices/microservices-architecture/microservices-vs-monolith/" class="govuk-link">Microservices vs. monolithic architecture</a> Atlassian</li>
+      <li><a href="https://aws.amazon.com/microservices/" class="govuk-link">Microservices</a> Amazon Web Services</li>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, modular approaches bring co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Development Speed: Modular development supports faster delivery and adaptability to change</li>
+      <li>Resilience: Resilience is improved as a fault in one module or service does not impact the whole system</li>
+      <li>Cost: Microservice architectures support independent scaling of services and efficient cost allocation</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Resource usage: Communication between microservices can lead to increased energy consumption due to communication between services</li>
+      <li>Complexity: Microservice approaches can increase architectural and operational complexity through deployment and monitoring</li>
+      </ul>
+      </div>
+</details>
+
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(ii) Design for workload portability</h2>
+
+<p>Portable workloads are those where applications, data, and services can be moved between computing environments with minimal code refactoring or configuration changes.</p> 
+<p>This requires that workloads not be reliant on any single environment or underlying infrastructure, and then 'porting' can occur between public and private cloud, on-premises or even between different providers.</p>
+
+<p>This approach can bring sustainability benefit by:
+  
+      <ul class="govuk-list govuk-list--bullet">
+        <li>enabling general efficiencies and reduced energy consumption</li>
+        <li>running workloads in locations where more low carbon electricity is available on the grid.</li>
+      </ul>
+
+<p>Approaches that can help enable portability include:</p>
+
+<div class="app-table-container" data-table-label="Table"><table class="govuk-table">
+<thead class="govuk-table__head">
+<tr class="govuk-table__row">
+<th class="govuk-table__header">Approach</th>
+<th class="govuk-table__header">Description</th>
+</tr>
+</thead>
+<tbody class="govuk-table__body">
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Use of containers</td>
+<td class="govuk-table__cell">Containarised architecture means packaging software into self-contained units that can then run in any environment</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Automated container workflows</td>
+<td class="govuk-table__cell">Platforms such as Kubernetes can be used to automate the deployment, scaling, and management of containerized workloads</td>
+</tr>
+  <tr class="govuk-table__row">
+<td class="govuk-table__cell">Following open standards</td>
+<td class="govuk-table__cell">Applications that are designed to follow open industry standards, rather than provider-specific standards, can more easily be ported between environments</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>See also 4d. (ii) Shift workloads location</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -133,44 +205,69 @@
     <ul class="govuk-list govuk-list--bullet">
       <li><a href="https://www.ibm.com/think/architectures/well-architected/hybrid" class="govuk-link">Hybrid and portable</a> IBM Well-architected framework</li>
       <li><a href="https://www.akamai.com/glossary/what-is-cloud-portability/" class="govuk-link">What is cloud portability?</a> Akamai</li>
-
-
-      https://microsoft.github.io/code-with-engineering-playbook/non-functional-requirements/portability/ 
+      <li><a href="https://microsoft.github.io/code-with-engineering-playbook/non-functional-requirements/portability/" class="govuk-link">Portability</a> Microsoft</li>
+      </ul>
 </details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, portable workloads bring co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Cost: Increased flexibility in terms of workload placement allows optimising for cost, avoiding vendor lock-in</li>
+      <li>Resilience: Improved resilience by allowing workloads to be relocated or scaled across environments</li>
+      <li>Performance: Supports workload placement optimisation (e.g. region, provider, infrastructure type)</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Complexity: Portable workloads introduce additional architectural and operational complexity</li>
+      </ul>
+      </div>
+</details>
+
+
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-<h3 class="govuk-heading-m" id="model">(iii) Design workloads for flexibility</h2>
 
-<p>Designing workloads for flexibility means moving away from rigid, real-time execution models to those that can optimise how computing tasks are scheduled, managed, and executed.</p>
+
+<h3 class="govuk-heading-m" id="model">(iii) Design for workload flexibility</h2>
+
+<p>Designing workloads for flexibility means moving away from 'real-time' models that aim to complete tasks as soon as possible, to those where computational demand can be dynamically shifted in time.</p>
+<p>To be 'time-shiftable', workloads must not require that an immediate response be provided to a user.</p>
 
 <p>These patterns can help maximise efficiency and avoid reliance on peak-capacity infrastructure, allowing workloads to be scheduled when there is unused capacity or the electricity grid is at a lower carbon intensity.</p>
+
+<p>The approaches that can be taken to enable time-shifting include:</p>
 
 <div class="app-table-container" data-table-label="Table"><table class="govuk-table">
 <thead class="govuk-table__head">
 <tr class="govuk-table__row">
-<th class="govuk-table__header">Approach</th>
+<th class="govuk-table__header">Approaches</th>
 <th class="govuk-table__header">Description</th>
 </tr>
 </thead>
 <tbody class="govuk-table__body">
 <tr class="govuk-table__row">
-<td class="govuk-table__cell">Asynchronous patterns</td>
-<td class="govuk-table__cell">Decoupling a task request from its completion so the system doesn't wait for a response - allows tasks to run independently of one-another</td>
-</tr>
-<tr class="govuk-table__row">
 <td class="govuk-table__cell">Batch processing</td>
 <td class="govuk-table__cell">Grouping large volumes of data to be processed all at once, rather than one by one</td>
 </tr>
 <tr class="govuk-table__row">
-<td class="govuk-table__cell">Interruptible processing</td>
+<td class="govuk-table__cell">Design interruptible workloads</td>
 <td class="govuk-table__cell">Designing workloads that can be paused, stopped, and resumed at any time without data loss</td>
 </tr>
 </tbody>
 </table>
 </div>
 
-<p>See points on shifting to green, and also efficient cloud practices.</p>
+<p>See points on temporal shifting, 4c</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -181,6 +278,9 @@
   <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
       <li><a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/asynchronous-request-reply/" class="govuk-link">Asynchronous Request-Reply pattern</a> Microsoft Azure</li>
+      <li><a href="https://dl.acm.org/doi/full/10.1145/3769301/" class="govuk-link">Workload shifting techniques: From digital inebriation to sobriety</a> ACM Digital Library</li>
+
+
 </details>
 
 <details class="govuk-details" data-module="govuk-details">
@@ -199,7 +299,7 @@
       <h3 class="govuk-heading-s">Trade-offs</h3>
           <p class="govuk-body">Potential trade-offs may include:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Complexity: Introduces architectural complexity (e.g. queues, event handling, retry logic)</li>
+      <li>Complexity: Flexible workloads introduce architectural complexity (e.g. queues, event handling, retry logic)</li>
       </ul>
       </div>
 </details>

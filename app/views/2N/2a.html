@@ -57,18 +57,30 @@
 
  <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">2a. Take a circular approach to software</h1>
-        <p class="govuk-body-l">For software, circularity means reusing existing components where possible, and retiring software at the end of its life in order to save on energy use and associated carbon.</p>
-  
+  <h1 class="govuk-heading-xl">2a. Apply the principles of circularity to software</h1>
+
+        <p class="govuk-body-l">For software, embracing the principles of circularity means maximising value, saving resources and avoiding waste by reusing existing components where possible, and retiring software at the end of its life.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about circularity and software
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Principles of circular economy</h3>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview/" class="govuk-link">What is the meaning of a circular economy and what are the main principles?</a> Ellen MacArthur Foundation</li>
+      </ul>
+      </div>
+</details>
+
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
+<h2 class="govuk-heading-m" id="model">(i) Build software with existing components where possible</h2>
 
-<h2 class="govuk-heading-m" id="model">(i) Build with modular software components</h2>
-<p class="govuk-body">Modular components in software are independent, self-contained pieces of code designed to perform a particular function.</p>
-<p>Reuse of existing components avoids the consumption of resources required to build these from scratch.</p>
-<h3 class="govuk-heading-s">Making code open source and sharing components via a library</h3>
-<p>A component library is a collection of re-usable components, and can help teams make use of things created for other projects.</p>
-<p></p>
+<p>Building software by making use of existing components means assembling and integrating independent, pre-tested software modules rather than writing code from scratch.</p>
+<p>This approach avoids the unnesessary duplication of effort, saving </p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -77,14 +89,32 @@
     </span>
   </summary>
   <div class="govuk-details__text">
-    <h3 class="govuk-heading-s">UK government materials</h3>
+
+    <h3 class="govuk-heading-s">Government Digital Service (GDS) Components</h3>
+      <p>Government Digital Service have created a number of components that can be used by services across government.</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.forms.service.gov.uk/" class="govuk-link">GOV.UK Forms</a> is a platform to create accessible online forms for GOV.UK pages</li>
+      <li><a href="https://www.notifications.service.gov.uk/" class="govuk-link">GOV.UK Notify</a> is a platform to to send emails, text messages and letters to users</li>
+      <li><a href="https://www.sign-in.service.gov.uk/" class="govuk-link">GOV.UK One Login</a> lets users prove identity and sign in to services</li>
+      <li><a href="https://www.payments.service.gov.uk/" class="govuk-link">GOV.UK Forms</a> is a platform to to enable users to pay for things on services</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Shared components in Defra</h3>
+      <p>If you are working on a Defra service, there are a there are a set of <a href="https://digital.defra.gov.uk/architecture-and-software-development/defra-forms/" class="govuk-link">common tools</a> which can be used to build services. These include:</p>
+
+         <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://digital.defra.gov.uk/architecture-and-software-development/defra-forms/" class="govuk-link">Defra Forms</a> to build accessible, GOV.UK-styled forms for your digital service at Defra</li>
+      <li><a href="https://digital.defra.gov.uk/architecture-and-software-development/defra-customer-identity/" class="govuk-link">Defra Customer Identity</a> to allow users to sign in once and access multiple Defra services</li>
+      <li><a href="https://digital.defra.gov.uk/architecture-and-software-development/defra-accessible-maps/" class="govuk-link">Defra Interactive Maps</a> to build lightweight, accessible maps for frontend applications</li>
+      </ul>
+
+    <h3 class="govuk-heading-s">Other UK Government materials</h3>
     <ul class="govuk-list govuk-list--bullet">
-      <li>The GOV.UK Service Manual provides guidance on how code can be made <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable/" class="govuk-link">open & reusable</a></li>
       <li>The <a href="https://reuselibrary.service.justice.gov.uk/" class="govuk-link">Gov Reuse Library</a> provides a library of reusable government components from a range of departments.</li>
       </ul>
 
-      <h3 class="govuk-heading-s">Implementing this point in Defra</h3>
-      <p>In Defra, there are a numner of components.</p>
+
 
       </div>
 </details>
@@ -97,7 +127,7 @@
   </summary>
   <div class="govuk-details__text">
     <h3 class="govuk-heading-s">Co-benefits</h3>
-    <p class="govuk-body">Alongside sustainability benefits, building with shared components brings co-benefits in terms of:</p>
+    <p class="govuk-body">Alongside sustainability benefits, building with existing components brings co-benefits in terms of:</p>
     <ul class="govuk-list govuk-list--bullet">
       <li>Development Time: Developers avoid repeating unnecessary work, speeding up delivery</li>
       <li>Lower costs: Shorter development cycles reduce overall project labor and resource expenses</li>
@@ -107,17 +137,56 @@
       <h3 class="govuk-heading-s">Trade-offs</h3>
       <p class="govuk-body">Building with shared components can bring trade-offs such as:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Time: Upfront effort to find or adapt existing components</li>
-      <li>Dependencies: Potential dependency risks (external code quality, updates, licensing)</li>
+      <li>Time: Upfront effort required to find or adapt existing components</li>
+      <li>Dependencies: Reusing components from a shared library can bring dependency risks (such as external code quality, updates, licensing)</li>
       <li>Governance: Open sourcing code requires ongoing governance</li>
       </ul>
       </div>
 </details>
 
 
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m" id="model">(ii) Develop modular and open source? (new software components with reuse in mind)?</h2>
+
+<p>If you are developing new software components, then do so with reuse in mind, writing code that is modular, independent, self-contained pieces of code designed to perform a particular function.
+  
+<p>Where possinle, thing about maintainable, and easy to update or refactor.</p>
+
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">UK government materials</h3>
+    <p>The GOV.UK Service Manual provides guidance on how code can be made <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable/" class="govuk-link">open & reusable</a></p>
+
+    <h3 class="govuk-heading-s">GOV.UK Service Standard, Point 13</h3>
+    <p class="govuk-body">Point 13 of the GOV.UK Service Standard sets out the requirement for government services to <a href="https://www.gov.uk/service-manual/service-standard/point-13-use-common-standards-components-patterns/" class="govuk-link">'Use and contribute to open standards, common components and patterns'</a></p>
+
+    </div>
+</details>
+
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-<h2 class="govuk-heading-m" id="efficient">(ii) Use low and no-code approaches where appropriate</h2>
+
+  
+<h2 class="govuk-heading-m" id="model">(iii) Make code open source and sharing components via a library</h2>
+
+
+<p>A component library is a collection of re-usable components, and can help teams make use of things created for other projects.</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m" id="efficient">(iii) Use low and no-code approaches where appropriate</h2>
+
+
 <p class="govuk-body">Low-code or no-code are methods of designing and developing apps using drag and drop tools.</p> 
 <p>These approaches can save resources through reduced development effort and rework, and also improve efficiency where platforms optimise shared infrastructure.</p>
 
@@ -145,9 +214,13 @@
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-<h2 class="govuk-heading-m" id="modality">(iii) Ensure software is  decommissioned at the end of life</h2>
+<p>Remove obsolete code and features regularly, rather than allowing the codebase to accumulate unnecessary complexity.</p>
+
+<h2 class="govuk-heading-m" id="modality">(iv) Ensure software is decommissioned at the end of life</h2>
+
+
 <p class="govuk-body">Decommissioning software is the structured, secure process of retiring legacy, redundant, or obsolete applications.</p>
-<p class="govuk-body">Decommissioning obsolete and unused software frees up infrastructure, cutting the energy use associated with it.</p>
+<p class="govuk-body">Decommissioning obsolete and unused software frees up infrastructure and so cuts the energy use associated with it.</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -159,7 +232,7 @@
     <h3 class="govuk-heading-s">Co-benefits</h3>
     <p class="govuk-body">Alongside sustainability impact, decommissioning software when no longer needed brings co-benefits in terms of:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Cost: Reduced costs associated with software</li>
+      <li>Cost: Reduced costs associated with maintaining software unnecessarily</li>
       <li>Security: Reduced security risks from eliminating unmaintained systems</li>
       </ul>
 
