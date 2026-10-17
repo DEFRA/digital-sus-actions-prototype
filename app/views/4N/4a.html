@@ -64,52 +64,36 @@
 
   <h1 class="govuk-heading-xl">4a. Design for sustainable architectural patterns (mention circularity?) (design for modularity, portability and flexibility)</h1>
 
-<p class="govuk-body-l">Where appropriate, designing for more modular architecture, and workloads that can be decoupled from underlying hardware and infrastructure, bringing benefits in terms of avoiding over-provisioning infrastructure 
+<p class="govuk-body-l">Architectural decisions at the design stage can ensure that sustainabilty can be maximised when operating. Where appropriate, designing for more modular architecture, and workloads that can be decoupled from underlying hardware and infrastructure, bringing benefits in terms of avoiding over-provisioning infrastructure 
   
   flexibile and portable means that we can maximise efficiencies for sustainability and cost benefit. and to be flexible workloads enable the sustainable operation of a digital service, including porting workloads between cloud locations, and enabling carbon-aware computing, and running workloads when there is unused capacity or when the grid is greener</p>
 <p>NB There may be constraints on how flexible workloads can be, and not appropraite for many types of workload.</p>
-<p>Defining modular design for architcture: a design approach that divides a system into independent, self-contained, and reusable units (modules) that interact through well-defined interfaces and protocols.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+  <p>Good stuff from DfE! https://deliver-good-services.education.gov.uk/guides/enterprise-architecture-principles/7-reuse-and-modularity</p>
+</details>
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<p>Good stuff from DfE! https://deliver-good-services.education.gov.uk/guides/enterprise-architecture-principles/7-reuse-and-modularity</p>
-
-<h1>
-Modular Monoliths and Component Reuse, and also microservices, see WORD doc!
-</h1>
-
-
-<h2 class="govuk-heading-m">(i) Design for 'modular' architectural patterns over traditional monolithic systems</h2>
+<h2 class="govuk-heading-m">(i) Design for 'modular' architectural patterns</h2>
 
 <p>Traditional monolithic architecture is where an application is built, compiled, and deployed as a single, self-contained unit.</p>
-<p>More modular patterns, such as modular monoliths and microservice architectures, break monolithic systems down into separate components.</p>
-<p>These approaches enable sustainability benefits through:</p>
+<p>More modular patterns, such as modular monoliths and microservice architectures, break traditional monolithic systems down into self-contained and reusable components.</p>
+
+<p>Modular approaches can enable sustainability benefits through:</p>
 
      <ul class="govuk-list govuk-list--bullet">
-        <li>independent scaling of services, more efficient allocation of compute resources and reduced energy consumption</li>
-        <li>modularity aids the reuse of components, Using existing, proven, components saves on the resources associated with developing and testing these from scratch.</li>
+        <li>Enabling the independent scaling of services, more efficient allocation of compute resources and reduced energy consumption</li>
+        <li>Aiding the reuse of modular components across projects, which saves on the resources associated with developing and testing components from scratch.</li>
+        <li>Resilience is improved as a fault in one module or service does not impact the whole system</li>
       </ul>
-
-<div class="app-table-container" data-table-label="Table"><table class="govuk-table">
-<thead class="govuk-table__head">
-<tr class="govuk-table__row">
-<th class="govuk-table__header">Approach</th>
-<th class="govuk-table__header">Description</th>
-</tr>
-</thead>
-<tbody class="govuk-table__body">
-<tr class="govuk-table__row">
-<td class="govuk-table__cell">Modular monoliths</td>
-<td class="govuk-table__cell">A design pattern that structures a single, unified application into independent, loosely coupled logical modules</td>
-</tr>
-<tr class="govuk-table__row">
-<td class="govuk-table__cell">Microservice architecture</td>
-<td class="govuk-table__cell">A pattern that breaks applications into smaller, independent services. This helps with the build of composable and collaborative services, driven by events, commands and queries.</td>
-</tr>
-</tbody>
-</table>
-</div>
 
 <p>See also 'Serverless' and 'Resuse existing components'</p>
 
@@ -120,10 +104,26 @@ Modular Monoliths and Component Reuse, and also microservices, see WORD doc!
     </span>
   </summary>
   <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Modular Monoliths</h3>
+    <p>A modular monolithic architecture breaks a single, unified application into independent, loosely coupled logical modules.</p>
+
     <ul class="govuk-list govuk-list--bullet">
       <li><a href="https://www.ibm.com/think/topics/monolithic-architecture/" class="govuk-link">What is monolithic architecture?</a> IBM</li>
       <li><a href="https://www.atlassian.com/microservices/microservices-architecture/microservices-vs-monolith/" class="govuk-link">Microservices vs. monolithic architecture</a> Atlassian</li>
+      <li><a href="https://dev.to/flashblack/developing-modular-monolith-vs-traditional-monolith-in-software-engineering-pros-and-cons-p61/" class="govuk-link">Developing modular monolith vs. traditional monolith in software engineering, pros and cons</a> DEV.TO</li>
+      <li><a href="https://medium.com/@husain.ammar/modular-monoliths-explained-structure-strategy-and-scalability-ba94b103b345" class="govuk-link">Modular monoliths explained: Structure, strategy, and scalability</a> Ammar Husain</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Microservices</h3>
+      <p>A microservice architecture structures an application as a collection of small, autonomous, and loosely coupled services, rather than a single unified codebase.</p>
+      <ul class="govuk-list govuk-list--bullet">
       <li><a href="https://aws.amazon.com/microservices/" class="govuk-link">Microservices</a> Amazon Web Services</li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices/" class="govuk-link">Microservices architecture style</a> Microsoft Azure</li>
+      <li><a href="https://cloud.google.com/learn/what-is-microservices-architecture/" class="govuk-link">What is microservices architecture?</a> Google Cloud</li>
+      <li><a href="https://www.atlassian.com/microservices/microservices-architecture/" class="govuk-link">Microservices architecture</a> Atlassian</li>
+      <li><a href="https://www.ibm.com/think/topics/microservices/" class="govuk-link">What are microservices?</a> IBM</li>
+      </ul>
+
 </details>
 
 <details class="govuk-details" data-module="govuk-details">
@@ -133,21 +133,38 @@ Modular Monoliths and Component Reuse, and also microservices, see WORD doc!
     </span>
   </summary>
   <div class="govuk-details__text">
-    <h3 class="govuk-heading-s">Co-benefits</h3>
-    <p class="govuk-body">Alongside sustainability impact, modular approaches bring co-benefits in terms of:</p>
+    <h3 class="govuk-heading-s">Co-benefits of modular monoliths</h3>
+    <p class="govuk-body">Alongside sustainability impact, modular monoliths bring co-benefits in terms of:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Development Speed: Modular development supports faster delivery and adaptability to change</li>
-      <li>Resilience: Resilience is improved as a fault in one module or service does not impact the whole system</li>
-      <li>Cost: Microservice architectures support independent scaling of services and efficient cost allocation</li>
+      <li>Development Time: Developers work within a single codebase, making refactoring, testing and continuous integration faster</li>
+      <li>Cost: Reduced costs as less infrastructure, cloud resource overhead, and maintenance required compared to distributed architecture</li>
       </ul>
 
-      <h3 class="govuk-heading-s">Trade-offs</h3>
-          <p class="govuk-body">Potential trade-offs may include:</p>
+      <h3 class="govuk-heading-s">Trade-offs of modular monoliths</h3>
+          <p class="govuk-body">Potential trade-offs of modular monoliths may include:</p>
+          <ul class="govuk-list govuk-list--bullet">
+        <li>Scalability: With a modular monolith, the entire application scales as one block, limiting the scalbility of individual modules</li>
+        <li>Resilience: A sever crash or exception in one module can bring down the entire application process</li>
+      </ul>
+
+    <h3 class="govuk-heading-s">Co-benefits of microservices</h3>
+    <p class="govuk-body">Alongside sustainability impact, microservice approaches bring co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Cost: Microservice architectures support independent scaling of services and efficient cost allocation</li>
+      <li>Resilience: Improved resilience and fault isolation as failure in one service does not impact the whole system</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs of microservices</h3>
+          <p class="govuk-body">Potential trade-offs of microservices may include:</p>
     <ul class="govuk-list govuk-list--bullet">
       <li>Resource usage: Communication between microservices can lead to increased energy consumption due to communication between services</li>
       <li>Complexity: Microservice approaches can increase architectural and operational complexity through deployment and monitoring</li>
       </ul>
       </div>
+
+
+
+
 </details>
 
 
@@ -163,8 +180,8 @@ Modular Monoliths and Component Reuse, and also microservices, see WORD doc!
 <p>This approach can bring sustainability benefit by:
   
       <ul class="govuk-list govuk-list--bullet">
-        <li>enabling general efficiencies and reduced energy consumption</li>
-        <li>running workloads in locations where more low carbon electricity is available on the grid.</li>
+        <li>Enabling workloads to be shifted to locations where more energy-efficient hardware is available, so reducing energy consumption</li>
+        <li>Running workloads in locations where more low carbon electricity is available on the grid</li>
       </ul>
 
 <p>Approaches that can help enable portability include:</p>
@@ -187,7 +204,7 @@ Modular Monoliths and Component Reuse, and also microservices, see WORD doc!
 </tr>
   <tr class="govuk-table__row">
 <td class="govuk-table__cell">Following open standards</td>
-<td class="govuk-table__cell">Applications that are designed to follow open industry standards, rather than provider-specific standards, can more easily be ported between environments</td>
+<td class="govuk-table__cell">Applications that are designed to follow open industry standards, rather than proprietary, vendor-specific standards, can more easily be ported between environments</td>
 </tr>
 </tbody>
 </table>
@@ -233,41 +250,18 @@ Modular Monoliths and Component Reuse, and also microservices, see WORD doc!
 </details>
 
 
-
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
 
 
 <h3 class="govuk-heading-m" id="model">(iii) Design for workload flexibility</h2>
 
 <p>Designing workloads for flexibility means moving away from 'real-time' models that aim to complete tasks as soon as possible, to those where computational demand can be dynamically shifted in time.</p>
-<p>To be 'time-shiftable', workloads must not require that an immediate response be provided to a user.</p>
 
-<p>These patterns can help maximise efficiency and avoid reliance on peak-capacity infrastructure, allowing workloads to be scheduled when there is unused capacity or the electricity grid is at a lower carbon intensity.</p>
+<p>Flexible workload patterns can help maximise efficiency by avoiding reliance on peak-capacity infrastructure, and allow workloads to be scheduled when there is unused capacity or the electricity grid is at a lower carbon intensity.</p>
+<p>These approaches can save significantly on costs as well as carbon.</p>
+<p>To be time-flexible, workloads must not require that an immediate response be provided to a end user. These include things like batch jobs, data analytics, video encoding and rendering or large-scale AI model training.</p>
 
-<p>The approaches that can be taken to enable time-shifting include:</p>
-
-<div class="app-table-container" data-table-label="Table"><table class="govuk-table">
-<thead class="govuk-table__head">
-<tr class="govuk-table__row">
-<th class="govuk-table__header">Approaches</th>
-<th class="govuk-table__header">Description</th>
-</tr>
-</thead>
-<tbody class="govuk-table__body">
-<tr class="govuk-table__row">
-<td class="govuk-table__cell">Batch processing</td>
-<td class="govuk-table__cell">Grouping large volumes of data to be processed all at once, rather than one by one</td>
-</tr>
-<tr class="govuk-table__row">
-<td class="govuk-table__cell">Design interruptible workloads</td>
-<td class="govuk-table__cell">Designing workloads that can be paused, stopped, and resumed at any time without data loss</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<p>See points on temporal shifting, 4c</p>
+<p>See 4d. Shift cloud demand to match the availability of low carbon electricity, ALSO spot instances and Model training for AI</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
