@@ -1,0 +1,234 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">5. Artifical Intelligence</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/5N/AI.html">
+        5. Artificial Intelligence
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">Sustainability actions</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/5N/5a.html">
+        5a. Be clear on the need and readiness for AI use
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/5N/5b.html" aria-current="page">
+        5b. Choose the lowest energy AI model that meets your needs
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/5N/5c.html">
+        5c. Take a sustainable approach to training AI models
+      </a>
+    </li>
+            <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/5N/5c.html">
+        5d. Take a sustainable approach to operating AI models
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-xl">5b. Choose the lowest energy AI model that meets your needs</h1>
+<p>Choise of models can have significant impact on the energy consumed by use of AI tech. Choosing the right model means understanding the task, and then considering the right-size model (as small as possible whilst still meeting capability requirements), modality, energy efficiency</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(i) Choose smaller, task-specific models where appropriate (choose an appriopriately sized model)</h2>
+
+<h2>Select the smallest viable model (for your task)</h2>
+
+<p>The size of an AI model refers to its scale and complexity, primarily determined by the number of parameters (the internal variables) that the model uses to process information and make predictions.</p>
+
+<p>General-purpose AI models (such as Large Language Models) are those that have been trained on broad datasets, and can perform a variety of tasks, such as coding and generating text or images. In contrast, task-specific models are those built and fine-tuned for a single, well-defined function and trained on specific datasets.</p>
+<p>General-purpose models are usually larger and more complex than task-specific models, with significantly more parameters. This leads to significantly higher consumption of resources during training and operational phases.</p>
+
+<p>Choosing the smallest model that can deliver for the task at hand can lead to significant reductions to energy usage.</p>  
+
+<p>Smaller AI models require less computational power to run, and can sometimes be run 'at the edge' See Also run at the edge.</p>
+
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/the-future-of-ai-horses-for-courses---task-specific-models-and-content-understan/4363563/" class="govuk-link">Task-specific models and content understanding</a> Microsoft</li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/choose-ai-model/" class="govuk-link">Choose the right AI model for your workload</a> Microsoft Azure</li>
+      <li><a href="https://patterns.greensoftware.foundation/development/right-sized-energy-efficient-ai-models/" class="govuk-link">Use right-sized and energy-efficient AI models</a> Green Software Foundation</li>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, choosing smaller and task-specific models brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Accuracy: Task-specific models often deliver higher domain accuracy and lower hallucination rates</li>
+      <li>Governance: Task-specific models make it straightforward to apply strict compliance and safety guardrails</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+          <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Oper</li>
+      </ul>
+      </div>
+</details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(ii) Choose energy-efficient models</h2>
+
+<p>Models of the boradly the same size and task-specificity may still vary in terms of their energy efficiency.</p>
+
+<p>Evaluate and compare models, to help you to choose more energy efficient models that provide functionality and outputs of acceptable quality and accuracy for your needs. 
+
+AI energy comparison tools, such as HuggingFace’s AI Energy Score Leaderboard, can help you choose models that are more energy efficient. </p>
+
+
+ generate images, audio, or video from text prompts</p> Multimodal AI makes gen AI more robust and useful by allowing multiple types of inputs and outputs.
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://huggingface.co/blog/sasha/ai-energy-score-v2/" class="govuk-link">AI energy score</a> Green Software Foundation</li>
+</details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(iii) Choose models with the minimum required modality</h2>
+
+<p>A 'Multimodal' AI model is a type of artificial intelligence that can process, interpret, and generate multiple types of data, such as text, images, audio, and video.</p>
+
+<p>The more 'modes' a model has, the higher the energy consumption tends to be.</p>
+
+<p>Where possible, choose AI models with only the modality required for your project. For example, a chat-bot AI application will not need a model that can generate images.</p>
+
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+<h2 class="govuk-heading-m">(iv) Take an 'open first' approach to model selection</h2>
+
+
+<p>An open-source AI model is one where underlying components, such as source code, model parameters, and documentation, are in the public domain.</p>
+
+<p>If you want a general AI tool (rather than a more specialised model) then consider open source models.</p>
+
+<p>Open source AI models are generally cheaper, and they often provide more transparency about performance and efficiency. There are a number of open-source models available, such as Mistral, Llama, DeepSeek or Hugging Face.</p>
+
+<p>https://www.ibm.com/think/topics/open-source-ai</p>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+<h2 class="govuk-heading-m">(v) Track the development of improved models</h2>
+
+<p>Keep track of improved model releases and assess whether these would be an effective swap for current ones</p>
+
+
+
+
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

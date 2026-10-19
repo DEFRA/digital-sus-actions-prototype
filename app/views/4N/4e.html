@@ -63,6 +63,7 @@
  <div class="govuk-grid-column-two-thirds">
 
   <h1 class="govuk-heading-xl">4e. Maximise efficiency in on-premises data centres</h1>
+  <p>On premises systems give control but...On-premise gives control, with potential cooling drawbacks</p>
 <p class="govuk-body-l">Take action to ensure that on-premises servers are running as efficiently as possible, reducing associated energy consumption.</p>
 
 <p>An on-premises data centre is a physical computing facility owned, built, and managed directly by an organization within its own building or property</p>
@@ -107,6 +108,25 @@
 <h2 class="govuk-heading-m">(ii) Implement dynamic balancing</h2>
 <p>Dynamic balancing involves distributing network traffic in real-time across local servers based on current demand.</p>
 <p>This approach can optimise power distribution and reduce overall energy consumption.</p>
+
+<p>To maximise efficiency in an on-premises data centre, focus on optimizing airflow, consolidating workloads, upgrading physical infrastructure, and tracking resource metrics. [1, 2]
+Airflow and Cooling Optimisation
+•	Hot and Cold Aisle Containment: Arrange server racks in alternating rows (hot-to-hot and cold-to-cold) and install physical barriers, curtains, or doors to prevent hot exhaust air from mixing with cool intake air. This can improve cooling efficiency by 20% to 50%. [1, 2]
+•	Blanking Panels and Sealing: Install blanking panels in unused rack spaces and seal floor or ceiling gaps to stop chilled air from bypassing critical equipment. [1, 2]
+•	Raise Operating Temperatures: Gradually increase room or server inlet temperatures within safe ASHRAE guidelines (saving roughly 4% to 5% in energy costs for every 1°F increase). [1, 2]
+•	Advanced Cooling: Explore variable-speed fans, free-air cooling, or targeted liquid cooling for high-density hardware. [1, 2]
+Server Consolidation and Virtualisation
+•	Virtualisation: Deploy hypervisors and virtual machines (VMs) to raise typical server utilisation rates from low legacy baselines (10%–15%) up to 50% or higher, reducing the total number of physical machines needed. [1, 2, 3]
+•	Retire Zombie Servers: Audit and shut down underutilised, abandoned, or single-purpose legacy servers that consume power without delivering active workloads. [1, 2]
+•	Hardware Refresh Cycles: Replace older servers, storage arrays, and network switches with modern, energy-proportioned units that deliver higher compute-per-watt ratios. [1, 2, 3]
+Power and Electrical Infrastructure
+•	High-Efficiency UPS and PDUs: Upgrade Uninterruptible Power Supply (UPS) systems and Power Distribution Units (PDUs) to high-efficiency models (aiming for online UPS efficiencies of 95%–98%). [1, 2]
+•	Dynamic Power States: Enable built-in processor power management features (such as C-states and P-states) so hardware scales power draw down during low-demand periods. [1, 2]
+•	Facility Lighting: Replace legacy fluorescent bulbs with low-energy LEDs tied to motion sensors. [1, 2, 3]
+Monitoring and Management
+•	Data Centre Infrastructure Management (DCIM): Implement DCIM tools to track real-time power, temperature, humidity, and rack-level usage.
+•	Track Key Metrics: Regularly calculate and monitor Power Usage Effectiveness (PUE) to measure how much total facility energy reaches the IT equipment versus overhead systems like HVAC. Guidance and best-practice frameworks are available via the US Department of Energy Best Practices Guide. [1, 2, 3, 4]
+</p>
 
 
     </div>
