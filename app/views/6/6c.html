@@ -12,7 +12,7 @@
         <li class="govuk-breadcrumbs__list-item">
           <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
         </li>
-        <li class="govuk-breadcrumbs__list-item" aria-current="page">3. Data</li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">6. Artificial Intelligence</li>
   </ol>
 </nav>
 
@@ -20,56 +20,58 @@
     <div class="govuk-grid-row">
 
       <div class="govuk-grid-column-one-third">
+
 <nav class="app-sub-navigation" aria-label="Pages in this section">
   <p class="app-subnav__header">In this section</p>
   <ul class="app-subnav__list">
     <li class="app-subnav__item">
-      <a class="app-subnav__link" href="/3N/data.html">
-        3. Data
+      <a class="app-subnav__link" href="/6/AI.html">
+        6. Artificial Intelligence
       </a>
     </li>
   </ul>
     <p class="app-subnav__header">Sustainability actions</p>
   <ul class="app-subnav__list">
     <li class="app-subnav__item">
-       <a class="app-subnav__link" href="/3N/3a.html">
-        3a. Take a lean approach to data collection
+      <a class="app-subnav__link" href="/6/6a.html">
+        6a. Be clear on the need and readiness for AI use
       </a>
     </li>
     <li class="app-subnav__item">
-       <a class="app-subnav__link" href="/3N/3b.html">
-        3b. Optimise data storage
+      <a class="app-subnav__link" href="/6/6b.html">
+        6b. Choose the lowest energy AI model that meets your needs
       </a>
     </li>
         <li class="app-subnav__item">
-      <a class="app-subnav__link app-subnav__link--current" href="/3N/3c.html" aria-current="page">
-        3c. Optimise data for transit
+      <a class="app-subnav__link app-subnav__link--current" href="/6/6c.html" aria-current="page">
+        6c. Take a sustainable approach to training AI models
       </a>
     </li>
-          <li class="app-subnav__item">
-      <a class="app-subnav__link" href="/3N/3d.html">
-        3d. Balance data security and sustainability
+            <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/6/6d.html">
+        6d. Take a sustainable approach to operating AI models
       </a>
     </li>
   </ul>
 </nav>
+
   </div>
 
  <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">3c. Optimise data for transit</h1>
-<p class="govuk-body-l">Explore options to optimise transfer of data across networks and reduce emissions from networking.</p>
+  <h1 class="govuk-heading-xl">6c. Optimising AI models</h1>
 
-<p>Read more https://patterns.greensoftware.foundation/development/data-handling/compress-transmitted-data</p>
-
+<p>Apply model compression techniques such as quantization, pruning, and knowledge distillation.</p>
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(i) Compress data for transit</h2>
+<h2 class="govuk-heading-m">(i) Ai model pruning</h2>
 
-<p>Compressing data for transit means reducing the file size or bit-rate of digital information before sending it across a network.</p>
-<p>Compression can help reduce network load and energy consumption.</p>
+
+<p>General-purpose AI models (such as Large Language Models) are trained on broad datasets can perform a variety of tasks, such as coding, generating text or images.</p>
+<p>In contrast, task-specific models are those built and fine-tuned for a single, well-defined function and trained on specific datasets.</p>
+
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -79,9 +81,12 @@
   </summary>
   <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
-      <li><a href="https://patterns.greensoftware.foundation/development/data-handling/compress-transmitted-data/" class="govuk-link">Compress transmitted data,</a> Green Software Foundation</li>
-</details>
+      <li><a href="https://patterns.greensoftware.foundation/development/right-sized-energy-efficient-ai-models/" class="govuk-link">Use right-sized and energy-efficient AI models</a> Green Software Foundation</li>
+      <li><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/the-future-of-ai-horses-for-courses---task-specific-models-and-content-understan/4363563/" class="govuk-link">Task-specific models and content understanding</a> Microsoft</li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/choose-ai-model/" class="govuk-link">Choose the right AI model for your workload</a> Microsoft Azure</li>
 
+
+</details>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -91,34 +96,23 @@
   </summary>
   <div class="govuk-details__text">
     <h3 class="govuk-heading-s">Co-benefits</h3>
-    <p class="govuk-body">Alongside sustainability impact, compressing data for transit brings co-benefits in terms of:</p>
+    <p class="govuk-body">Alongside sustainability impact, choosing task-specific models brings co-benefits in terms of:</p>
     <ul class="govuk-list govuk-list--bullet">
-       <li>Cost: Reduced network usage can lead to cost savings</li>
-    </ul>
+      <li>Accuracy: Accuracy and Precision: Task-specific models often deliver higher domain accuracy and lower hallucination rates</li>
+      <li>Governance: Task-specific models make it straightforward to apply strict compliance, safety guardrails, and drift detection.</li>
+      </ul>
 
       <h3 class="govuk-heading-s">Trade-offs</h3>
           <p class="govuk-body">Potential trade-offs may include:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Compression introduces additional CPU overhead for encoding and decoding</li>
-    </ul>
+      <li>Operational process: Introduction of operational overhead for monitoring, alerting and tuning cloud usage</li>
+      </ul>
       </div>
 </details>
 
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-
-<h2 class="govuk-heading-m">(ii) Enable consumption of data from primary source</h2>
-
-<p>Consuming data from its primary source means accessing data from where it was first generated.</p>
-<p>This approach means we can access the most up-to-date information without the need for any intermediary processing or transformation, in turn reducing energy use from data processing, duplicate data storage and replication, and network transmission.</p>
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-
-<h2 class="govuk-heading-m">(iii) Use efficient network protocols</h2>
-
-<p>A network protocol is a set of rules that define how data is exchanged between devices on a network.</p>
-<p>Using efficient protocols like UDP based HTTP3 or QUIC can help reduce retransmissions.</p>
 
     </div>
 
