@@ -62,23 +62,20 @@
   <h1 class="govuk-heading-xl">6b. Choose the lowest energy AI model that meets your needs</h1>
 
 <p>Choise of models can have significant impact on the energy consumed by use of AI tech. Choosing the right model means understanding the task, and then considering the right-size model (as small as possible whilst still meeting capability requirements), modality, energy efficiency</p>
+<p>ACTIONS - ofr engineers and developers</p>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(i) Choose smaller, task-specific models where appropriate (choose an appriopriately sized model)</h2>
-
-<h2>Select the smallest viable model (for your task)</h2>
+<h2 class="govuk-heading-m">(i) Choose the smallest viable model for your task</h2>
 
 <p>The size of an AI model refers to its scale and complexity, primarily determined by the number of parameters (the internal variables) that the model uses to process information and make predictions.</p>
 
 <p>General-purpose AI models (such as Large Language Models) are those that have been trained on broad datasets, and can perform a variety of tasks, such as coding and generating text or images. In contrast, task-specific models are those built and fine-tuned for a single, well-defined function and trained on specific datasets.</p>
-<p>General-purpose models are usually larger and more complex than task-specific models, with significantly more parameters. This leads to significantly higher consumption of resources during training and operational phases.</p>
-
-<p>Choosing the smallest model that can deliver for the task at hand can lead to significant reductions to energy usage.</p>  
-
-<p>Smaller AI models require less computational power to run, and can sometimes be run 'at the edge' See Also run at the edge.</p>
+<p>General-purpose models are usually more complex than task-specific models, with significantly more parameters.</p>
+<p>Choosing the smallest model that can deliver for the task at hand can lead to significant reductions to energy usage across training and operational phases.</p>  
+<p>Smaller AI models can sometimes be run 'at the edge'.</p>
 
 
 <details class="govuk-details" data-module="govuk-details">
@@ -102,16 +99,18 @@
   </summary>
   <div class="govuk-details__text">
     <h3 class="govuk-heading-s">Co-benefits</h3>
-    <p class="govuk-body">Alongside sustainability impact, choosing smaller and task-specific models brings co-benefits in terms of:</p>
+    <p class="govuk-body">Alongside sustainability impact, smaller and task-specific models bring co-benefits in terms of:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Accuracy: Task-specific models often deliver higher domain accuracy and lower hallucination rates</li>
-      <li>Governance: Task-specific models make it straightforward to apply strict compliance and safety guardrails</li>
+      <li>Accuracy: Task-specific models often outperform larger models where workflows are well-defined</li>
+      <li>Governance: Task-specific models can make it more straightforward to apply strict compliance and safety guardrails</li>
+      <li>Speed: Smaller models usually allow for faster inference</li>
+      <li>Cost: Task-specific models are often significantly cheaper to use than larger, general models</li>
       </ul>
 
       <h3 class="govuk-heading-s">Trade-offs</h3>
           <p class="govuk-body">Potential trade-offs may include:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Oper</li>
+      <li>Versatility: General-purpose models are able to pivot to unfamiliar domains and respond to out-of-scope prompts</li>
       </ul>
       </div>
 </details>
@@ -120,16 +119,14 @@
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(ii) Choose energy-efficient models</h2>
 
-<p>Models of the boradly the same size and task-specificity may still vary in terms of their energy efficiency.</p>
+<h2 class="govuk-heading-m">(ii) Choose an energy-efficient model</h2>
 
-<p>Evaluate and compare models, to help you to choose more energy efficient models that provide functionality and outputs of acceptable quality and accuracy for your needs. 
+<p>AI models of similiar size and task-specificity may still vary significantly in terms of their energy efficiency.</p>
 
-AI energy comparison tools, such as HuggingFace’s AI Energy Score Leaderboard, can help you choose models that are more energy efficient. </p>
+<p>Evaluate and compare models to help you to choose the most energy-efficient options that provide outputs of acceptable quality and accuracy for your needs.</p>
 
-
- generate images, audio, or video from text prompts</p> Multimodal AI makes gen AI more robust and useful by allowing multiple types of inputs and outputs.
+<p>There are a number of AI model energy use comparison tools, which can help you choose models that are more energy-efficient.</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -139,48 +136,66 @@ AI energy comparison tools, such as HuggingFace’s AI Energy Score Leaderboard,
   </summary>
   <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
-      <li><a href="https://huggingface.co/blog/sasha/ai-energy-score-v2/" class="govuk-link">AI energy score</a> Green Software Foundation</li>
+      <li><a href="https://huggingface.co/blog/sasha/ai-energy-score-v2/" class="govuk-link">AI energy score,</a> Hugging Face</li>
+      <li><a href="https://cleerdash.sustainableaigroup.com/" class="govuk-link">AI energy & carbon dashboards,</a> Sustainable AI Group</li>
+
 </details>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(iii) Choose models with the minimum required modality</h2>
 
-<p>A 'Multimodal' AI model is a type of artificial intelligence that can process, interpret, and generate multiple types of data, such as text, images, audio, and video.</p>
+<h2 class="govuk-heading-m">(iii) Choose a model with the minimum required modality</h2>
+
+<p>A 'multimodal' AI model is one that can process, interpret, and generate multiple types of data, such as text, images, audio, and video. This can bring value in connecting different data types, such as the ability to analyse and generate a written description of an image.</p>
 
 <p>The more 'modes' a model has, the higher the energy consumption tends to be.</p>
 
 <p>Where possible, choose AI models with only the modality required for your project. For example, a chat-bot AI application will not need a model that can generate images.</p>
 
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.ibm.com/think/topics/multimodal-ai/" class="govuk-link">What is multimodal AI?,</a> IBM</li>
+      <li><a href="https://cloud.google.com/use-cases/multimodal-ai/" class="govuk-link">Multimodal AI,</a> Google Cloud</li>
+
+</details>
+
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
 
-<h2 class="govuk-heading-m">(iv) Take an 'open first' approach to model selection</h2>
+<h2 class="govuk-heading-m">(iv) Consider open-source AI models, where appropriate</h2>
 
+<p>An open-source AI model is one where underlying components, such as source code, model parameters and documentation are in the public domain.</p>
 
-<p>An open-source AI model is one where underlying components, such as source code, model parameters, and documentation, are in the public domain.</p>
+<p>Open-source AI models are usually general-use, rather than being task-specfic. There are a number available, such as Mistral, Llama, Gemma or GPT-OSS.</p>
 
-<p>If you want a general AI tool (rather than a more specialised model) then consider open source models.</p>
+<p>The open nature of these models usually provide more transparency about performance and energy-efficiency than closed-source models. However, the open nature can create trade-offs from a security perspective: While the open architecture permits security experts to audit code for vulnerabilities, knowing model weights and data used for training could aid the targeting of attacks.</p>
+  
+<p>If you need a general-purpose AI model, consider open source models.</p>
 
-<p>Open source AI models are generally cheaper, and they often provide more transparency about performance and efficiency. There are a number of open-source models available, such as Mistral, Llama, DeepSeek or Hugging Face.</p>
-
-<p>https://www.ibm.com/think/topics/open-source-ai</p>
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-
-
-<h2 class="govuk-heading-m">(v) Track the development of improved models</h2>
-
-<p>Keep track of improved model releases and assess whether these would be an effective swap for current ones</p>
-
-
-
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.ibm.com/think/topics/open-source-ai/" class="govuk-link">What is open-source AI?,</a> IBM</li>
+      <li><a href="https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html#security/" class="govuk-link">Security,</a> AI Playbook for the UK Government</li>
+      <li><a href="https://www.ibm.com/think/insights/unregulated-generative-ai-dangers-open-source/" class="govuk-link">Open source, open risks: The growing dangers of unregulated generative AI,</a> IBM</li>
+      <li><a href="https://www.gov.uk/guidance/ai-open-code-and-vulnerability-risk-in-the-public-sector/" class="govuk-link">AI, open code and vulnerability risk in the public sector,</a> Government Digital Service</li>
+</details>
 
 
 

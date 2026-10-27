@@ -59,18 +59,22 @@
 
  <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">6c. ONE MORE!</h1>
+  <h1 class="govuk-heading-xl">6d. Take a more sustainable approach to operating AI</h1>
 
-<p>Apply model compression techniques such as quantization, pruning, and knowledge distillation.</p>
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(i) Ai model pruning</h2>
+
+<h2 class="govuk-heading-m">(i) Take a multi-tiered approach to AI</h2>
 
 
-<p>General-purpose AI models (such as Large Language Models) are trained on broad datasets can perform a variety of tasks, such as coding, generating text or images.</p>
-<p>In contrast, task-specific models are those built and fine-tuned for a single, well-defined function and trained on specific datasets.</p>
+
+<p>Rather than relying on a single solution, a multi-tier approach means choosing the right AI model for each task.</p>
+  
+<p>Implementing a multi-tiered approach requires that a suitable range of AI technologies (such as AI agents, Large Language Models and decision models) are available. User prompts and agent workflows can then be directed to the simplest and/or most cost-effective model capable of solving them reliably.</p>
+ 
+<p>A multi-tiered approach reduces waste by avoiding simple prompts being sent to complex models, and in this way reduces energy consumption.</p>
 
 
 <details class="govuk-details" data-module="govuk-details">
@@ -81,12 +85,10 @@
   </summary>
   <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
-      <li><a href="https://patterns.greensoftware.foundation/development/right-sized-energy-efficient-ai-models/" class="govuk-link">Use right-sized and energy-efficient AI models</a> Green Software Foundation</li>
-      <li><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/the-future-of-ai-horses-for-courses---task-specific-models-and-content-understan/4363563/" class="govuk-link">Task-specific models and content understanding</a> Microsoft</li>
-      <li><a href="https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/choose-ai-model/" class="govuk-link">Choose the right AI model for your workload</a> Microsoft Azure</li>
-
+      <li><a href="https://aws.amazon.com/blogs/machine-learning/multi-llm-routing-strategies-for-generative-ai-applications-on-aws/" class="govuk-link">Multi-LLM routing strategies for generative AI applications on AWS,</a> Amazon Web Services</li>
 
 </details>
+
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -96,19 +98,56 @@
   </summary>
   <div class="govuk-details__text">
     <h3 class="govuk-heading-s">Co-benefits</h3>
-    <p class="govuk-body">Alongside sustainability impact, choosing task-specific models brings co-benefits in terms of:</p>
+    <p class="govuk-body">Alongside sustainability impact, a multi-tiered approach to AI brings co-benefits in terms of:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Accuracy: Accuracy and Precision: Task-specific models often deliver higher domain accuracy and lower hallucination rates</li>
-      <li>Governance: Task-specific models make it straightforward to apply strict compliance, safety guardrails, and drift detection.</li>
+      <li>Accuracy: Appropriate multi-tiered approach reduces risk of error within an AI workflow</li>
       </ul>
 
       <h3 class="govuk-heading-s">Trade-offs</h3>
           <p class="govuk-body">Potential trade-offs may include:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Operational process: Introduction of operational overhead for monitoring, alerting and tuning cloud usage</li>
+      <li>Versatility: G</li>
       </ul>
       </div>
 </details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(ii) Optimise agentic AI workflows</h2>
+
+<p>Agents are autonomous AI systems pthat can set goals, make decisions, plan multi-step actions and use digital tools or APIs with minimal human supervision.</p>
+
+<p>An AI agentic workflow is a multi-step process where agents make decisions, following a set of predefined rules and data inputs.</p>
+
+<p>Agentic AI has the potential to automate complex processes and deliver significant efficiencies. However it also comes with significant resource consumption of its own.</p>
+
+<p>Optimising the workflow that AI agents follow ensures that energy consumption is reduced as far as possible while output quality is maximised.</p>
+
+<p>https://www.gov.uk/government/publications/ai-insights/ai-insights-agentic-workflow-html</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(iii) Implement prompt caching</h2>
+
+<p>Prompt caching stores the frequently unchanged first part of an AI prompt so the model does not have to reprocess those tokens on every request.</p>
+
+<p>This approach can reduce input token usage by as much as 80%, lowering energy use and costs significantly</p>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(iii) Implement token metering</h2>
+
+
+<p>Token metering is the process of tracking the number of tokens consumed when interacting with an AI model. This can cover both the ‘input’ tokens (the prompts provided for models) and ‘outputs’ that are generated as a response.</p>
+
+<p>Metering tokens provides insight into opportunities for optimisation, and can enable intelligent model routing, where prompts are matched to smaller, task-specific models.</p>
+
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">

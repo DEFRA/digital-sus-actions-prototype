@@ -59,19 +59,59 @@
 
  <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">6c. Optimising AI models</h1>
+  <h1 class="govuk-heading-xl">6c. Take a sustainable approach to training AI models</h1>
 
-<p>Apply model compression techniques such as quantization, pruning, and knowledge distillation.</p>
+  <p class="govuk-body-l">Reusing a pre-trained model can save significantly on resource oncusmpiton,. I f we are training models, then apply model compression techniques such as quantization, pruning, and knowledge distillation.</p>
+
+
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(i) Ai model pruning</h2>
+
+<h2 class="govuk-heading-m">(i) Reuse pre-trained models</h2>
 
 
-<p>General-purpose AI models (such as Large Language Models) are trained on broad datasets can perform a variety of tasks, such as coding, generating text or images.</p>
-<p>In contrast, task-specific models are those built and fine-tuned for a single, well-defined function and trained on specific datasets.</p>
+<p>Reusing an AI model means taking one that has already been trained for a particular task and reusing it for a new task.</p> 
 
+<p>Reusing pre-trained models can enable significant savings in terms of time, costs and energy consumption compared to training a model from scratch.</p>
+
+<p>'Transfer learning' techniques take the patterns, features and weights learned by a pre-trained model for a 'source task' as a starting point for a new or related task.</p>
+
+<p>Avoid training models from scratch where appropriate pre-trained models are available, and encourage transfer learning and model sharing between teams. In this way, a single AI model may be able to serve multiple teams' needs.</p>
+
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+        <h3 class="govuk-heading-s">Fine-tuning AI models</h3>
+    <p>Fine-tuning involves taking a pre-trained AI model, unfreezing model weights and training the model further on a smaller, specialised dataset to adapt it for a specific task.</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.ibm.com/think/topics/fine-tuning/" class="govuk-link">What is fine-tuning?,</a> IBM</li>
+      <li><a href="https://learn.microsoft.com/en-us/windows/ai/fine-tuning/" class="govuk-link">Model fine-tuning concepts,</a> Microsoft Learn</li>
+      </ul>
+
+    <h3 class="govuk-heading-s">Feature extraction in transfer learning</h3>
+    <p>Feature extraction is an approach where the pre-trained model's layers remain frozen and new layers added ontop.</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.ibm.com/think/topics/transfer-learning/" class="govuk-link">What is transfer learning?,</a> IBM</li>
+      </ul>
+     
+</details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(ii) Prune AI models</h2>
+
+<p>When training an AI model, pruning is a technique that removes unnecessary parameters, such as weights, neurons and layers, that are contributing little to a model's output.</p>
+
+<p>Pruning can significantly reduce the size, complexity and energy consumption of models while preserving high accuracy of outputs.</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -82,36 +122,66 @@
   <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
       <li><a href="https://patterns.greensoftware.foundation/development/right-sized-energy-efficient-ai-models/" class="govuk-link">Use right-sized and energy-efficient AI models</a> Green Software Foundation</li>
-      <li><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/the-future-of-ai-horses-for-courses---task-specific-models-and-content-understan/4363563/" class="govuk-link">Task-specific models and content understanding</a> Microsoft</li>
-      <li><a href="https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/choose-ai-model/" class="govuk-link">Choose the right AI model for your workload</a> Microsoft Azure</li>
-
 
 </details>
+
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+
+<h2 class="govuk-heading-m">(iii) Quantize AI models</h2>
+
+<p>Quantization is an approach that reduces the numerical precision of a model's parameters.</p>
+
+<p>This approach can reduce the size of AI models, speeding up computation without a significant loss of accuracy, whilst also reducing energy consumption.</p>
+
+<p>Quantization can also allow models to be made small enough to be deployed on hardware like mobile devices.</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
     <span class="govuk-details__summary-text">
-      Co-benefits and trade-offs
+      Read more about implementing this point
     </span>
   </summary>
   <div class="govuk-details__text">
-    <h3 class="govuk-heading-s">Co-benefits</h3>
-    <p class="govuk-body">Alongside sustainability impact, choosing task-specific models brings co-benefits in terms of:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>Accuracy: Accuracy and Precision: Task-specific models often deliver higher domain accuracy and lower hallucination rates</li>
-      <li>Governance: Task-specific models make it straightforward to apply strict compliance, safety guardrails, and drift detection.</li>
-      </ul>
+      <li><a href="https://www.ibm.com/think/topics/quantization/" class="govuk-link">What is quantization?,</a> IBM</li>
 
-      <h3 class="govuk-heading-s">Trade-offs</h3>
-          <p class="govuk-body">Potential trade-offs may include:</p>
+</details>
+
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+<h2 class="govuk-heading-m">(iv) Distill knowledge to transfer learnings</h2>
+
+<p>Knowledge distillation is a technique where a small, fast model is trained to replicate the behaviour and performance of a larger and more complex one.</p>
+
+<p>By replacing larger models with smaller ones, this approach can significantly reduce the energy consumption coming from AI model use.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
-      <li>Operational process: Introduction of operational overhead for monitoring, alerting and tuning cloud usage</li>
-      </ul>
-      </div>
+      <li><a href="https://www.gov.uk/government/publications/ai-insights/ai-insights-model-distillation-html/" class="govuk-link">AI insights: Model distillation,</a> Department for Digital, Culture, Media and Sport, Government Digital Service</li>
+      <li><a href="https://www.ibm.com/think/topics/knowledge-distillation/" class="govuk-link">What is knowledge distillation?,</a> IBM</li>
+
 </details>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
 
 
     </div>
