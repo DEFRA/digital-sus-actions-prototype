@@ -59,22 +59,23 @@
 
  <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">6d. Take a more sustainable approach to operating AI</h1>
+  <h1 class="govuk-heading-xl">6d. Take a sustainable approach to operating AI</h1>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
 
-<h2 class="govuk-heading-m">(i) Take a multi-tiered approach to AI</h2>
+<h2 class="govuk-heading-m">(i) Implement a multi-tiered approach to AI</h2>
 
 
-
-<p>Rather than relying on a single solution, a multi-tier approach means choosing the right AI model for each task.</p>
+<p>Rather than relying on a single solution, a multi-tier approach means the right AI model is selected for each task.</p>
   
-<p>Implementing a multi-tiered approach requires that a suitable range of AI technologies (such as AI agents, Large Language Models and decision models) are available. User prompts and agent workflows can then be directed to the simplest and/or most cost-effective model capable of solving them reliably.</p>
+<p>Implementing a multi-tiered approach requires that a suitable range of AI technologies (such as AI agents, Large Language Models and decision models) are available in an organisation. User prompts and agent workflows can then be directed to the simplest and/or most cost-effective model capable of solving them reliably.</p>
  
 <p>A multi-tiered approach reduces waste by avoiding simple prompts being sent to complex models, and in this way reduces energy consumption.</p>
+
+<p>See also <a href="ht/" class="govuk-link">6a. (i) Be clear on the use case for AI</a></p>
 
 
 <details class="govuk-details" data-module="govuk-details">
@@ -86,7 +87,6 @@
   <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
       <li><a href="https://aws.amazon.com/blogs/machine-learning/multi-llm-routing-strategies-for-generative-ai-applications-on-aws/" class="govuk-link">Multi-LLM routing strategies for generative AI applications on AWS,</a> Amazon Web Services</li>
-
 </details>
 
 
@@ -115,27 +115,22 @@
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(ii) Optimise agentic AI workflows</h2>
-
-<p>Agents are autonomous AI systems pthat can set goals, make decisions, plan multi-step actions and use digital tools or APIs with minimal human supervision.</p>
-
-<p>An AI agentic workflow is a multi-step process where agents make decisions, following a set of predefined rules and data inputs.</p>
-
-<p>Agentic AI has the potential to automate complex processes and deliver significant efficiencies. However it also comes with significant resource consumption of its own.</p>
-
-<p>Optimising the workflow that AI agents follow ensures that energy consumption is reduced as far as possible while output quality is maximised.</p>
-
-<p>https://www.gov.uk/government/publications/ai-insights/ai-insights-agentic-workflow-html</p>
-
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-
-<h2 class="govuk-heading-m">(iii) Implement prompt caching</h2>
+<h2 class="govuk-heading-m">(ii) Implement prompt caching</h2>
 
 <p>Prompt caching stores the frequently unchanged first part of an AI prompt so the model does not have to reprocess those tokens on every request.</p>
 
 <p>This approach can reduce input token usage by as much as 80%, lowering energy use and costs significantly</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.ibm.com/think/topics/prompt-caching/" class="govuk-link">What is prompt caching?,</a> IBM</li>
+</details>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -143,14 +138,79 @@
 
 <h2 class="govuk-heading-m">(iii) Implement token metering</h2>
 
+<p>Token metering is the process of tracking the number of tokens consumed when interacting with an AI model.</p>
+<p>This can cover both the ‘input’ tokens (consumed through the prompts, conversation history and files provided to models) and the tokens associated with the ‘outputs’ that are generated in response.</p>
 
-<p>Token metering is the process of tracking the number of tokens consumed when interacting with an AI model. This can cover both the ‘input’ tokens (the prompts provided for models) and ‘outputs’ that are generated as a response.</p>
+<p>Token metering provides insight into opportunities for optimisation of AI use, and can guide intelligent model routing, where prompts are matched to smaller, task-specific models.</p>
 
-<p>Metering tokens provides insight into opportunities for optimisation, and can enable intelligent model routing, where prompts are matched to smaller, task-specific models.</p>
+<p>See also <a href="ht/" class="govuk-link">6d. (i) Implement a multi-tiered approach to AI</a></p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://greensoftware.foundation/articles/tokens-and-greens-measuring-the-impacts-of-agentic-ai/" class="govuk-link">Tokens and greens: Measuring the impacts of agentic AI,</a> Green Software Foundation</li>
+      <li><a href="https://www.bcg.com/publications/2026/managing-ai-token-costs/" class="govuk-link">Return on AI: How CFOs and CIOs can manage the token meter,</a> Boston Consulting Group</li>  
+</details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(iv) Optimise agentic AI workflows</h2>
+
+<p>Agents are autonomous AI systems that can make decisions and perform actions with minimal human supervision.</p>
+
+<p>An AI agentic workflow is a multi-step process within which agents make decisions and interact with tools and datasets following a set of predefined rules.</p>
+
+<p>Agentic AI has the potential to automate complex processes, deliver significant efficiencies and with this, resource savings. However Agentic AI also comes with significant resource consumption of its own.</p>
+
+<p>Optimising the workflow that AI agents follow ensures that energy consumption is reduced as far as possible while output quality is maximised.</p>
+
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.gov.uk/government/publications/ai-insights/ai-insights-agentic-workflow-html/" class="govuk-link">AI Insights: Agentic Workflow, </a> Department for Digital, Culture, Media & Sport and Government Digital Service</li>
+      <li><a href="https://patterns.greensoftware.foundation/development/optimize-agent-orchestration-reduce-model-calls/" class="govuk-link">Optimize agent orchestration to reduce unnecessary model calls,</a> Green Software Foundation</li>
+
+</details>
 
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+<h2 class="govuk-heading-m">(v) Run AI models 'at the edge'</h2>
+
+<p>Instead of sending data to a model in the cloud, using AI 'at the edge' means running models directly on local hardware such as laptops, mobile phones, or edge servers.</p>
+
+<p>This approach can mean that data is processed near its source, reducing network usage and overall energy consumption.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://patterns.greensoftware.foundation/architecture/system-topology/run-ai-models-edge/" class="govuk-link">Run AI models at the edge,</a> Green Software Foundation</li>
+      <li><a href="https://www.ibm.com/think/insights/edge-ai-strategy/" class="govuk-link">Foundation models at the edge,</a> IBM</li>
+
+
+</details>
+
 
 
     </div>
