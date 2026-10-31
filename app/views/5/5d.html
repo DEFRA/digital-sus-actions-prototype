@@ -58,10 +58,13 @@
  <div class="govuk-grid-column-two-thirds">
 
   <h1 class="govuk-heading-xl">5d. Maximise efficiency in on-premises data centres</h1>
-  <p>On premises systems give control but...On-premise gives control, with potential cooling drawbacks</p>
-<p class="govuk-body-l">Take action to ensure that on-premises servers are running as efficiently as possible, reducing associated energy consumption.</p>
 
-<p>An on-premises data centre is a physical computing facility owned, built, and managed directly by an organization within its own building or property</p>
+  <p class="govuk-body-l">Take action to ensure that on-premises servers are running as efficiently as possible, reducing associated energy consumption To maximise efficiency in an on-premises data centre, through a focus on optimizing airflow, consolidating workloads, upgrading physical infrastructure, and tracking resource metrics.</p>
+
+  <p>An on-premises data centre is a physical computing facility owned, built, and managed directly by an organization within its own building or property</p>
+
+  <p>On premises systems give control over the hardware in a way that public cloud does not, Localized Control & Data Sovereignty, but can mean loweer hardware utilisation and over-provisioning as hardware required to cope with peak deamnd.</p>
+
 
 
 <table class="govuk-table">
@@ -89,39 +92,70 @@
   </tbody>
 </table>
 
+
+
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
 
 
-<h3 class="govuk-heading-m" id="model">(i) Consolidate workloads</h2>
-<p>Consolidating workloads means combining multiple applications, databases, or virtual machines that previously ran on separate physical servers onto a smaller number of higher capacity servers.
+
+
+<h3 class="govuk-heading-m" id="model">(i) Consolidate and virtualise workloads</h2>
+
+<p>Consolidating workloads means combining multiple applications, databases, or virtual machines that previously ran on separate physical servers onto a smaller number of higher capacity servers.</p>
 <p>This approach can increase hardware utilisation rates and reduce overall energy consumption.</p>
+
+•	Virtualisation: Deploy hypervisors and virtual machines (VMs) to raise typical server utilisation rates from low legacy baselines (10%–15%) up to 50% or higher, reducing the total number of physical machines needed. [1, 2, 3]
+•	Retire Zombie Servers: Audit and shut down underutilised, abandoned, or single-purpose legacy servers that consume power without delivering active workloads. [1, 2]
+•	Hardware Refresh Cycles: Replace older servers, storage arrays, and network switches with modern, energy-proportioned units that deliver higher compute-per-watt ratios. [1, 2, 3]
+
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
 <h2 class="govuk-heading-m">(ii) Implement dynamic balancing</h2>
+
+
 <p>Dynamic balancing involves distributing network traffic in real-time across local servers based on current demand.</p>
 <p>This approach can optimise power distribution and reduce overall energy consumption.</p>
 
-<p>To maximise efficiency in an on-premises data centre, focus on optimizing airflow, consolidating workloads, upgrading physical infrastructure, and tracking resource metrics. [1, 2]
-Airflow and Cooling Optimisation
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+<h2 class="govuk-heading-m">(iii) Optimise airflow and cooling optimisation</h2>
+
+
 •	Hot and Cold Aisle Containment: Arrange server racks in alternating rows (hot-to-hot and cold-to-cold) and install physical barriers, curtains, or doors to prevent hot exhaust air from mixing with cool intake air. This can improve cooling efficiency by 20% to 50%. [1, 2]
-•	Blanking Panels and Sealing: Install blanking panels in unused rack spaces and seal floor or ceiling gaps to stop chilled air from bypassing critical equipment. [1, 2]
 •	Raise Operating Temperatures: Gradually increase room or server inlet temperatures within safe ASHRAE guidelines (saving roughly 4% to 5% in energy costs for every 1°F increase). [1, 2]
 •	Advanced Cooling: Explore variable-speed fans, free-air cooling, or targeted liquid cooling for high-density hardware. [1, 2]
-Server Consolidation and Virtualisation
-•	Virtualisation: Deploy hypervisors and virtual machines (VMs) to raise typical server utilisation rates from low legacy baselines (10%–15%) up to 50% or higher, reducing the total number of physical machines needed. [1, 2, 3]
-•	Retire Zombie Servers: Audit and shut down underutilised, abandoned, or single-purpose legacy servers that consume power without delivering active workloads. [1, 2]
-•	Hardware Refresh Cycles: Replace older servers, storage arrays, and network switches with modern, energy-proportioned units that deliver higher compute-per-watt ratios. [1, 2, 3]
-Power and Electrical Infrastructure
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+<h2 class="govuk-heading-m">(iv) Power and Electrical Infrastructure</h2>
+
+
 •	High-Efficiency UPS and PDUs: Upgrade Uninterruptible Power Supply (UPS) systems and Power Distribution Units (PDUs) to high-efficiency models (aiming for online UPS efficiencies of 95%–98%). [1, 2]
 •	Dynamic Power States: Enable built-in processor power management features (such as C-states and P-states) so hardware scales power draw down during low-demand periods. [1, 2]
 •	Facility Lighting: Replace legacy fluorescent bulbs with low-energy LEDs tied to motion sensors. [1, 2, 3]
-Monitoring and Management
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+
+<h2 class="govuk-heading-m">(v) Monitoring and Management</h2>
+
+
 •	Data Centre Infrastructure Management (DCIM): Implement DCIM tools to track real-time power, temperature, humidity, and rack-level usage.
-•	Track Key Metrics: Regularly calculate and monitor Power Usage Effectiveness (PUE) to measure how much total facility energy reaches the IT equipment versus overhead systems like HVAC. Guidance and best-practice frameworks are available via the US Department of Energy Best Practices Guide. [1, 2, 3, 4]
-</p>
+•	Track Key Metrics: Regularly calculate and monitor Power Usage Effectiveness (PUE) to measure how much total facility energy reaches the IT equipment versus overhead systems like HVAC. Guidance and best-practice frameworks 
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
 
 
     </div>

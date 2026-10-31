@@ -58,7 +58,14 @@
 
  <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">7d. Choose providers with resilient infrastructure</h1>
+  <h1 class="govuk-heading-xl">7d. Choose providers with proportional resilient infrastructure</h1>
+
+
+  <p>The UK government addresses infrastructure vulnerability through the GOV.UK Data Centre Covenant, requiring annual reporting on energy and water efficiency, emissions, and grid flexibility, alongside the House of Commons Library Research Briefing on Data Centres which notes data centers were designated critical national infrastructure</p>
+
+
+  <p>Resilient digital services: it can withstand disruptions, maintain continuous operations, and recover quickly from failures</p>
+  <p>Resilience measures come with their own environmental impacts.</P>
 
  <p>Resilient public services are those designed to withstand and rapidly recover from the impacts of these events, as well as cyber attacks and others threats, ensuring that there are no significant breaks in service availability for citizens.
 
@@ -75,21 +82,40 @@ However, the flipside to the question of resilient digital public services is th
 
 
 
-<h2 class="govuk-heading-m">(i) Choose providers incorporating resilience into site selection and design</h2>
+<h2 class="govuk-heading-m">(i) Choose providers incorporating resilience into site selection</h2>
 
-<p>Site selection and design has been done to factor climate resilience into planning. This could include:</p>
+<p>Factoring resilience into site selection means choosing geographical locations that minimise exposure to environmental and logistical risks while maximising access to critical resources</p>
 
-<p>Map risks of flooding, high temperatures, wildfires, and water scarcity at the site level</p>
+<p>For data centres, this looks liks:</p>
 
 
-Site Selection and Design
-
-• Asset-Level Climate Data: Use hyper-local physical climate risk analysis—rather than country-level averages—to map flooding, high temperatures, wildfires, and water scarcity across short distances.
-• Scenario Testing: Model multiple time horizons and high-emissions climate trajectories during the pre-construction phase to identify critical points where equipment or cooling will fail.
-• Elevation and Physical Hardening: Elevate critical electrical and mechanical equipment above projected flood lines, and build structures to withstand high wind speeds, storms, and heavy precipitation.
-• Standards Compliance: Design facilities using frameworks like EN50600 Availability Classes (Classes 1–4) and ASHRAE environmental thermal envelopes
-
-<p>Need to check the above EN50600 etc!!</p>
+<div class="app-table-container" data-table-label="Table"><table class="govuk-table">
+<thead class="govuk-table__head">
+<tr class="govuk-table__row">
+<th class="govuk-table__header">Aspect</th>
+<th class="govuk-table__header">Description</th>
+</tr>
+</thead>
+<tbody class="govuk-table__body">
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Map climate risks at the site level</td>
+<td class="govuk-table__cell">Use hyper-local analysis to map risks of flooding, high temperatures, water scarcity, earthquakes, or wildfires</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Scenario testing</td>
+<td class="govuk-table__cell">Model multiple time horizons and high-emissions climate trajectories during the pre-construction phase to identify critical points where equipment or cooling will fail</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Power Grid Stability & Capacity</td>
+<td class="govuk-table__cell">Ensuring reliable, high-capacity electricity connections, access to renewable energy sources, and proximity to substations to prevent grid-failure blackouts</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Geographic Redundancy</td>
+<td class="govuk-table__cell">Distribute mission-critical services across geographically decoupled zones to prevent single-region failures during correlated climate events</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 <details class="govuk-details" data-module="govuk-details">
@@ -102,9 +128,7 @@ Site Selection and Design
     <ul class="govuk-list govuk-list--bullet">
       <li><a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10315/" class="govuk-link">Data centres: planning policy, sustainability, and resilience,</a> House of Commons Library</li>
       <li><a href="https://www.the-esg-institute.org/blog/climate-resilience-a-critical-pillar-of-data-centre-strategy-the-esg-institute/" class="govuk-link">Climate resilience: A critical pillar of data centre strategy,</a> The ESG Institute</li>
-
 </details>
-
 
 
 
@@ -112,37 +136,90 @@ Site Selection and Design
 
 
 
+<h2 class="govuk-heading-m">(ii) Proportionate data centre resilience design for physical and technical systems</h2>
 
-<h2 class="govuk-heading-m">(ii) cooling and power infrastructure to handle shit</h2>
+<p>Resilient data centre design means engineering a facility’s physical and technical systems so it can withstand disruptions, maintain continuous operations, and recover quickly from failures.</p>
 
-<p>Uninterruptible power supply (UPS) systems are backup devices that provide emergency power if the main utility electricity fails. In data centres, these can ensure that critical servers and services do no go offline if there is a power failure.</p>
+<p>Choose hosting providers with proportionate resilience measures to avoid excess energy waste while maintaining resilience.</p>
 
-<p>Choose hosting providers with proportionate uninterruptible power supply systems to avoid excess energy waste while maintaining resilience.</p>
+<div class="app-table-container" data-table-label="Table"><table class="govuk-table">
+<thead class="govuk-table__head">
+<tr class="govuk-table__row">
+<th class="govuk-table__header">Aspect</th>
+<th class="govuk-table__header">Description</th>
+</tr>
+</thead>
+<tbody class="govuk-table__body">
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">On-site generation and storage</td>
+<td class="govuk-table__cell">Dedicated backup generators, Uninterruptible Power Supplies (UPS), and co-located renewable energy or battery storage systems to ensure that critical servers and services do no go offline if there is a power failure</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Heatwave-adapted systems</td>
+<td class="govuk-table__cell">Cooling infrastructure such as liquid cooling, closed-loop systems, or higher-capacity chillers to handle sustained heatwave temperatures, and analytics in place to aid dynamically adjust workloads during sudden temperature spikes to avoid overheating</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Water-scarcity redundancy</td>
+<td class="govuk-table__cell">If data centres are located in water-stressed regions, transition away from water-intensive evaporative cooling methods or install on-site water recycling and storage</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Physical and structural engineering</td>
+<td class="govuk-table__cell">Build structures to withstand wind speeds during storms, and elevate physical infrastructure above predicted flood lines</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10315/" class="govuk-link">Data centres: planning policy, sustainability, and resilience,</a> House of Commons Library</li>
+</details>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
 
-<p>
-Cooling and Thermal Management
 
-• Heatwave Adaptation: Upgrade cooling infrastructure—including liquid cooling, closed-loop systems, or higher-capacity chillers—to handle sustained, record-breaking summer temperatures without dropping efficiency.
-• Water-Scarcity Redundancy: Transition away from water-intensive evaporative cooling methods in drought-prone regions, or install on-site water recycling and storage buffers.
-• Real-Time Analytics: Deploy automated energy intelligence and sensor networks to dynamically adjust thermal workloads across GPUs and servers during sudden temperature spikes.
+<h2 class="govuk-heading-m">(iii) Operational side of things</h2>
 
-Power and Grid Independence
-
-• On-Site Generation & Storage: Supplement unstable grid connections with dedicated backup generators, Uninterruptible Power Supplies (UPS), and co-located renewable energy or battery storage systems.
-• Geographic Redundancy: Distribute mission-critical services across geographically decoupled zones to prevent single-region failures during correlated climate events.</p>
+<p>Operational Preparedness and Supply Chain for climate resilience, Active Emergency Response & Early Warning</p>
 
 
+<div class="app-table-container" data-table-label="Table"><table class="govuk-table">
+<thead class="govuk-table__head">
+<tr class="govuk-table__row">
+<th class="govuk-table__header">Aspect</th>
+<th class="govuk-table__header">Description</th>
+</tr>
+</thead>
+<tbody class="govuk-table__body">
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Early-warning systems for climate events</td>
+<td class="govuk-table__cell">Integrate real-time weather tracking and natural catastrophe monitoring tools into site management workflows</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Emergency Response Planning</td>
+<td class="govuk-table__cell">Establish clear protocols for staff safety, site accessibility during floods or wildfires, and emergency fuel/water resupplier contracts</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell">Upstream dependencies</td>
+<td class="govuk-table__cell">Secure backup paths for fibre-optic routes, transport corridors, and cloud dependencies so a local physical impact does not sever broader network operations</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-<h2>Operational shiz??</h2>
 
-<p>
-Operational Preparedness and Supply Chain
 
-• Early Warning Systems: Integrate real-time weather tracking and NatCat (natural catastrophe) monitoring tools into site management workflows.
-• Emergency Response Planning: Establish clear protocols for staff safety, site accessibility during floods or wildfires, and emergency fuel/water resupplier contracts.
-• Upstream/Downstream Redundancy: Secure backup paths for fibre-optic routes, transport corridors, and cloud dependencies so a local physical impact does not sever broader network operations.</p>
+
+
 
     </div>
 
