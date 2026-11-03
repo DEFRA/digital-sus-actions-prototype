@@ -59,7 +59,7 @@
 
   <h1 class="govuk-heading-xl">3a. Apply the principles of circularity to software</h1>
 
-  <p class="govuk-body-l">For software, embracing the principles of circularity means maximising value, saving resources and avoiding waste by sharing and reusing existing components where possible, as well as retiring software at the end of its life.</p>
+  <p class="govuk-body-l">For software, embracing the principles of circularity means sharing and reusing existing components where possible, as well as responsibly retiring software at the end of its life. This serv es to maximise value, saving resources and avoiding waste by .</p>
 
 
 <details class="govuk-details" data-module="govuk-details">
@@ -76,12 +76,14 @@
       </div>
 </details>
 
+
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
 
 <h2 class="govuk-heading-m" id="model">(i) Build software with existing components where possible</h2>
 
-<p>Building software by making use of existing components means assembling and integrating independent, pre-tested software modules rather than writing code from scratch.</p>
-<p>This approach avoids the unnesessary duplication of effort, saving </p>
+<p>Building software by making use of existing components means assembling and integrating pre-tested libraries and modules rather than writing code from scratch.</p>
+<p>This approach avoids the unnesessary duplication of effort and resource consumption associated with developing and testing new components that could have been reused from another project.</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -147,12 +149,16 @@
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m" id="model">(ii) Develop modular and open source? (new software components with reuse in mind)?</h2>
 
-<p>If you are developing new software components, then do so with reuse in mind, writing code that is modular, independent, self-contained pieces of code designed to perform a particular function.
+<h2 class="govuk-heading-m" id="model">(ii) Develop new software components with reuse in mind</h2>
+
+<p>Developing software with reuse in mind could mean writing code that is designed to perform a particular function that is modular, independent and self-contained.</p>
+
+<p>If you are developing new software components, then do so with reuse in mind. Where possible, think about how easy the code will be to refactor and update.</p>
   
-<p>Where possinle, thing about maintainable, and easy to update or refactor.</p>
+<p>For services following the Agile lifecyle, the Service Standard requires that <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable/" class="govuk-link">code is made open source and reusable</a>, so that it is available to reuse and be built upon. This means writing code in the open from the start, and publishing code under an open license where appropriate.</p>
 
+<p>In addition, software components can also be shared via a component library. Libraries can help teams make use of things created for other projects.</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -162,22 +168,13 @@
   </summary>
   <div class="govuk-details__text">
     <h3 class="govuk-heading-s">UK Government materials</h3>
-    <p>The GOV.UK Service Manual provides guidance on how code can be made <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable/" class="govuk-link">open & reusable</a></p>
+    <p>The GOV.UK Service Manual provides guidance on how code can be made <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable/" class="govuk-link">open & reusable.</a></p>
 
     <h3 class="govuk-heading-s">GOV.UK Service Standard, Point 13</h3>
     <p class="govuk-body">Point 13 of the GOV.UK Service Standard sets out the requirement for government services to <a href="https://www.gov.uk/service-manual/service-standard/point-13-use-common-standards-components-patterns/" class="govuk-link">'Use and contribute to open standards, common components and patterns'</a></p>
-
     </div>
 </details>
 
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-  
-<h2 class="govuk-heading-m" id="model">(iii) Make code open source and sharing components via a library</h2>
-
-
-<p>A component library is a collection of re-usable components, and can help teams make use of things created for other projects.</p>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -186,8 +183,23 @@
 <h2 class="govuk-heading-m" id="efficient">(iii) Use low and no-code approaches where appropriate</h2>
 
 
-<p class="govuk-body">Low-code or no-code are methods of designing and developing apps using drag and drop tools.</p> 
+<p class="govuk-body">Low-code or no-code are methods of designing and developing apps using visual interfaces, drag-and-drop components, and automated code generation instead of the need to writing code from scratch.</p> 
+
 <p>These approaches can save resources through reduced development effort and rework, and also improve efficiency where platforms optimise shared infrastructure.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+      <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.microsoft.com/en-us/power-platform/products/power-apps/topics/low-code-no-code/low-code-no-code-development-platforms/" class="govuk-link">Low-code vs. no-code app development, </a> Microsoft</li>
+      <li><a href="https://www.sap.com/uk/resources/what-is-low-code-no-code/" class="govuk-link">What is low-code/no-code?</a> SAP</li>
+      </ul>
+      </div>
+</details>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -200,7 +212,7 @@
     <p class="govuk-body">Building with low and no-code approaches brings co-benefits in terms of:</p>
     <ul class="govuk-list govuk-list--bullet">
       <li>Development Time: Faster delivery and enables broader participation from other roles on teams that don't have specialist software skills</li>
-      <li>Lower costs: Shorter development cycles reduce overall project labor and resource expenses.</li>
+      <li>Lower costs: Shorter development cycles reduce overall project labor and resource expenses</li>
       </ul>
 
       <h3 class="govuk-heading-s">Trade-offs</h3>
@@ -211,13 +223,20 @@
       </ul>
 </details>
 
+
+
+
+
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
 
 <h2 class="govuk-heading-m" id="modality">(iv) Ensure software is decommissioned at the end of life</h2>
 
 
 <p class="govuk-body">Decommissioning software is the structured, secure process of retiring legacy, redundant, or obsolete applications.</p>
-<p class="govuk-body">Decommissioning obsolete and unused software frees up infrastructure and so cuts the energy use associated with it.</p>
+
+<p class="govuk-body">Decommissioning software that is no longer needed or used frees up infrastructure Unused or legacy applications still require active server instances, cooling, and background processing whether on-premises or in the cloud. Shutting them down stops continuous electricity consumption</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -232,7 +251,6 @@
       <li>Cost: Reduced costs associated with maintaining software unnecessarily</li>
       <li>Security: Reduced security risks from eliminating unmaintained systems</li>
       </ul>
-
 </details>
 
 

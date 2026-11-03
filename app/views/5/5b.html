@@ -59,52 +59,7 @@
 
   <h1 class="govuk-heading-xl">5b. Ensure cloud services are efficiently provisioned</h1>
 
-<p>From AWS: Public cloud computing services can often bring sustainability benefits through shared resources -  through high server utilization rates. Cloud workloads reduce impact by taking advantage of shared resources, such as networking, power, cooling, and physical facilities (words from AWS, need to edit)</p>
-<p>There are a number of approaches to ensure that these savings are maximised.</p>
-<p class="govuk-body-l">Taking advantage of the various ways to maximise the efficiency of public cloud computing helps ensure that energy use is reduced as far as possible</p>
-<p>Efficient provisioning of Cloud services means optimising resource usage and reducing carbon footprint</p>
-
-<p>Read more</p>
-<p>Public cloud is a model where a third-party provider delivers computing resources over the public internet to multiple customers who share the same underlying hardware infrastructure</p>
-<p>https://www.gov.uk/government/publications/cloud-guide-for-the-public-sector/cloud-guide-for-the-public-sector</p>
-<p>'Cloud first' policy from 2013, https://www.gov.uk/guidance/government-cloud-first-policy/ 'Organisations who do not deploy in Public Cloud should ensure they can evidence the decision, business case and value for money behind their choice.'</p>
-<p>https://www.gov.uk/government/collections/cloud-technology-and-the-public-sector</p>
-
-<p>Read more - sustainable workloads on Azure! https://learn.microsoft.com/en-us/azure/well-architected/sustainability/overview#enable-storage-compression</p>
-<p>AWS have their sustainability pillar https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html</p>
-<p>The shared responsibility model for AWS and sustainability - https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/the-shared-responsibility-model.html</p>
-
-<p>In general, Cloud technologies are energy-efficient and scalable, significantly reducing e-waste and carbon emissions.
-
-GreenOps is the practice of minimizing a cloud environment’s carbon footprint through the efficient use of cloud resources.</p>
-<p>Adopt approaches to ensure high server utilisation and compute efficiency and avoid overconsumption of resources, including energy and associated carbon:
-
-choosing cloud infrastructure wisely can help reduce energy and water consumption, embodied carbon as well as reduced financial costs.
-
-A well-architected service is more energy-efficient. For example, 
-
-Ensure we are utilising the full benefits that public cloud has to offer by driving GreenOps including:
-</p>
-<p>GreenOps is closely related to FinOps (Financial Operations), as sustainability goals often align with financial efficiency. Optimizing resources for lower emissions frequently results in lower costs.
-
-GreenOps addresses the carbon footprint of cloud infrastructure, FinOps is a cooperative approach between IT, finance and business to address resource costs’ accountability in cloud environments
-
-https://greenly.earth/en-gb/blog/industries/finops-and-greenops-how-do-they-relate 
-
-Choosing software architecture such as serverless computing and other composable approaches helps guarantee flexibility, scalability and adaptability, promoting reuse and reducing costs.</p>
-<p>Read more about FinOps and GreenOps</p>
-
-
-<details class="govuk-details" data-module="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      Read more about implementing this point in Defra
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    <p>In Defra, many services are moving to the Core Devliery Platform. Has a page on sustainability, detailing the ‘shared responsibility model’. https://digital.defra.gov.uk/architecture-and-software-development/core-delivery-platform</p>
-
-</details>
+<p class="govuk-body-l">There are a range of actions that we can take to maximise the sustainability benefits coming from the shared and scalable resources in the public cloud, reducing energy and water use, e-waste and carbon emissions.</p>
 
 
 <table class="govuk-table">
@@ -126,13 +81,40 @@ Choosing software architecture such as serverless computing and other composable
         Likely co-benefits
       </td>
       <td class="govuk-table__cell">
-        Cost: Lower costs coming the storage of data
+        Cost: More efficient use of cloud resources generally aligns with cost savings
       </td>
     </tr>
   </tbody>
 </table>
 
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about this action
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+
+    <h3 class="govuk-heading-s">Public cloud providers on sustainability</h3>
+    <p>The major public cloud providers have guidance on sustainability:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html/" class="govuk-link">Sustainability Pillar - AWS Well-Architected Framework,</a> Amazon Web Services</li>
+      <li><a href="https://docs.cloud.google.com/architecture/framework/sustainability/" class="govuk-link">Well-Architected Framework: Sustainability pillar,</a> Google Cloud</li>
+      <li><a href="https://learn.microsoft.com/en-us/azure/well-architected/sustainability/overview#enable-storage-compression/" class="govuk-link">Sustainable workloads,</a> Microsoft Azure</li>
+      </ul>
+
+      <h3 class="govuk-heading-s">GreenOps and FinOps</h3>
+    <p>GreenOps (Green Operations) is the practice of minimising the carbon emissions of workloads in public cloud, through optimising resources, architecture and usage.</p>
+    <p>GreenOps is closely related to FinOps (Financial Operations), as sustainability goals often align with financial efficiency, and optimising resources for lower emissions frequently results in lower costs.</p>
+      <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://greenly.earth/en-gb/blog/industries/finops-and-greenops-how-do-they-relate/" class="govuk-link">FinOps & GreenOps: How do they relate?</a> Greenly</li>
+      <li><a href="https://www.gov.uk/service-manual/communities/finops-community/" class="govuk-link">FinOps Community, </a> GOV.UK Service Manual</li>
+      </ul>
+</details>
+
+
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
 
@@ -172,6 +154,7 @@ Choosing software architecture such as serverless computing and other composable
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
 
 
 <h2 class="govuk-heading-m">(ii) Right-size services</h2>
@@ -311,12 +294,12 @@ Choosing software architecture such as serverless computing and other composable
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
+
 <h2 class="govuk-heading-m">(v) Use a service mesh only if needed</h2>
 
 <p>A service mesh is a dedicated infrastructure layer for handling service-to-service communication between microservices.</p>
 <p>While service meshes can optimise traffic between microservices and reduce related energy consumption, they also add to energy use through extra compute and resource overhead.</p>
 <p>Consider carefully if a service mesh is required for your project or service. Service meshes are more likley to bring benefit for more complex services, and may be unnecessary for smaller systems or simpler architecture.</p>
-<p>See also 4a. Design for flexible workloads, point on microservices.</p>
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -354,6 +337,9 @@ Choosing software architecture such as serverless computing and other composable
       </ul>
       </div>
 </details>
+
+<p>See also <a href="/5/5a.html" class="govuk-link">5a. (i) Design for 'modular' architectural patterns</a></p>
+
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
