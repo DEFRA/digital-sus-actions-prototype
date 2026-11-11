@@ -1,0 +1,718 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">6. Artificial Intelligence</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/6/AI.html">
+        6. Artificial Intelligence
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">Sustainability actions</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/6/6a.html">
+        6a. Be clear on the need and readiness for AI use
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/6/6b.html">
+        6b. Choose the lowest energy AI model that meets your needs
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/6/6c.html">
+        6c. Take a sustainable approach to training AI models
+      </a>
+    </li>
+            <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/6/6d.html" aria-current="page">
+        6d. Take a sustainable approach to operating AI models
+      </a>
+    </li>
+  </ul>
+  <p class="app-subnav__header">Measuring progress</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/6/measure-AI.html">
+        Estimating AI energy use
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+<main class="govuk-main-wrapper" id="main-content">
+  <div class="govuk-grid-row">
+
+      <h1 class="govuk-heading-xl">
+        Measure the environmental impact of artificial intelligence
+      </h1>
+
+      <p class="govuk-body-l">
+        Measuring the environmental impact of artificial intelligence (AI) can
+        help you find impact hotspots and identify ways to reduce them.
+      </p>
+
+      <p class="govuk-body">
+        You can include these measurements in a wider assessment of the
+        environmental impact of a digital service or project.
+      </p>
+
+      <h2 class="govuk-heading-l">Decide what to measure</h2>
+
+      <p class="govuk-body">
+        Start by measuring the energy used by the AI system. You can use this
+        figure to estimate greenhouse gas emissions and water consumption.
+      </p>
+
+      <p class="govuk-body">
+        A complete assessment should consider these stages of the AI lifecycle:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>preparing and storing data</li>
+        <li>training and fine-tuning the model</li>
+        <li>running the model to produce results, known as inference</li>
+      </ul>
+
+      <div class="govuk-inset-text">
+        Many measurement methods focus on inference or on training and
+        inference together. State which lifecycle stages your assessment
+        includes.
+      </div>
+
+      <h2 class="govuk-heading-l">Choose a measurement method</h2>
+
+      <p class="govuk-body">
+        The method you use will depend on how you access and run the model.
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Use hardware measurements or software instrumentation for
+          self-hosted models.
+        </li>
+        <li>
+          Use token records or supplier reports for models accessed through
+          public cloud services.
+        </li>
+        <li>
+          Ask the supplier for environmental data when AI is built into
+          other software.
+        </li>
+      </ul>
+
+      <h2 class="govuk-heading-l">Measure self-hosted AI models</h2>
+
+      <p class="govuk-body">
+        A self-hosted model runs on hardware that your organisation owns,
+        rents or uses exclusively. This can include:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>desktop computers, laptops with graphics processing units (GPUs) and edge devices</li>
+        <li>servers in on-premises or externally managed data centres</li>
+        <li>virtual machines in a private cloud</li>
+        <li>dedicated, single-tenant cloud infrastructure</li>
+      </ul>
+
+      <p class="govuk-body">
+        Use a bottom-up method to estimate the energy used by a self-hosted
+        model. You can either measure the hardware directly or estimate
+        activity using a proxy such as token use.
+      </p>
+
+      <h3 class="govuk-heading-m">Measure hardware energy use directly</h3>
+
+      <p class="govuk-body">
+        Direct measurement records the power used by hardware while the model
+        is being trained or producing results.
+      </p>
+
+      <p class="govuk-body">
+        You can collect this information from:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>processor, GPU and AI accelerator telemetry</li>
+        <li>server or rack-level power distribution unit meters</li>
+        <li>physical power meters</li>
+        <li>software that records hardware use during a model run</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">Use software instrumentation</h3>
+
+      <p class="govuk-body">
+        Software tools can record CPU, GPU and memory use during training or
+        inference. Some tools also estimate energy use and greenhouse gas
+        emissions.
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+            Example measurement tools
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Tool</th>
+              <th scope="col" class="govuk-table__header">What it measures or estimates</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">EcolagM</th>
+              <td class="govuk-table__cell">
+                The environmental impact of generative AI during inference.
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">EcoLogits</th>
+              <td class="govuk-table__cell">
+                The energy and environmental impact of generative AI models
+                accessed through application programming interfaces (APIs).
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">CodeCarbon</th>
+              <td class="govuk-table__cell">
+                Power used by CPUs, GPUs and memory.
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Carbontracker</th>
+              <td class="govuk-table__cell">
+                Power used by hardware components during model training.
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">MIT EnergAIzer</th>
+              <td class="govuk-table__cell">
+                The expected electricity demand of an AI workload before it runs.
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Experiment Impact Tracker
+              </th>
+              <td class="govuk-table__cell">
+                Hardware use, energy use and emissions during machine learning
+                training.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          Tools may use different system boundaries, assumptions and carbon
+          intensity data. Record the tool, version, configuration and date used.
+        </strong>
+      </div>
+
+      <h3 class="govuk-heading-m">Use tokens as an activity-based estimate</h3>
+
+      <p class="govuk-body">
+        You can use token records to estimate the energy used during inference
+        when direct measurements are not available.
+      </p>
+
+      <p class="govuk-body">
+        A token is a unit of text processed or generated by a language model:
+      </p>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Input tokens</dt>
+          <dd class="govuk-summary-list__value">
+            Content sent to the model, including prompts, system instructions,
+            conversation history, documents, code and other context.
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Output tokens</dt>
+          <dd class="govuk-summary-list__value">
+            Content generated by the model, such as answers, summaries, tables
+            and code.
+          </dd>
+        </div>
+      </dl>
+
+      <p class="govuk-body">
+        Record input and output tokens separately. Generating output will
+        usually use more energy than processing the same number of input tokens.
+      </p>
+
+      <p class="govuk-body">
+        Multiply the number of tokens by an energy-per-token factor for the
+        model and hardware:
+      </p>
+
+      <p class="govuk-body">
+        <strong>
+          Estimated energy use = token count × energy-per-token factor
+        </strong>
+      </p>
+
+      <p class="govuk-body">
+        The factor may also be affected by model size, hardware, batching,
+        caching, response length and the number of generation steps.
+      </p>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          Do not apply a generic token factor without checking the model,
+          hardware, workload and system boundary it represents.
+        </strong>
+      </div>
+
+      <h3 class="govuk-heading-m">Use published estimates carefully</h3>
+
+      <p class="govuk-body">
+        Published estimates can help when model-specific measurements are not
+        available. They should not replace measured data.
+      </p>
+
+      <p class="govuk-body">
+        The source document includes these indicative estimates:
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+            Indicative energy estimates per million tokens
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Activity</th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric">
+                Indicative energy use
+              </th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Input tokens</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">390 Wh</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Output tokens</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">1,950 Wh</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Cache creation</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">490 Wh</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Cache read</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">39 Wh</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          These figures need an authoritative source and a defined methodology
+          before they are used in published reporting.
+        </strong>
+      </div>
+
+      <h3 class="govuk-heading-m">Add data centre overhead</h3>
+
+      <p class="govuk-body">
+        Hardware measurements may not include the energy used by the data
+        centre's supporting infrastructure. This can include:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>cooling systems, pumps and fans</li>
+        <li>power supplies, transformers and distribution equipment</li>
+        <li>lighting, security and building management systems</li>
+      </ul>
+
+      <p class="govuk-body">
+        Use the data centre's Power Usage Effectiveness (PUE) value to estimate
+        this overhead:
+      </p>
+
+      <p class="govuk-body">
+        <strong>Total energy use = core IT energy × PUE</strong>
+      </p>
+
+      <p class="govuk-body">
+        Check whether the original measurement already includes facility
+        energy before applying PUE. This will help you avoid double counting.
+      </p>
+
+      <h2 class="govuk-heading-l">Measure AI accessed through public cloud services</h2>
+
+      <p class="govuk-body">
+        Public cloud AI services may charge for input and output tokens,
+        subscriptions or dedicated computing capacity.
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+            Common ways to access cloud AI
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Approach</th>
+              <th scope="col" class="govuk-table__header">Description</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Direct model API</th>
+              <td class="govuk-table__cell">
+                Access a provider's model through an API and pay for the input
+                and output tokens used.
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Model as a service
+              </th>
+              <td class="govuk-table__cell">
+                Access a pretrained model through cloud infrastructure and
+                standard API endpoints.
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Managed AI platform
+              </th>
+              <td class="govuk-table__cell">
+                Use models and supporting services within an enterprise cloud
+                platform.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="govuk-body">
+        You can estimate energy use with token records, provider reports or a
+        top-down allocation method.
+      </p>
+
+      <h3 class="govuk-heading-m">Use a top-down allocation method</h3>
+
+      <p class="govuk-body">
+        A top-down method starts with the energy use or emissions of a cloud
+        environment or data centre. It then allocates a proportion to the AI
+        workload.
+      </p>
+
+      <p class="govuk-body">
+        For example, you could allocate the total according to the proportion
+        of GPU or tensor processing unit hours used by the AI workload.
+      </p>
+
+      <div class="govuk-inset-text">
+        Record the allocation method and explain why it represents the
+        workload. Do not present an allocated figure as a direct measurement.
+      </div>
+
+      <h2 class="govuk-heading-l">Measure AI built into other software</h2>
+
+      <p class="govuk-body">
+        You may not have access to token records or hardware data when AI is
+        part of a software-as-a-service product. Ask the supplier for evidence.
+      </p>
+
+      <h3 class="govuk-heading-m">Ask for an energy efficiency benchmark</h3>
+
+      <p class="govuk-body">
+        Ask the supplier for an AI Energy Score or an equivalent benchmark for
+        the models used by the service.
+      </p>
+
+      <h3 class="govuk-heading-m">Ask for measured energy data</h3>
+
+      <p class="govuk-body">
+        Ask the supplier to report the energy used by training and inference.
+        The report should define its units, hardware, locations, dates and
+        system boundaries.
+      </p>
+
+      <h3 class="govuk-heading-m">Ask for a lifecycle assessment</h3>
+
+      <p class="govuk-body">
+        Ask for an attributional lifecycle assessment that follows ISO 14040
+        and ISO 14044.
+      </p>
+
+      <p class="govuk-body">The assessment should cover:</p>
+
+      <ol class="govuk-list govuk-list--number">
+        <li>
+          acquiring raw materials
+        </li>
+        <li>
+          manufacturing and assembling devices and supporting equipment
+        </li>
+        <li>
+          preparing and storing training data
+        </li>
+        <li>
+          research, training, fine-tuning and retraining
+        </li>
+        <li>
+          inference, networking, idle tasks, storage and cooling
+        </li>
+        <li>
+          reuse, disassembly, recycling and disposal
+        </li>
+      </ol>
+
+      <p class="govuk-body">
+        The assessment should report at least:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>energy consumption in watt-hours or kilowatt-hours</li>
+        <li>greenhouse gas emissions in grams or kilograms of carbon dioxide equivalent</li>
+        <li>water consumption in litres or cubic metres</li>
+        <li>abiotic resource depletion in kilograms of antimony equivalent</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">
+        If the supplier does not have a lifecycle assessment
+      </h3>
+
+      <p class="govuk-body">
+        Ask for measured data or verified estimates covering:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the acquisition, processing and storage of training data</li>
+        <li>research, training, fine-tuning and retraining for the current model</li>
+        <li>inference on a defined set of hardware</li>
+        <li>the manufacture, transport and end-of-life treatment of the hardware</li>
+      </ul>
+
+      <p class="govuk-body">
+        Ask the supplier to report inference as a median value per token. If
+        the model is not token-based, ask for a value per inference or another
+        clearly defined functional unit.
+      </p>
+
+      <h2 class="govuk-heading-l">Compare models before deployment</h2>
+
+      <p class="govuk-body">
+        Compare models before choosing one. Use the smallest model that meets
+        the service's accuracy, safety and performance requirements.
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">
+            Example model comparison tools
+          </caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Tool</th>
+              <th scope="col" class="govuk-table__header">Purpose</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">AI Energy Score</th>
+              <td class="govuk-table__cell">
+                Rates the energy efficiency of models during inference.
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">ML.Energy Leaderboard</th>
+              <td class="govuk-table__cell">
+                Compares the energy use and performance of open-weight language
+                models.
+              </td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">whatmodel.sh</th>
+              <td class="govuk-table__cell">
+                Compares model performance, hardware requirements, resources
+                and price.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="govuk-heading-l">
+        Convert energy use into environmental impacts
+      </h2>
+
+      <h3 class="govuk-heading-m">Calculate greenhouse gas emissions</h3>
+
+      <p class="govuk-body">
+        Multiply the energy used by the appropriate electricity carbon
+        intensity:
+      </p>
+
+      <p class="govuk-body">
+        <strong>
+          Emissions = energy use × electricity carbon intensity
+        </strong>
+      </p>
+
+      <p class="govuk-body">
+        Use a carbon intensity value for the location and reporting period in
+        which the energy was consumed.
+      </p>
+
+      <p class="govuk-body">
+        The
+        <a class="govuk-link" href="https://greensoftware.foundation/standards/sci-ai/">
+          Software Carbon Intensity for AI specification
+        </a>
+        provides methods for assessing emissions from AI training and
+        inference.
+      </p>
+
+      <div class="govuk-inset-text">
+        The Software Carbon Intensity for AI specification is evolving. Record
+        the version used and explain any assumptions.
+      </div>
+
+      <h3 class="govuk-heading-m">Calculate water consumption</h3>
+
+      <p class="govuk-body">
+        Water use can include water consumed directly by data centre cooling
+        and water used indirectly to generate electricity.
+      </p>
+
+      <p class="govuk-body">
+        Use the data centre's Water Usage Effectiveness (WUE) value to estimate
+        water used for cooling:
+      </p>
+
+      <p class="govuk-body">
+        <strong>
+          Cooling water consumption = IT energy use × WUE
+        </strong>
+      </p>
+
+      <p class="govuk-body">
+        Report direct and indirect water consumption separately. State the
+        location, period, factor and system boundary used.
+      </p>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          Online calculators provide estimates. Do not use them as a substitute
+          for measured data or verified supplier information.
+        </strong>
+      </div>
+
+      <h2 class="govuk-heading-l">Record and report your method</h2>
+
+      <p class="govuk-body">Record:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the model and version</li>
+        <li>the hardware and data centre region</li>
+        <li>the lifecycle stages included</li>
+        <li>the measurement period</li>
+        <li>input and output token totals, where applicable</li>
+        <li>the energy, PUE, carbon intensity and WUE factors used</li>
+        <li>assumptions, exclusions and sources of uncertainty</li>
+      </ul>
+
+      <p class="govuk-body">
+        Report enough information for another practitioner to repeat the
+        calculation and understand its limitations.
+      </p>
+
+    </div>
+  </div>
+</main>
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}
