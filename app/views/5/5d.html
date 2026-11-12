@@ -57,102 +57,93 @@
 
  <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">5d. Maximise efficiency in on-premises data centres</h1>
+  <h1 class="govuk-heading-xl">5d. Maximise efficiency for on-premises workloads</h1>
 
-  <p class="govuk-body-l">Take action to ensure that on-premises servers are running as efficiently as possible, reducing associated energy consumption To maximise efficiency in an on-premises data centre, through a focus on optimizing airflow, consolidating workloads, upgrading physical infrastructure, and tracking resource metrics.</p>
+  <p class="govuk-body-l">Maximising efficiencies in on-premises data centres involves consolidating and refreshing servers where appropriate, and increasing utilisation rates of servers.</p>
 
-  <p>An on-premises data centre is a physical computing facility owned, built, and managed directly by an organization within its own building or property</p>
-
-  <p>On premises systems give control over the hardware in a way that public cloud does not, Localized Control & Data Sovereignty, but can mean loweer hardware utilisation and over-provisioning as hardware required to cope with peak deamnd.</p>
-
-  <p>An off-premises data centre is where You still own or rent the physical servers and hardware, but they are housed outside your office in a third-party commercial data center facility</p>
-
-
-<table class="govuk-table">
-  <thead class="govuk-table__head">
-  </thead>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell govuk-!-font-weight-bold">
-        Lead role families:
-      </td>
-      <td class="govuk-table__cell">
-        <strong class="govuk-tag govuk-tag--green">
-          Architecture
-        </strong>
-      </td>
-    </tr>
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell govuk-!-font-weight-bold">
-        Likely co-benefits
-      </td>
-      <td class="govuk-table__cell">
-        Cost: Lower costs coming the storage of data
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
-
-
-
-
-<h3 class="govuk-heading-m" id="model">(i) Consolidate and virtualise workloads</h2>
-
-<p>Consolidating workloads means combining multiple applications, databases, or virtual machines that previously ran on separate physical servers onto a smaller number of higher capacity servers.</p>
-<p>This approach can increase hardware utilisation rates and reduce overall energy consumption.</p>
-
-•	Virtualisation: Deploy hypervisors and virtual machines (VMs) to raise typical server utilisation rates from low legacy baselines (10%–15%) up to 50% or higher, reducing the total number of physical machines needed. [1, 2, 3]
-•	Retire Zombie Servers: Audit and shut down underutilised, abandoned, or single-purpose legacy servers that consume power without delivering active workloads. [1, 2]
-•	Hardware Refresh Cycles: Replace older servers, storage arrays, and network switches with modern, energy-proportioned units that deliver higher compute-per-watt ratios. [1, 2, 3]
+<p><b>Lead role families: </b><strong class="govuk-tag govuk-tag--green">Architecture</strong> <strong class="govuk-tag govuk-tag--green">IT Operations</strong></p>
+<p><b>Likely co-benefits: </b>Cost, service performance, development time</p>
 
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(ii) Implement dynamic balancing</h2>
+<h3 class="govuk-heading-m" id="model">(i) Monitor, consolidate and refresh server hardware when appropriate</h2>
+
+<p>Powering down, sleeping or retiring servers that are running with low-levels of utilisation or energy efficiency can save on overall energy consumption.</p>
+
+<p>Approaches can include:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+      <li>Identifying low-utilisation and zombie servers: Track inventory, monitor hardware power, and orchestrate analytics to identify servers that are consistently running at low rates of utilisation or are ‘zombies’ (doing no productive work)</li>
+      <li>Powering down or retiring low-utilisation and zombie servers: Sleep and shut down underutilised, abandoned, or single-purpose legacy servers</li>
+      <li>Refreshing server hardware where appropriate: Replace older servers, storage arrays, and network switches with more energy-efficient hardware, when this is the more sustainable option</li>
+      </ul>
 
 
-<p>Dynamic balancing involves distributing network traffic in real-time across local servers based on current demand.</p>
-<p>This approach can optimise power distribution and reduce overall energy consumption.</p>
+<p>See also <a href="/3/3a.html" class="govuk-link">3a. Apply the principles of circularity to software</a> and <a href="/5/5b.html" class="govuk-link">4b. (vi) Move from rented infrastructure to platform and serverless models where appropriate</a></p>
+
+<p>See also: Replace new hardware when it is the greener thing to do</p>
+<p>See also: Retiring hardware in most circular way [Hardware points]</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.ibm.com/think/topics/server-monitoring/" class="govuk-link">What is server monitoring?,</a> IBM</li>
+</details>
+
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-<h2 class="govuk-heading-m">(iii) Optimise airflow and cooling optimisation</h2>
+<h2 class="govuk-heading-m">(ii) Maximise server utilisation</h2>
 
+<p>Increasing server utilisation rates improves the efficiency of an on-premises data centre and reduces overall energy consumption.</p>
 
-•	Hot and Cold Aisle Containment: Arrange server racks in alternating rows (hot-to-hot and cold-to-cold) and install physical barriers, curtains, or doors to prevent hot exhaust air from mixing with cool intake air. This can improve cooling efficiency by 20% to 50%. [1, 2]
-•	Raise Operating Temperatures: Gradually increase room or server inlet temperatures within safe ASHRAE guidelines (saving roughly 4% to 5% in energy costs for every 1°F increase). [1, 2]
-•	Advanced Cooling: Explore variable-speed fans, free-air cooling, or targeted liquid cooling for high-density hardware. [1, 2]
+<p>Approaches that can maximise server utilisation include:</p>
 
+   <ul class="govuk-list govuk-list--bullet">
+    <li>Virtualising workloads: Run workloads inside virtual machines (VMs) to enable multiple applications to run on an individual server, reducing the total number of physical machines required</li>
+    <li>Consolidating workloads: Combine multiple applications, databases, or virtual machines that previously ran on separate physical servers onto a smaller number of higher capacity servers</li>
+    <li>Dynamic workload balancing: Move workloads across servers in real-time based on demand, including scheduling batch workloads for times of low demand </li>
+    </ul>
 
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+  <details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.ibm.com/think/topics/virtualization/" class="govuk-link">What is virtualisation?,</a> IBM</li>
+      <li><a href="https://cloud.google.com/learn/what-is-a-virtual-machine/" class="govuk-link">What is a virtual machine?,</a> Google Cloud</li>
+      <li><a href="https://www.sciencedirect.com/topics/computer-science/dynamic-load-balancing/" class="govuk-link">Dynamic load balancing,</a> Science Direct</li>
+</details>
 
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability benefits, maximising server utilisation brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Cost: Lowering costs associated with operating servers and the need to purchase new hardware</li>
+      <li>Agility: Virtualised and containerised workloads allow teams to spin up, clone, or scale workloads quickly</li>
+      </ul>
+      </div>
+</details>
 
-
-<h2 class="govuk-heading-m">(iv) Power and Electrical Infrastructure</h2>
-
-
-•	High-Efficiency UPS and PDUs: Upgrade Uninterruptible Power Supply (UPS) systems and Power Distribution Units (PDUs) to high-efficiency models (aiming for online UPS efficiencies of 95%–98%). [1, 2]
-•	Dynamic Power States: Enable built-in processor power management features (such as C-states and P-states) so hardware scales power draw down during low-demand periods. [1, 2]
-•	Facility Lighting: Replace legacy fluorescent bulbs with low-energy LEDs tied to motion sensors. [1, 2, 3]
-
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-
-
-<h2 class="govuk-heading-m">(v) Monitoring and Management</h2>
-
-
-•	Data Centre Infrastructure Management (DCIM): Implement DCIM tools to track real-time power, temperature, humidity, and rack-level usage.
-•	Track Key Metrics: Regularly calculate and monitor Power Usage Effectiveness (PUE) to measure how much total facility energy reaches the IT equipment versus overhead systems like HVAC. Guidance and best-practice frameworks 
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
