@@ -65,406 +65,694 @@
 
  <div class="govuk-grid-column-two-thirds">
 
-<main class="govuk-main-wrapper" id="main-content">
-  <div class="govuk-grid-row">
 
-      <h1 class="govuk-heading-xl">Measure the environmental impact of data</h1>
+      <h1 class="govuk-heading-xl">
+        Measurement for Data
+      </h1>
 
-      <p class="govuk-body-l">
-        Measuring the energy used to store and transfer data can help you find
-        environmental impact hotspots and identify ways to reduce them.
+      <p class="govuk-body">
+        Measuring the environmental impacts of storing and transferring data can:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Provide insights to practitioners working with data insights on the
+          impact hotspots and help to reduce these
+        </li>
+        <li>
+          Be integrated into broader whole-service measurement, alongside other
+          aspects of digital services or projects [Link to whole service
+          measurement page]
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        The primary thing to measure is the storage and transfer of data. These
+        metrics can either be used as proxies for sustainability in themselves,
+        or can be used to estimate energy, carbon and water use using conversion
+        factors.
       </p>
 
       <p class="govuk-body">
-        You can include these estimates in a wider assessment of the environmental
-        impact of a digital service or project.
+        There are a few ways data can be measured:
       </p>
 
-      <p class="govuk-body">
-        The main measure is the energy used to store and transfer data. You can use
-        this to estimate associated carbon emissions and water use.
-      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Absolute metrics: such as the total volume of data stored or transferred
+        </li>
+        <li>
+          Time metrics: such as monthly storage growth
+        </li>
+        <li>
+          Intensity metrics: convert absolute and time metrics relative to a
+          meaningful unit of service activity, such as data stored per user or
+          data transferred per transaction
+        </li>
+      </ul>
 
       <div class="govuk-inset-text">
-        Measuring data separately can help data architects and other practitioners
-        track trends and assess whether changes to storage and transfer reduce
-        environmental impacts.
+        These metrics can be assessed alongside a service’s data management
+        policies and settings, such as data retention periods, archiving
+        policies, back up policies and storage-tiering rules. Used together,
+        these metrics support service teams to identify and demonstrate
+        improvements in service efficiency independently of service growth.
       </div>
-
-      <h2 class="govuk-heading-l">Measure the energy used to store data</h2>
-
-      <p class="govuk-body">
-        Data storage accounts for part of a data centre's energy use. Your estimate
-        should include the electricity used by the storage hardware and a share of
-        the energy used by supporting facilities, such as cooling equipment.
-      </p>
-
-      <p class="govuk-body">
-        You should also identify the storage tier used for the data. Storage is
-        commonly divided into hot, warm and cold tiers.
-      </p>
-
-      <div class="govuk-table__container">
-        <table class="govuk-table">
-          <caption class="govuk-table__caption govuk-table__caption--m">
-            Typical characteristics of data storage tiers
-          </caption>
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Characteristic</th>
-              <th scope="col" class="govuk-table__header">Hot tier</th>
-              <th scope="col" class="govuk-table__header">Warm tier</th>
-              <th scope="col" class="govuk-table__header">Cold tier</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Typical technology</th>
-              <td class="govuk-table__cell">Solid-state drives (SSDs)</td>
-              <td class="govuk-table__cell">Hard disk drives (HDDs)</td>
-              <td class="govuk-table__cell">Magnetic tape or offline disks</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Access speed</th>
-              <td class="govuk-table__cell">Very fast, around 10 to 200 microseconds</td>
-              <td class="govuk-table__cell">Moderate, around 5 to 15 milliseconds</td>
-              <td class="govuk-table__cell">Slow or sequential, from seconds to minutes</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Power use</th>
-              <td class="govuk-table__cell">Highest</td>
-              <td class="govuk-table__cell">Moderate</td>
-              <td class="govuk-table__cell">Lowest</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Typical use</th>
-              <td class="govuk-table__cell">
-                Active databases, applications and real-time analytics
-              </td>
-              <td class="govuk-table__cell">
-                General file storage and standard backups
-              </td>
-              <td class="govuk-table__cell">
-                Long-term archives, compliance records, data lakes and disaster recovery
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="govuk-body">
-        Storage tiers differ in cost, speed, reliability, power use and security.
-        Choose a tier that meets the service's access, retention and resilience needs
-        without using more resources than necessary.
-      </p>
-
-      <h3 class="govuk-heading-m">Read guidance from cloud providers</h3>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a class="govuk-link" href="https://aws.amazon.com/blogs/architecture/optimizing-your-aws-infrastructure-for-sustainability-part-ii-storage/">
-            AWS guidance on sustainable storage
-          </a>
-        </li>
-        <li>
-          <a class="govuk-link" href="https://docs.cloud.google.com/storage/docs/storage-classes">
-            Google Cloud storage classes
-          </a>
-        </li>
-        <li>
-          <a class="govuk-link" href="https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview">
-            Azure Blob Storage access tiers
-          </a>
-        </li>
-        <li>
-          <a class="govuk-link" href="https://docs.oracle.com/en/cloud/paas/ociov/oci_storage.html">
-            Oracle Cloud Infrastructure storage
-          </a>
-        </li>
-      </ul>
-
-      <p class="govuk-body">
-        The method you use will depend on whether the data is stored in the cloud or
-        in an on-premises or externally managed data centre.
-      </p>
-
-      <h2 class="govuk-heading-l">Estimate energy use for data stored in the cloud</h2>
-
-      <p class="govuk-body">
-        Start with usage data from your cloud provider's billing or usage reports.
-        These reports may include:
-      </p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>the total volume of data stored</li>
-        <li>the volume of data transferred</li>
-        <li>the storage tier used</li>
-        <li>the period covered by the figures</li>
-      </ul>
-
-      <p class="govuk-body">
-        Some cloud providers also offer dashboards that estimate carbon emissions.
-        Check what the dashboard includes before using its figures in a wider
-        environmental assessment.
-      </p>
-
-      <p class="govuk-body">
-        To estimate energy use, multiply the usage figure by an appropriate energy
-        intensity factor.
-      </p>
-
-      <h3 class="govuk-heading-m">Apply industry benchmark factors</h3>
-
-      <p class="govuk-body">
-        You can use an industry benchmark when measured energy data is not available.
-        The 2025 report
-        <a class="govuk-link" href="https://assets.publishing.service.gov.uk/media/689d9dc487bf475940723f6c/impact-of-growth-of-data-centres.pdf">
-          Impact of Growth of Data Centres on Energy Consumption
-        </a>
-        provides the following estimates.
-      </p>
-
-      <div class="govuk-table__container">
-        <table class="govuk-table">
-          <caption class="govuk-table__caption govuk-table__caption--m">
-            Example energy intensity factors
-          </caption>
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Activity</th>
-              <th scope="col" class="govuk-table__header">Indicative factor</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">HDD storage</th>
-              <td class="govuk-table__cell govuk-table__cell--numeric">
-                0.0025 kWh per GB
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">SSD storage</th>
-              <td class="govuk-table__cell govuk-table__cell--numeric">
-                0.008 kWh per GB
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">
-                Uploading data to a data centre
-              </th>
-              <td class="govuk-table__cell govuk-table__cell--numeric">
-                0.02 kWh per GB
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          Benchmark factors are estimates. Record the source, date, units,
-          assumptions and scope of every factor you use.
-        </strong>
-      </div>
-
-      <p class="govuk-body">
-        Other frameworks may use different units. For example, a capacity-time
-        benchmark may express energy intensity in watt-hours per terabyte-hour.
-        Do not compare or combine factors until you have converted them to
-        compatible units and checked that their scopes match.
-      </p>
-
-      <h3 class="govuk-heading-m">Use open-source tools</h3>
-
-      <p class="govuk-body">
-        Open-source tools can apply energy factors to cloud usage data.
-        <a class="govuk-link" href="https://www.cloudcarbonfootprint.org/docs/classifying-usage-types/">
-          Cloud Carbon Footprint
-        </a>
-        classifies cloud usage and applies standard conversion factors.
-      </p>
-
-      <div class="govuk-inset-text">
-        Defra users can also assess whether Greenpixie can map items in a cloud
-        Cost and Usage Report to physical hardware estimates. Its outputs can help
-        estimate electricity use and Scope 3 emissions. Check the tool's methodology
-        and coverage before relying on the results.
-      </div>
-
-      <h3 class="govuk-heading-m">Account for time and storage state</h3>
-
-      <p class="govuk-body">
-        Capacity-time factors require the volume of stored data and the length of
-        time it is stored. Convert these figures into a unit such as
-        terabyte-hours before applying the factor.
-      </p>
-
-      <p class="govuk-body">As a starting assumption:</p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <strong>Hot storage:</strong> assume that the storage is continuously available.
-        </li>
-        <li>
-          <strong>Warm storage:</strong> account for idle states and lower active use
-          where the selected factor requires this.
-        </li>
-        <li>
-          <strong>Cold storage or tape:</strong> account for long periods when drives
-          or tape libraries are powered down.
-        </li>
-      </ul>
-
-      <p class="govuk-body">
-        Use measured or provider-specific information instead of these assumptions
-        when it is available.
-      </p>
-
-      <h3 class="govuk-heading-m">Use financial cost as a proxy</h3>
-
-      <p class="govuk-body">
-        You may not be able to identify the hardware used by a managed cloud
-        service. In this case, some tools estimate energy use from billing data
-        by applying an average energy-per-cost factor.
-      </p>
-
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          Treat cost-based estimates as a last resort. Prices can change without
-          a corresponding change in energy use.
-        </strong>
-      </div>
-
-      <h3 class="govuk-heading-m">Account for data centre overhead</h3>
-
-      <p class="govuk-body">
-        Multiply the storage hardware energy estimate by the provider's or
-        facility's Power Usage Effectiveness (PUE) value to account for supporting
-        infrastructure such as cooling and power distribution.
-      </p>
-
-      <p class="govuk-body">You should also consider energy used for:</p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>redundant or replicated copies of data</li>
-        <li>transferring data to and from the cloud</li>
-        <li>switching and routing data across networks</li>
-      </ul>
-
-      <p class="govuk-body">
-        Check whether these activities are already included in the factor or tool
-        you use. This will help you avoid counting the same energy twice.
-      </p>
 
       <h2 class="govuk-heading-l">
-        Estimate energy use in on-premises and managed data centres
+        Suggested metrics
+      </h2>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">
+                Measurement
+              </th>
+              <th scope="col" class="govuk-table__header">
+                What to capture
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Unit
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Purpose
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Data storage volume, by tier
+              </th>
+              <td class="govuk-table__cell">
+                Total stored data, by tier
+              </td>
+              <td class="govuk-table__cell">
+                GB/TB
+              </td>
+              <td class="govuk-table__cell">
+                Establish a baseline and identify where stored data is concentrated
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Data growth by tier
+              </th>
+              <td class="govuk-table__cell">
+                Change in stored data over a reporting period
+              </td>
+              <td class="govuk-table__cell">
+                GB/TB growth per month or % growth
+              </td>
+              <td class="govuk-table__cell">
+                Identify growth or reduction in data and investigate causes.
+                Assess optimisation alongside changes in service demand.
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Data storage intensity
+              </th>
+              <td class="govuk-table__cell">
+                Volume of stored data divided by a scaling metric, such as
+                active users or licenses issued
+              </td>
+              <td class="govuk-table__cell">
+                GB/MB per metric
+              </td>
+              <td class="govuk-table__cell">
+                Track storage efficiency independently of service growth
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Inbound and outbound data transfer
+              </th>
+              <td class="govuk-table__cell">
+                Volume of data transferred into and out of the service,
+                including between regions, cloud services and users.
+              </td>
+              <td class="govuk-table__cell">
+                GB/TB over a time frame
+              </td>
+              <td class="govuk-table__cell">
+                Identify hotspots and track changes over time
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Data transfer intensity
+              </th>
+              <td class="govuk-table__cell">
+                Data transferred divided by a scaling metric, such as active
+                users or licenses issued
+              </td>
+              <td class="govuk-table__cell">
+                GB/MB per metric
+              </td>
+              <td class="govuk-table__cell">
+                Track data transfer efficiency independent of service growth
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="govuk-heading-l">
+        Measuring the energy use of digital data storage
       </h2>
 
       <p class="govuk-body">
-        Use a bottom-up model when you have information about the storage hardware.
-        Gather the following data:
+        Data storage makes up one part of data centre energy consumption. The
+        other part is data transfer
       </p>
 
-      <dl class="govuk-summary-list">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">Power demand</dt>
-          <dd class="govuk-summary-list__value">
-            The measured or rated power used by the storage equipment. Use metered
-            data where possible. Otherwise, use manufacturer data sheets.
-          </dd>
+      <p class="govuk-body">
+        Estimating energy use for stored data means understanding which tiers
+        data is stored at. This is often described in terms of 3 broad tiers,
+        although tiers specifically available may vary between providers:
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">
+                <span class="govuk-visually-hidden">Characteristic</span>
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Hot tier
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Warm tier
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Cold tier
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Technology
+              </th>
+              <td class="govuk-table__cell">
+                Solid-State Drives (SSDs)
+              </td>
+              <td class="govuk-table__cell">
+                Hard Disk Drives (HDDs)
+              </td>
+              <td class="govuk-table__cell">
+                Magnetic tape or offline disks
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Speed / Latency
+              </th>
+              <td class="govuk-table__cell">
+                Ultra-fast (~10–200 µs)
+              </td>
+              <td class="govuk-table__cell">
+                Moderate (~5–15 ms)
+              </td>
+              <td class="govuk-table__cell">
+                Slow / Sequential (Seconds to minutes)
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Power usage
+              </th>
+              <td class="govuk-table__cell">
+                Highest
+              </td>
+              <td class="govuk-table__cell">
+                Moderate
+              </td>
+              <td class="govuk-table__cell">
+                Lowest
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Use
+              </th>
+              <td class="govuk-table__cell">
+                High-performance tiers
+              </td>
+              <td class="govuk-table__cell">
+                General file storage, standard backups
+              </td>
+              <td class="govuk-table__cell">
+                Long term storage and can often be powered off entirely
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Examples
+              </th>
+              <td class="govuk-table__cell">
+                Active databases and apps, real-time analytics
+              </td>
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">
+                Historical compliance records, massive data lakes, disaster
+                recovery
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          There are very significant cost differences between tiers, as well
+          as security considerations. See DSAs for data. A trade-off between
+          resource efficiency, access latency, and reliability when considering
+          these storage tiers.
+        </strong>
+      </div>
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            [Read more on storage tiers from major cloud providers]
+          </span>
+        </summary>
+
+        <div class="govuk-details__text">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              <a
+                class="govuk-link"
+                href="https://aws.amazon.com/blogs/architecture/optimizing-your-aws-infrastructure-for-sustainability-part-ii-storage/"
+              >
+                https://aws.amazon.com/blogs/architecture/optimizing-your-aws-infrastructure-for-sustainability-part-ii-storage/
+              </a>
+              AWS storage tiers
+            </li>
+            <li>
+              <a
+                class="govuk-link"
+                href="https://docs.cloud.google.com/storage/docs/storage-classes"
+              >
+                https://docs.cloud.google.com/storage/docs/storage-classes
+              </a>
+              Google Cloud
+            </li>
+            <li>
+              <a
+                class="govuk-link"
+                href="https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
+              >
+                https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview
+              </a>
+              Azure
+            </li>
+            <li>
+              <a
+                class="govuk-link"
+                href="https://docs.oracle.com/en/cloud/paas/ociov/oci_storage.html"
+              >
+                https://docs.oracle.com/en/cloud/paas/ociov/oci_storage.html
+              </a>
+              Oracle
+            </li>
+          </ul>
         </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">Active time</dt>
-          <dd class="govuk-summary-list__value">
-            The number of hours the equipment is powered on during the reporting period.
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">Capacity and utilisation</dt>
-          <dd class="govuk-summary-list__value">
-            The installed capacity and the proportion used. Include the effects of
-            compression and deduplication when reporting energy per effective
-            terabyte of stored data.
-          </dd>
-        </div>
-      </dl>
+      </details>
 
       <p class="govuk-body">
-        If you know the equipment's total power demand, multiply it by its operating
-        time to estimate energy use:
+        We need different estimation methodologies depending on whether our
+        services are based in cloud or on- or off-premises environments.
       </p>
+
+      <h2 class="govuk-heading-l">
+        Estimating energy and carbon used by data in the cloud
+      </h2>
 
       <p class="govuk-body">
-        <strong>Energy use (kWh) = power demand (kW) × operating time (hours)</strong>
+        Cloud provider billing and monitoring tools commonly gives the following
+        metrics:
       </p>
-
-      <p class="govuk-body">
-        Use capacity and utilisation figures when you need to allocate part of the
-        equipment's total energy use to a dataset, service or effective terabyte of
-        storage.
-      </p>
-
-      <h3 class="govuk-heading-m">Add data centre overhead</h3>
-
-      <p class="govuk-body">
-        Multiply the hardware energy estimate by the data centre's PUE value to
-        account for supporting infrastructure.
-      </p>
-
-      <p class="govuk-body">
-        State whether your result includes only storage equipment or the full
-        data centre overhead.
-      </p>
-
-      <h2 class="govuk-heading-l">Calculate carbon emissions and water use</h2>
-
-      <p class="govuk-body">
-        After estimating energy use, multiply it by an appropriate carbon intensity
-        factor to estimate greenhouse gas emissions.
-      </p>
-
-      <p class="govuk-body">
-        Use an appropriate water intensity factor to estimate water consumption.
-        Carbon and water intensity factors vary by location, electricity source,
-        provider and reporting period.
-      </p>
-
-      <p class="govuk-body">
-        Record the factors, locations, dates and assumptions used in the calculation.
-        Follow the wider measurement guidance for your service or organisation.
-      </p>
-
-      <h2 class="govuk-heading-l">Further reading</h2>
 
       <ul class="govuk-list govuk-list--bullet">
         <li>
-          <a class="govuk-link" href="https://www.techcarbonstandard.org/technology-categories/data">
-            Technology Carbon Standard guidance for data
-          </a>
+          Compute: Active instance hours, virtual central processing unit
+          (vCPU) and memory allocations, Graphics Processing Unit (GPU) usage
         </li>
         <li>
-          <a class="govuk-link" href="https://assets.publishing.service.gov.uk/media/689d9dc487bf475940723f6c/impact-of-growth-of-data-centres.pdf">
-            Impact of Growth of Data Centres on Energy Consumption
-          </a>
+          Data Storage: Capacity consumed across storage tiers, I/O operations,
+          and snapshot or backup volumes.
         </li>
         <li>
-          <a class="govuk-link" href="https://www.cloudcarbonfootprint.org/docs/classifying-usage-types/">
-            Cloud Carbon Footprint usage classification
-          </a>
+          Data Transfer: Ingress (inbound) versus egress (outbound to the
+          internet), inter-availability zone inter-region data traffic.
         </li>
       </ul>
 
-    </div>
-  </div>
-</main>
+      <p class="govuk-body">
+        Estimating the energy use from data storage and transfer in the cloud
+        involves taking these usage numbers and then applying an ‘energy use
+        factor’.
+      </p>
 
+      <p class="govuk-body">
+        This section will focus on the energy use and carbon coming from data
+        that is stored and transferred. For Cloud Compute see the ‘Architecture’
+        section of the DSAs.
+      </p>
 
+      <h3 class="govuk-heading-m">
+        Applying industry benchmark factors
+      </h3>
 
+      <p class="govuk-body">
+        Energy use factors can be applied to data storage and transfer figures
+        to calculate a total energy use figure. As cloud and data center
+        providers typically do not disclose energy or carbon estimates for data
+        storage, services should use industry estimates for these factors.
+        Although approximate, these estimates can help service teams track
+        trends and assess improvements.
+      </p>
 
+      <p class="govuk-body">
+        The ‘Impact of Growth of Data Centres on Energy Consumption’ report
+        (2025) uses the following estimates for energy use per annum:
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">
+                Data type
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Estimates
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Storage
+              </th>
+              <td class="govuk-table__cell">
+                <p class="govuk-body">Long-term storage at:</p>
+                <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0">
+                  <li>0.0025 kWh per GB for HDDs (cold storage)</li>
+                  <li>0.005kWh per GB central estimate (warm storage)</li>
+                  <li>0.008 kWh per GB for SSDs (hot storage)</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Transfer
+              </th>
+              <td class="govuk-table__cell">
+                Energy intensity of 0.02 kWh per GB for uploading data to a data
+                centre (Ingress)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="govuk-body">
+        [Read More
+        <a
+          class="govuk-link"
+          href="https://assets.publishing.service.gov.uk/media/689d9dc487bf475940723f6c/impact-of-growth-of-data-centres.pdf"
+        >
+          Impact of Growth of Data Centres on Energy Consumption Report
+        </a>
+        prepared by Europe Economics This project has been supported by the
+        Department for Energy Security &amp; Net Zero, 2025, p.15]
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Using open-source tooling to apply factors
+      </h3>
+
+      <p class="govuk-body">
+        Energy use factors can also be applied through open-source tooling.Tools
+        available include:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          E-footprint: an open source tool that models the environmental
+          footprint of a service prior to building it
+        </li>
+        <li>
+          Cloud Carbon Footprint: analyses public cloud usage and estimates
+          energy consumption and carbon for data storage
+        </li>
+        <li>
+          Boavista cloud scanner: calculates the environmental impacts of AWS
+          storage usage by combining inventory and usage data
+        </li>
+        <li>
+          CO2.js: estimates carbon emissions from transferring data on the
+          internet
+        </li>
+      </ul>
+
+      <div class="govuk-inset-text">
+        In Defra,Cloudability is now available as a tool that maps items in the
+        Cost and Usage Report (CUR) to its corresponding physical hardware to
+        estimate electricity consumption, water consumption and carbon and
+        emissions. Users can drill down into services to view metrics associated
+        with data storage and transfer.
+      </div>
+
+      <h3 class="govuk-heading-m">
+        Accounting for data centre overhead for data storage in the cloud
+      </h3>
+
+      <p class="govuk-body">
+        As for other aspects of digital services, once energy consumption of
+        data storage has been calculated, the data centre overhead must be
+        factored in. The data centre overhead is accounted for using Power Usage
+        Effectiveness (PUE); the ratio of total data centre energy consumption
+        to IT equipment energy consumption. This can be provided by the
+        supplier. The formula for using PUE is:
+      </p>
+
+      <div class="govuk-inset-text">
+        Total energy in kWh= energy consumption of data (kWh) x (PUE)
+      </div>
+
+      <h3 class="govuk-heading-m">
+        Accounting for redundancy and replication of data storage in the cloud
+      </h3>
+
+      <p class="govuk-body">
+        Depending on the cloud provider storage configuration, and the level of
+        redundancy, replication and backup configurations selected, data may be
+        duplicated across multiple servers or data centres. This can increase
+        the physical storage capacity and associated energy consumption. The
+        redundancy configuration is typically reflected in the pricing of
+        storage, rather by affecting estimates of storage consumption.
+      </p>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          When estimating storage energy consumption, consider what redundancy
+          is configured for the service and account for each back up in the
+          calculation.
+        </strong>
+      </div>
+
+      <h2 class="govuk-heading-l">
+        Estimating energy use for data in on- and off-premises data centres
+      </h2>
+
+      <h3 class="govuk-heading-m">
+        For data storage:
+      </h3>
+
+      <p class="govuk-body">
+        For services with data stored in hardware that is located in on- and
+        off-premises data centres, a <strong>bottom-up model</strong> can be used
+        to estimate the energy being used. The metrics required will depend on
+        the measurement approach used.
+      </p>
+
+      <p class="govuk-body">
+        Metrics required when the service has dedicated storage:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Power consumption: electricity consumption (kWh) of storage hardware
+          over the reporting period. Calculate this from power monitoring or
+          metered electricity consumption. If this is not available, use
+          manufacturer power specifications for the relevant storage hardware,
+          using typical energy consumption rather than maximum rated power. If
+          manufacture datasheets are not available, use a reference item (a
+          similar piece of hardware).
+        </li>
+        <li>
+          Operating time: The duration the hardware is powered on or actively
+          serving data over the target period, such as a month or a year.
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        Where the service uses shared storage an extra step is required to
+        allocate the total storage energy consumption to the specific service:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Storage capacity and allocation: Obtain the storage capacity allocated
+          to the service and the total capacity of the storage infrastructure to
+          apportion the % of the total power that should be allocated to the
+          service. If this is not available, use service spend as a basis for
+          allocation.
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        If no data is available:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Use the intensity metrics outlined in the ‘estimating energy from
+          cloud’ section to calculate average energy consumption per GB of data
+          stored.
+        </li>
+      </ul>
+
+      <h3 class="govuk-heading-m">
+        Adding data centre overhead
+      </h3>
+
+      <p class="govuk-body">
+        As for Cloud services, when data is stored in on- or off-premises data
+        centres the data centre overhead needs to be factored into energy use
+        via use of Power Usage Effectiveness (PUE) multiplication factors.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Calculating data transfer:
+      </h3>
+
+      <p class="govuk-body">
+        Metrics required:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Data transfer volume in GB or TB over a given time frame. This can be
+          obtained through network monitoring systems, or supplier reports. If
+          unavailable, use estimated traffic from service logs.
+        </li>
+        <li>
+          Network energy intensity: Use an energy-intensity benchmark to
+          estimate electricity consumption from the volume of data transferred.
+        </li>
+      </ul>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">
+                Energy intensity factor
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Source
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                0.001 kWh/Gb
+              </th>
+              <td class="govuk-table__cell">
+                Cloud carbon footprint calculation for exchanging data between
+                hyperscaler data centres
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                0.02 kWh/GB
+              </th>
+              <td class="govuk-table__cell">
+                DESNZ 2025 data centre energy study: for uploading into a data
+                centre
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                0.015 kWh/GB
+              </th>
+              <td class="govuk-table__cell">
+                DESNZ 2025 data centre energy study: for downloading into a data
+                centre
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="govuk-heading-l">
+        Calculating carbon and water use
+      </h2>
+
+      <p class="govuk-body">
+        To convert energy use into carbon and water figures, you multiply your
+        energy consumption (such as kilowatt-hours or fuel volume) by specific
+        carbon intensity factors and water intensity factors that vary
+        depending on region.
+      </p>
+
+      <p class="govuk-body">
+        See measurement section for guidance on this.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        More reading
+      </h2>
+
+      <p class="govuk-body">
+        <a
+          class="govuk-link"
+          href="https://www.techcarbonstandard.org/technology-categories/data"
+        >
+          https://www.techcarbonstandard.org/technology-categories/data
+        </a>
+        this is good as well! Has estimates for the embodied emissions of data
+        storage equipment, as well operational for on-premises and on the cloud
+      </p>
 
 
     </div>

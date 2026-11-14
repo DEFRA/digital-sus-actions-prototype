@@ -1,0 +1,509 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">3. Software</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/3/software.html" aria-current="page">
+        3. Software
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">Sustainability actions</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+     <a class="app-subnav__link" href="/3/3a.html">
+        3a. Apply the principles of circularity to software
+      </a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/3/3b.html">
+        3b. Develop energy-efficient software
+      </a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/3/3c.html">
+        3c. Take an efficient software testing approach
+      </a>
+    </li>
+          <li class="app-subnav__item">
+        <a class="app-subnav__link" href="/3/3d.html">
+        3d. Build on DevOps best practices
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">
+        Measuring Software Energy Use
+      </h1>
+
+      <p class="govuk-body">
+        Insight into energy consumption can guide practitioners working on the
+        design and development of software.
+      </p>
+
+      <p class="govuk-body">
+        Energy use per functional unit, for example energy per API request or
+        per user transaction helps make measurement useful for software
+        decisions, because it connects energy consumption to the work the system
+        actually performs. It allows software developers to compare changes to
+        <strong>
+          user journeys, algorithms, data movement, hosting architecture and AI
+          approaches
+        </strong>
+        even when overall demand is growing.
+      </p>
+
+      <p class="govuk-body">
+        There are a number of methods to estimate software energy consumption
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <strong>direct measurement (tracking power used by hardware)</strong>
+        </li>
+        <li>
+          <strong>inferred from hardware activity</strong>
+        </li>
+        <li>
+          <strong>modelled from software/cloud usage</strong>
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        Measuring energy use directly is likely to provide the most accurate
+        figures, whilst modelling the least.
+      </p>
+
+      <p class="govuk-body">
+        The challenge is establishing a credible energy-per-activity figure.
+      </p>
+
+      <p class="govuk-body">
+        As with other aspects of digital services, energy figures can also be
+        used to:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Generate estimates of water and carbon emissions via conversion
+          factors
+        </li>
+        <li>
+          Feed into estimates of the environmental impacts of the digital
+          service or project as a whole
+        </li>
+      </ul>
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            READ MORE
+          </span>
+        </summary>
+
+        <div class="govuk-details__text">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              <a
+                class="govuk-link"
+                href="https://greensoftware.foundation/articles/how-to-accurately-measure-the-energy-consumption-of-application-software/"
+              >
+                https://greensoftware.foundation/articles/how-to-accurately-measure-the-energy-consumption-of-application-software/
+              </a>
+            </li>
+            <li>
+              <a
+                class="govuk-link"
+                href="https://greensoftware.foundation/standards/sei/"
+              >
+                https://greensoftware.foundation/standards/sei/
+              </a>
+            </li>
+            <li>
+              <a
+                class="govuk-link"
+                href="https://www.microsoft.com/en-gb/microsoft-cloud/blog/technetuk/2021/10/12/how-to-measure-and-reduce-the-carbon-footprint-of-your-application/"
+              >
+                https://www.microsoft.com/en-gb/microsoft-cloud/blog/technetuk/2021/10/12/how-to-measure-and-reduce-the-carbon-footprint-of-your-application/
+              </a>
+              this is quite useful on software! Suggests some proxy measures
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <h2 class="govuk-heading-l">
+        1.Estimating the energy of software running in the cloud
+      </h2>
+
+      <p class="govuk-body">
+        Software applications built in the cloud do not have access to power
+        meters, sensors or usage metrics that can be directly used to measure
+        energy use. Instead, assumptions must be used about the shared hardware
+        it runs on and the rate at which that hardware is utilised.
+      </p>
+
+      <p class="govuk-body">
+        For cloud software, estimate energy from the resources provisioned or
+        consumed, for example:
+      </p>
+
+      <div class="govuk-inset-text">
+        instance type × runtime × estimated server power × utilisation
+      </div>
+
+      <p class="govuk-body">
+        The <u>Measurement page</u> [LINK] details approaches that can be taken
+        to converting Cloud usage metrics from supplier reporting and
+        dashboards into energy-use estimates.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        2. Measuring energy use when we have visibility of the hardware on which
+        it runs
+      </h2>
+
+      <p class="govuk-body">
+        Software can run on equipment that is controlled by the organisation.
+        This could be a laptop, or a server in an on-premises data centre.
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>direct measurement of hardware power</li>
+        <li>hardware modelling</li>
+      </ul>
+
+      <p class="govuk-body">
+        In these cases, follow the guidance on the ‘on-prem’ Measurement page.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        2. Direct measurement of software power consumption
+      </h2>
+
+      <p class="govuk-body">
+        When software runs on hardware such as server or laptops, this means
+        there is access underlying electrical and processor interfaces to
+        capture power consumption. Controlled experiments can be run to directly
+        measure the power-draw of software in real time as it runs.
+      </p>
+
+      <p class="govuk-body">
+        Approaches can involve:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Hardware power meters: Devices placed at the wall socket or via
+          current clamps measure total physical power drawn by hardware such as
+          servers and laptops
+        </li>
+        <li>
+          <strong>Power Distribution Units (PDU):</strong> In a data centre,
+          Intelligent rack power distribution units distribute power to
+          multiple servers, and can be used to track energy used by each.
+        </li>
+        <li>
+          <strong>Hardware power sensors:</strong> Integrated internal circuits
+          and components that track energy consumption for processors (Core
+          Processing and Graphical Processing Units), cores, and Dynamic
+          Random-Access Memory (DRAM).
+        </li>
+      </ul>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          Direct measurement methods require that a machine’s total energy usage
+          is apportioned between the workloads running on it at a given time.
+        </strong>
+      </div>
+
+      <h2 class="govuk-heading-l">
+        3. Hardware utilisation models
+      </h2>
+
+      <p class="govuk-body">
+        Hardware utilisation models maps system usage metrics to energy
+        consumption without needing physical power meters to measure it
+        directly.
+      </p>
+
+      <p class="govuk-body">
+        Metrics to track resource usage can include:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Core Processing Unit (CPU) utilisation or time</li>
+        <li>Graphical Processing Unit (GPU) utilisation</li>
+        <li>Memory use</li>
+        <li>Disk Input/Output (I/O)</li>
+        <li>Network activity</li>
+      </ul>
+
+      <div class="govuk-inset-text">
+        <strong>
+          While resource utilisation and electrical power are not perfectly
+          proportional, hardware utilisation approaches can help guide
+          decisions on software development, testing and continuous monitoring.
+        </strong>
+      </div>
+
+      <p class="govuk-body">
+        <strong>
+          There are a number of open-source software profilers and frameworks
+          that can be used to automate hardware monitoring. Two examples are:
+        </strong>
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          CodeCarbon: <strong>A tool that periodically samples power consumption
+          (in Watts or kWh) from underlying hardware components</strong>
+        </li>
+        <li>
+          <strong>PowerAPI</strong>: A software-defined power meter toolkit
+          designed to measure application-level power consumption
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        To convert hardware utilisation into energy use,
+        <strong>power draw over time must be estimated.</strong>
+      </p>
+
+      <p class="govuk-body">
+        A simple CPU model might approximate power as:
+      </p>
+
+      <div class="govuk-inset-text">
+        <strong>
+          Power ≈ idle power + utilisation × (maximum power − idle power)
+        </strong>
+      </div>
+
+      <h2 class="govuk-heading-l">
+        Software-as-a-Service and other managed software
+      </h2>
+
+      <p class="govuk-body">
+        Software is often consumed ‘as a service’, through Software-as-a-Service
+        or Managed Software-as-a-Service models. In these circumstances the
+        hosting and maintenance of software will be managed by the supplier and
+        are outside of the direct control of teams working in government.
+      </p>
+
+      <p class="govuk-body">
+        Services using a software-as-a-service, but not involved in its
+        procurement, may still be able to get sustainability data for the
+        software. This may be available from the supplier, or through internal
+        measurement capability within the organisation. Where a service team
+        has contact with the supplier, request the following metrics:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Energy consumption attributable to the software in kWh. For complex
+          software comprising multiple applications, modules or functional
+          components, energy consumption should be disaggregated at component
+          level wherever possible.
+        </li>
+        <li>Hosting location</li>
+        <li>
+          Data centre Power Usage Effectiveness (if not accounted for in energy
+          consumption)
+        </li>
+        <li>Hardware embodied carbon</li>
+        <li>Hardware expected lifespan</li>
+      </ul>
+
+      <p class="govuk-body">
+        These metrics can then be combined with the GHG conversion factors for
+        electricity and an appropriate functional unit to calculate the
+        software carbon intensity. For complex software, it may be appropriate
+        calculate SCI scores at component level as a more granular assessment
+        can highlight opportunities for targeted optimisation. See the section
+        on SCI in the main measurement section for more details.
+      </p>
+
+      <p class="govuk-body">
+        Collecting these metrics is still valuable, as although services cannot
+        influence the hosting infrastructure, teams may be able to influence
+        how the software is configured, used and managed. For example, services
+        may be able to set data retention policies, storage configuration and
+        usage configurations which impact the environmental footprint.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Estimating energy-use on the web (other proxies)
+      </h2>
+
+      <p class="govuk-body">
+        There are several approaches that have been used as proxies for energy
+        consumption. These include:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          ‘Time-to-Interactive (TTI)’ / Page Load Speed: Assuming faster,
+          leaner experiences consume less device and network energy.
+        </li>
+        <li>
+          <strong>Page Weight:</strong> This approach has often used for websites
+          by take the weight (in bytes) of web pages and multiplies this by an
+          estimated energy-per-gigabyte factor to estimate the carbon emissions
+          from the transfer of this data to the end user A number of online
+          webpage carbon footprint calculators use these methods but this
+          approach is more appropriate for simple webpages rather than complex
+          service. See SCI for Web and the GWF article on this.
+        </li>
+      </ul>
+
+      <h3 class="govuk-heading-m">
+        SCI for Web
+      </h3>
+
+      <p class="govuk-body">
+        The SCI for web
+        <a
+          class="govuk-link"
+          href="https://greensoftware.foundation/standards/sci-web/"
+        >
+          https://greensoftware.foundation/standards/sci-web/
+        </a>
+        An update on SCI for Web – a new standard for measuring software carbon
+        intensity for the Web
+      </p>
+
+      <p class="govuk-body">
+        What is the carbon cost of networking? It’s difficult to measure and
+        there are competing models, but suffice it to say, two things are true.
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          The larger the size of data you are transmitting, the more energy and
+          compute it requires to transmit. Therefore, data size is a carbon
+          proxy. A good metric to choose here for websites is page weight – the
+          overall size of all the assets in your website. Page weight is a
+          carbon proxy.
+        </li>
+        <li>
+          The more distance the data has to travel, the more compute and energy
+          is needed. Therefore, the distance that data has to travel is also a
+          carbon proxy.
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        Network Data Transfer Proxies (Gigabytes Transferred): Estimates the
+        energy cost of moving data across internal data centre fabrics or public
+        internet routing per GB. This approach has often used for websites by
+        take the weight (in bytes) of web pages and multiplies this by an
+        estimated energy-per-gigabyte factor to estimate the carbon emissions
+        from the transfer of this data to the end user A number of online
+        webpage carbon footprint calculators use these methods but this
+        approach is more appropriate for simple webpages rather than complex
+        service.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        See SCI for Web and the GWF article on this. Note on previous tools and
+        approaches:
+      </h3>
+
+      <p class="govuk-body">
+        Tools and frameworks like the
+        <a
+          class="govuk-link"
+          href="https://sustainablewebdesign.org/"
+        >
+          Sustainable Web Design Model
+        </a>,
+        <a
+          class="govuk-link"
+          href="https://www.thegreenwebfoundation.org/co2-js/"
+        >
+          CO2.js
+        </a>.
+        Use data as a proxy.
+      </p>
+
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}
