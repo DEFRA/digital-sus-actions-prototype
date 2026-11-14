@@ -1,0 +1,254 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Sustainability Measurement</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/8/hardware.html" aria-current="page">
+        Measuring sustainability at the service level
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/8/8a.html">
+        Orders of impact</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/what-and-how.html">
+       Carbon estimate approaches</a>
+    </li>
+        <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/Measurement/formula.html">
+        Calculation formula</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/boundary-and-unit.html">
+       Setting boundaries and functional unit</a>
+    </li>
+
+    <p class="app-subnav__header">Estimating carbon for services</p>
+  <ul class="app-subnav__list">
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/cloud-carbon.html">
+       Cloud usage</a>
+    </li>
+           <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/onpremcarbon.html">
+       On-premises</a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">
+        Orders of impact for a digital service
+      </h1>
+
+      <h2 class="govuk-heading-l">
+        Orders of impact of a digital project
+      </h2>
+
+      <p class="govuk-body">
+        The orders of impact for a digital service describe how its effects
+        cascade outward from immediate functional changes to broader systemic
+        or societal consequences.
+      </p>
+
+      <p class="govuk-body">
+        There are three orders of effect relevant to measurement for ICT
+        sustainability. Project and service teams should focus measurement on
+        the first order impacts, as these are within the control of the service.
+        Second order impacts require measurement against a baseline (such as an
+        existing process or service which is being replaced) and assessing
+        rebound effects, both which may be challenging. Third order impacts
+        should be calculated at policy level.
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">
+                Order
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Core Focus
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Nature of Carbon Impact
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                First-Order
+              </th>
+              <td class="govuk-table__cell">
+                Infrastructure &amp; Life Cycle
+              </td>
+              <td class="govuk-table__cell">
+                <strong>Costly:</strong> The footprint of building and running
+                digital systems.
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Second-Order
+              </th>
+              <td class="govuk-table__cell">
+                Application &amp; Optimization
+              </td>
+              <td class="govuk-table__cell">
+                <strong>Mixed:</strong> Carbon savings from efficiency vs.
+                initial rebound spikes.
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Third-Order
+              </th>
+              <td class="govuk-table__cell">
+                Systemic &amp; Behavioral Shift
+              </td>
+              <td class="govuk-table__cell">
+                <strong>Mixed:</strong> Society-wide lifestyle changes,
+                transforming global economic structures.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-inset-text">
+        Note – comment in the main doc linking digital economy report - unsure
+        of which aspect of the digital economy report you were linking.
+      </div>
+
+      <h3 class="govuk-heading-m">
+        First order impacts
+      </h3>
+
+      <p class="govuk-body">
+        These are the direct environmental and social impacts from the
+        lifecycle of ICT hardware and digital infrastructure. They represent
+        costs to the environment and society, and include the impacts above
+        such as carbon emissions, water, material use, e-waste and supply chain
+        labour risks.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Second order impacts
+      </h3>
+
+      <p class="govuk-body">
+        These are the indirect environmental and social changes caused by how
+        digital technology is applied to other sectors and processes. They can
+        be positive (enabling efficiency) or negative (increasing demand).
+      </p>
+
+      <p class="govuk-body">
+        For example, an assessment of the impact of a new service relative to
+        what is replaced is calculating second order impacts.
+      </p>
+
+      <p class="govuk-body">
+        Rebound effects are second order impacts. A rebound effect is the
+        difference between the potential benefit and the actual impact. For
+        example, a cloud provider creates new technology making data storage
+        more efficient, and businesses respond by generating and storing more
+        data such that the total footprint of data storage is now higher.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Third order impacts
+      </h3>
+
+      <p class="govuk-body">
+        These are medium- to long-term systemic shifts in economic structures,
+        consumer culture, and human behaviour triggered by the permanent
+        availability of ICT services.
+      </p>
+
+      <p class="govuk-body">
+        In Defra these can be policy objectives, such as boosting recycling
+        rates.
+      </p>
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

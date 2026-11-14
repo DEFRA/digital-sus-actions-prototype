@@ -1,0 +1,331 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Sustainability Measurement</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/8/hardware.html" aria-current="page">
+        Measuring sustainability at the service level
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/8/8a.html">
+        Orders of impact</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/what-and-how.html">
+       Carbon estimate approaches</a>
+    </li>
+        <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/Measurement/formula.html">
+        Calculation formula</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/boundary-and-unit.html">
+       Setting boundaries and functional unit</a>
+    </li>
+
+    <p class="app-subnav__header">Estimating carbon for services</p>
+  <ul class="app-subnav__list">
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/cloud-carbon.html">
+       Cloud usage</a>
+    </li>
+           <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/onpremcarbon.html">
+       On-premises</a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">
+        Measuring energy use
+      </h1>
+
+      <p class="govuk-body">
+        The starting point for many services will be to quantify the energy use
+        from the use-phase of the service. This may factor in energy from the
+        hosted infrastructure, and energy from end user devices. Energy may be
+        measured at the whole service level for reporting purposes, or at
+        component level to drive action and insight into improving the service.
+      </p>
+
+      <p class="govuk-body">
+        There are a few methods to measure the energy consumption of a service.
+        These may not be possible for every service. More information on how to
+        measure energy according to each of the methods below can be found on
+        the Green Software Foundation measurement site.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Direct measurement of energy:
+      </h2>
+
+      <p class="govuk-body">
+        When software and services run on hardware, such as servers and laptops,
+        controlled experiments can be run to directly measure the power draw of
+        the service. This can be done through:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Hardware power meters: devices placed at the wall socket or via
+          current clamps measure total physical power drawn by hardware such as
+          servers and laptops
+        </li>
+        <li>
+          Power Distribution Units (PDU): In a data centre, intelligent rack
+          power distribution units distribute power to multiple servers, and
+          can measure energy consumption at individual server level, depending
+          on capability.
+        </li>
+        <li>
+          Hardware power sensors: integrated internal circuits and components
+          that track energy consumption for processors (Core Processing and
+          Graphical Processing Units), cores, and Dynamic Random-Access Memory
+          (DRAM).
+        </li>
+      </ul>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          ALLOCATION!!!
+        </strong>
+      </div>
+
+      <p class="govuk-body">
+        Where multiple services share the same underlying hardware, an
+        allocation methodology is required to apportion energy consumption
+        between services. This may use resource utilisation, such as CPU time,
+        memory allocation or other workload activity, over the measurement
+        period. Spend may also be used where more granular metrics are not
+        available.
+      </p>
+
+      <p class="govuk-body">.</p>
+
+      <h2 class="govuk-heading-l">
+        Performance engineering techniques and hardware utilization models:
+      </h2>
+
+      <p class="govuk-body">
+        Hardware utilisation models maps system usage metrics to energy
+        consumption without needing physical power meters to measure it
+        directly.
+      </p>
+
+      <p class="govuk-body">
+        Metrics used to track resource utilisation can include:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Central Processing Unit (CPU) utilisation or processing time
+        </li>
+        <li>Graphics Processing Unit (GPU) utilisation</li>
+        <li>Memory utilisation</li>
+        <li>Disk Input/Output (I/O) activity</li>
+        <li>Network activity</li>
+      </ul>
+
+      <p class="govuk-body">
+        While resource utilisation and electrical power are not perfectly
+        proportional, hardware utilisation approaches can help guide decisions
+        on software development, testing and continuous monitoring.
+      </p>
+
+      <p class="govuk-body">
+        There are a number of open-source software profilers and frameworks
+        that can be used to automate hardware monitoring. Two examples are:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          CodeCarbon: A tool that periodically samples power consumption (in
+          Watts or kWh) from underlying hardware components
+        </li>
+        <li>
+          PowerAPI: A software-defined power meter toolkit designed to measure
+          application-level power consumption
+        </li>
+        <li>
+          Green Algorithms: an open-source framework and online tool designed
+          to estimate and reduce the environmental and carbon footprint of
+          computational science, high-performance computing (HPC), and
+          artificial intelligence workloads
+        </li>
+      </ul>
+
+      <h3 class="govuk-heading-m">
+        API-based measurement
+      </h3>
+
+      <p class="govuk-body">
+        APIs can be used to retrieve power or energy consumption readings from
+        hardware components and infrastructure. These readings can be collected
+        over time to calculate energy consumption attributable to the hardware
+        or workload. For example, Climatiq converts operational activity data
+        into CO2e for the power consumption for computing (CPU), storage and
+        memory, based on location and resource utilisation
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Other estimation models
+      </h2>
+
+      <p class="govuk-body">
+        Where direct measurement or detailed hardware utilisation data is not
+        available, energy consumption can be estimated using published energy
+        consumption data, manufacturer specifications, supplier information or
+        other relevant datasets.
+      </p>
+
+      <p class="govuk-body">
+        For example, hardware power ratings and typical utilisation assumptions
+        can be used to estimate the energy consumption of computing resources
+        over a defined period.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Accounting for data centre overheards
+      </h2>
+
+      <p class="govuk-body">
+        For services hosted in data centres, the energy consumed by supporting
+        infrastructure, such as cooling, power distribution and lighting, can
+        be accounted for using the data centre's Power Usage Effectiveness
+        (PUE) rating.
+      </p>
+
+      <div class="govuk-inset-text">
+        Total Energy = PUE x IT Hardware energy
+      </div>
+
+      <p class="govuk-body">
+        The pros and cons of directly measuring energy use:
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">
+                Pros
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Cons
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <p class="govuk-body">
+                  High Precision:
+                </p>
+
+                <p class="govuk-body govuk-!-margin-bottom-0">
+                  Actionable Granularity: Lets engineers see the exact impact
+                  of algorithmic changes, inefficient loops, or database
+                  queries on power draw.
+                </p>
+              </td>
+
+              <td class="govuk-table__cell">
+                <p class="govuk-body">
+                  Attribution Complexity: In shared cloud or multi-tenant
+                  environments, isolating which software process triggered a
+                  specific fraction of a server's power state is notoriously
+                  difficult.
+                </p>
+
+                <p class="govuk-body govuk-!-margin-bottom-0">
+                  • Implementation Overhead: Requires specialized
+                  instrumentation, runtime hooks, and cross-referencing live
+                  grid-intensity APIs
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

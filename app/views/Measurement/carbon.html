@@ -9,10 +9,7 @@
         <li class="govuk-breadcrumbs__list-item">
           <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
         </li>
-        <li class="govuk-breadcrumbs__list-item">
-          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-sustainability-actions.html">Digital Sustainability Actions</a>
-        </li>
-        <li class="govuk-breadcrumbs__list-item" aria-current="page">8. Hardware</li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Sustainability Measurement</li>
   </ol>
 </nav>
 
@@ -25,23 +22,40 @@
   <ul class="app-subnav__list">
     <li class="app-subnav__item">
       <a class="app-subnav__link app-subnav__link--current" href="/8/hardware.html" aria-current="page">
-        Measuring sustainability
+        Measuring sustainability at the service level
       </a>
     </li>
   </ul>
-    <p class="app-subnav__header">Sustainability actions</p>
+    <p class="app-subnav__header">General points</p>
   <ul class="app-subnav__list">
     <li class="app-subnav__item">
       <a class="app-subnav__link" href="/8/8a.html">
-        Energy and carbon</a>
+        Orders of impact</a>
     </li>
     <li class="app-subnav__item">
-      <a class="app-subnav__link" href="/8/8b.html">
-        8b. Support sustainable approaches to procurement</a>
+      <a class="app-subnav__link" href="/measurement/what-and-how.html">
+       Carbon estimate approaches</a>
     </li>
-       <li class="app-subnav__item">
-      <a class="app-subnav__link" href="/8/8c.html">
-        8c. Choose the most sustainable options at the end of life</a>
+        <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/Measurement/formula.html">
+        Calculation formula</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/boundary-and-unit.html">
+       Setting boundaries and functional unit</a>
+    </li>
+
+    <p class="app-subnav__header">Estimating carbon for services</p>
+  <ul class="app-subnav__list">
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/cloud-carbon.html">
+       Cloud usage</a>
+    </li>
+           <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/onpremcarbon.html">
+       On-premises</a>
     </li>
   </ul>
 </nav>
@@ -49,17 +63,152 @@
 
  <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">Carbon</h1>
+      <h1 class="govuk-heading-xl">
+        Carbon
+      </h1>
 
+      <p class="govuk-body">
+        Carbon is the most measured environmental impact. Carbon footprint
+        calculation should be done in accordance with the
+        <a
+          class="govuk-link"
+          href="https://ghgprotocol.org/"
+        >
+          GHG Protocol
+        </a>
+        and their accompanying
+        <a
+          class="govuk-link"
+          href="Product-Life-Cycle-Accounting-Reporting-Standard_041613.pdf"
+        >
+          Product Life Cycle Accounting and Reporting Standard
+        </a>
+      </p>
 
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
+      <p class="govuk-body">
+        There are three scopes of carbon emissions:
+      </p>
 
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Scope 1 emissions – direct greenhouse gas emissions from sources that
+          are owned or controlled by the reporting body (for example, emissions
+          from combustion of fuel in a back up generator)
+        </li>
+        <li>
+          Scope 2 emissions – indirect greenhouse gas emissions associated with
+          the generation of purchased energy consumed by the reporting body
+        </li>
+        <li>
+          Scope 3 emissions - all other indirect emissions occurring across the
+          upstream and downstream value chain (for example, the embodied
+          emissions present in hardware through its manufacture and transport,
+          and the emissions generated from e-waste)
+        </li>
+      </ul>
 
-<h2>Hardware and sustainability</h2>
+      <div class="govuk-inset-text">
+        Services have most control over the scope 2 emissions, which are
+        calculated from energy consumption.
+      </div>
 
+      <h2 class="govuk-heading-l">
+        Calculating Scope 1 carbon
+      </h2>
 
-<h3>Economic opportunties for the UK from develoing a circular economy</h3>
+      <p class="govuk-body">
+        Scope 1 emissions for digital services are primarily from the back up
+        generators used to power data centres.
+      </p>
 
+      <p class="govuk-body">
+        To calculate the energy from sources owned or controlled by the
+        reporting body, multiply the total quantity of fuel by the relevant
+        emissions factor in the
+        <a
+          class="govuk-link"
+          href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2026"
+        >
+          GHG conversion factors
+        </a>.
+      </p>
+
+      <p class="govuk-body">
+        Public cloud providers and off premise hosting suppliers will supply
+        this data as part of their cloud dashboards.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Calculating carbon from energy consumption
+      </h2>
+
+      <p class="govuk-body">
+        Energy can be converted to carbon using emissions factors, such as the
+        <a
+          class="govuk-link"
+          href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2026"
+        >
+          GHG conversion factors
+        </a>
+        or the
+        <a
+          class="govuk-link"
+          href="https://app.electricitymaps.com/docs"
+        >
+          electricity maps API
+        </a>.
+      </p>
+
+      <p class="govuk-body">
+        The conversion from electricity to carbon is calculated by a
+        market-based or location-based methodology. For government services the
+        location-based methodology must be used.
+      </p>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Location-based
+          </dt>
+          <dd class="govuk-summary-list__value">
+            measures the carbon intensity of the local electrical grid where
+            the energy is physically consumed.
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Market-based
+          </dt>
+          <dd class="govuk-summary-list__value">
+            reflect the electricity purchased through contractual instruments
+            such as renewable energy purchased elsewhere on the grid, or carbon
+            offsets.
+          </dd>
+        </div>
+      </dl>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          For government services the location-based methodology must be used.
+        </strong>
+      </div>
+
+      <p class="govuk-body">
+        Note that the locality of the location-based methodology can vary. The
+        GHG conversion factors provide a UK wide measure of carbon intensity per
+        annum, whereas providers such as the electricity maps API provides a
+        carbon intensity figure per local grid and by time.
+      </p>
+
+      <p class="govuk-body">
+        Service teams that have control over where their service is hosted, or
+        at what time workloads are scheduled should use carbon intensity data
+        for the local grid with time use data, so that their emissions
+        calculations reflect the service teams decisions.
+      </p>
 
 
     </div>

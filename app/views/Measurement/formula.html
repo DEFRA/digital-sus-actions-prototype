@@ -1,0 +1,294 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Sustainability Measurement</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/8/hardware.html" aria-current="page">
+        Measuring sustainability at the service level
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/8/8a.html">
+        Orders of impact</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/what-and-how.html">
+       Carbon estimate approaches</a>
+    </li>
+        <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/8/8a.html">
+        Calculation formula</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/what-and-how.html">
+       Setting boundaries and functional unit</a>
+    </li>
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/what-and-how.html">
+       Cloud usage</a>
+    </li>
+           <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/what-and-how.html">
+       On-premises</a>
+    </li>
+
+
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        The equation for carbon measurement
+      </h1>
+
+      <p class="govuk-body">
+        The
+        <a class="govuk-link" href="https://grnsft.org/sci">
+          Software Carbon Intensity (SCI) specification
+        </a>
+        by the the
+        <a
+          class="govuk-link"
+          href="https://greensoftware.foundation/standards/sci/"
+        >
+          Green Software Foundation
+        </a>
+        provides a formula to calculate the carbon produced by digital software
+        and systems.
+      </p>
+
+      <p class="govuk-body">
+        Rather than measuring total carbon, the SCI is an intensity metric that
+        measures emissions per unit of service delivered, such as per completed
+        transaction or volume of data captured per user. The closer the SCI
+        score is to zero, the lower the carbon emissions per functional unit of
+        the software system.
+      </p>
+
+      <p class="govuk-body">
+        The SCI makes it easier to assess changes in carbon efficiency as
+        service use grows or falls, helping teams make better, evidence-based
+        decisions on what they can influence – whether technology stack,
+        design, development and operation in order to minimise carbon
+        emissions.
+      </p>
+
+      <p class="govuk-body">
+        The SCI is an ISO standard and following the formula for whole-service
+        carbon measurement should be considered best practice.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        The Formula
+      </h2>
+
+      <p class="govuk-body">
+        The SCI methodology calculates emissions using the equation:
+      </p>
+
+      <div class="govuk-inset-text">
+        SCI = (E × I) + M per R
+      </div>
+
+      <p class="govuk-body">
+        Where:
+      </p>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            (E × I)
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Describes the operational carbon produced by the service:
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            E (Energy)
+          </dt>
+          <dd class="govuk-summary-list__value">
+            The amount of energy (in kilowatt-hours, or kWh) the software
+            consumes to run on servers, storage, and networks.
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            I (Carbon Intensity)
+          </dt>
+          <dd class="govuk-summary-list__value">
+            The carbon intensity of the electricity grid where the software
+            runs (measured in grams of CO₂ per kWh).
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            M (Embodied Emissions)
+          </dt>
+          <dd class="govuk-summary-list__value">
+            A proportional share of the carbon emissions tied to manufacturing
+            and disposing of the physical hardware the software uses, split by
+            time and resource allocation.
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            R (Functional Unit)
+          </dt>
+          <dd class="govuk-summary-list__value">
+            The specific unit of output that the software scales with (such as
+            per active user or per Gigabyte processed)
+          </dd>
+        </div>
+      </dl>
+
+      <p class="govuk-body">
+        Before we can calculate the SCI, we need to determine:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>The functional unit (R)</li>
+        <li>The system boundary</li>
+      </ul>
+
+      <h2 class="govuk-heading-l">
+        Extensions to the SCI standard
+      </h2>
+
+      <p class="govuk-body">
+        There are a number of domain-specific standards that build on the
+        original SCI for software that are in progress by the Green Software
+        Foundation.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        READ MORE ABOUT
+      </h3>
+
+      <p class="govuk-body">
+        <strong>SCI for AI: </strong>The
+        <a
+          class="govuk-link"
+          href="https://greensoftware.foundation/standards/sci-ai/"
+        >
+          SCI for AI
+        </a>
+        extends the SCI ISO speciation to address the unique aspects of
+        Artificial Intelligence systems across its entire lifecycle. This
+        includes:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>AI training</li>
+        <li>Data preparation</li>
+        <li>Inference</li>
+      </ul>
+
+      <p class="govuk-body">
+        <strong>SCI for Web: </strong>The SCI for Web adapts the ISO-accredited
+        SCI framework specifically to web applications, helping to define
+        appropriate boundaries across servers, networks, third-party services,
+        and end-user devices
+      </p>
+
+      <p class="govuk-body">
+        The SCI for web
+        <a
+          class="govuk-link"
+          href="https://greensoftware.foundation/standards/sci-web/"
+        >
+          https://greensoftware.foundation/standards/sci-web/
+        </a>
+      </p>
+
+      <p class="govuk-body">
+        <a
+          class="govuk-link"
+          href="https://www.thegreenwebfoundation.org/news/an-update-on-sci-for-web-a-new-standard-for-measuring-software-carbon-intensity-for-the-web/"
+        >
+          https://www.thegreenwebfoundation.org/news/an-update-on-sci-for-web-a-new-standard-for-measuring-software-carbon-intensity-for-the-web/
+        </a>
+        An update on SCI for Web – a new standard for measuring software carbon
+        intensity for the Web
+      </p>
+
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

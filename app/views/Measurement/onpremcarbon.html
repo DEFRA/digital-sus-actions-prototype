@@ -1,0 +1,338 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Sustainability Measurement</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/8/hardware.html" aria-current="page">
+        Measuring sustainability at the service level
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/8/8a.html">
+        Orders of impact</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/what-and-how.html">
+       Carbon estimate approaches</a>
+    </li>
+        <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/Measurement/formula.html">
+        Calculation formula</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/boundary-and-unit.html">
+       Setting boundaries and functional unit</a>
+    </li>
+
+    <p class="app-subnav__header">Estimating carbon for services</p>
+  <ul class="app-subnav__list">
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/cloud-carbon.html">
+       Cloud usage</a>
+    </li>
+           <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/onpremcarbon.html">
+       On-premises</a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">
+        carbon calculation for services using on-premise or off-premise data centres
+      </h1>
+
+      <p class="govuk-body">
+        On-premises data centres are those where an organization owns, houses,
+        and maintains physical hardware and software inside their own facility.
+        Off-premises means that an organisation owns or rents hardware, but the
+        equipment is housed in a third-party facility and may be managed by a
+        supplier.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Calculating the footprint of the overall service
+      </h2>
+
+      <p class="govuk-body">
+        For services hosted in on and off premise data centres the boundary
+        remains the same as for public cloud; the carbon produced by
+        infrastructure hosting the service.
+      </p>
+
+      <p class="govuk-body">
+        However, the data capture may be more complex than for cloud. For this
+        calculation, the following data is needed:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          An inventory of hardware used to host the service (refer to the energy
+          measurement section
+        </li>
+        <li>
+          Energy consumption of the hardware (refer to the energy measurement
+          section), calculated in kWh.
+        </li>
+        <li>
+          Location-based carbon intensity factors (see Calculating carbon from
+          energy consumption)
+        </li>
+        <li>
+          Embodied carbon of the hardware (see Calculating embodied carbon)
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        These can then be combined to calculate a carbon footprint over a given
+        time frame.
+      </p>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          Note that where hardware is shared with other services, emissions
+          will need to be allocated accordingly following the Allocation
+          guidance.
+        </strong>
+      </div>
+
+      <p class="govuk-body">
+        If on- and off-premises data centres are maintained and supported by
+        suppliers, they may be able to provide this data.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Calculating more granular service emissions
+      </h2>
+
+      <p class="govuk-body">
+        As with cloud, developers may need more granular data on specific
+        components of a service, available over shorter timescales, so they can
+        see how their development and operational decisions affect emissions.
+      </p>
+
+      <p class="govuk-body">
+        For on and off-premises data centres, work with the infrastructure team
+        or hosting supplier to map the service to the physical servers, virtual
+        machines, storage and network equipment it uses. See the energy section
+        for more details on tools available that can support these calculations.
+      </p>
+
+      <p class="govuk-body">
+        Core metrics to collect, where available, include:
+      </p>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Compute
+          </dt>
+          <dd class="govuk-summary-list__value">
+            physical server model or virtual machine configuration, processor
+            type, allocated CPU or vCPU capacity, GPU capacity where relevant,
+            allocated memory and running hours.
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Data storage
+          </dt>
+          <dd class="govuk-summary-list__value">
+            capacity consumed (GB/TB) by storage type or tier, input/output
+            (I/O) operations, and snapshot or backup volumes.
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Data transfer
+          </dt>
+          <dd class="govuk-summary-list__value">
+            volumes transferred between service components and into or out of
+            the data centre, where these fall within the measurement boundary.
+          </dd>
+        </div>
+      </dl>
+
+      <p class="govuk-body">
+        Additional data that may be available through infrastructure monitoring
+        tools includes:
+      </p>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Compute and memory
+          </dt>
+          <dd class="govuk-summary-list__value">
+            average and peak CPU, GPU and memory utilisation over the assessment
+            period.
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Power and energy
+          </dt>
+          <dd class="govuk-summary-list__value">
+            server or equipment power readings and energy consumption from
+            hardware telemetry or metered power distribution units.
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Resource efficiency
+          </dt>
+          <dd class="govuk-summary-list__value">
+            idle, underutilised or over-provisioned servers and virtual
+            machines.
+          </dd>
+        </div>
+      </dl>
+
+      <p class="govuk-body">
+        These metrics may be used as proxies without conversion to carbon
+        estimates. (link to section on proxies) For example, improving
+        utilisation can be an indicator of improved sustainability.
+      </p>
+
+      <p class="govuk-body">
+        These usage metrics can also be converted into estimated energy use
+        (kWh) using modelling approaches and open-source tools. The energy
+        estimates are then and then combined with electricity grid carbon
+        intensity using the
+        <a
+          class="govuk-link"
+          href="https://www.google.com/search?q=ghg+conversion+factors+2026&amp;oq=ghg+&amp;gs_lcrp=EgRlZGdlKgkIABBFGDsY-QcyCQgAEEUYOxj5BzIOCAEQRRg7GEMYgAQYigUyBggCEEUYOzIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyDAgFEAAYQxiABBiKBTIKCAYQABiABBi0BzIGCAcQRRg8MgYICBBFGDwyCAgJEOkHGPxV0gEIMTYxNmowajSoAgGwAgE&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8"
+        >
+          GHG Conversion Factors
+        </a>,
+        or
+        <a
+          class="govuk-link"
+          href="https://www.electricitymaps.com/data"
+        >
+          Electricity Maps data
+        </a>
+        to produce carbon emissions (CO2e).
+      </p>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          Note that where hardware supports several services, allocate a
+          suitable share of its energy to the component, following the
+          Allocation guidance above.
+        </strong>
+      </div>
+
+      <p class="govuk-body">
+        To assess a development change, compare measurements before and after
+        using the same boundary, allocation method and comparable workloads.
+        Record the measurement period, data sources and exclusions, and
+        distinguish measured values from estimates. Tracking emissions per
+        transaction or other appropriate unit of work alongside total emissions
+        can help distinguish efficiency improvements from changes in demand.
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Allocation
+      </h2>
+
+      <p class="govuk-body">
+        When resources such as servers or data centres support several services,
+        allocation may be needed to apportion their emissions between those
+        services. Use directly measured consumption, such as electricity use,
+        where available. If directly measuring is not possible, estimate each
+        service’s share using a relevant activity measure (see proxies section
+        below). Choose an allocation method that best reflects resource use, and
+        document the assumptions and apply the approach consistently. See
+        <a
+          class="govuk-link"
+          href="https://help.sumday.io/hc/en-us/articles/12096180662031-Allocating-Emissions-to-multiple-outputs-or-when-providing-primary-data-to-customers-to-calculate-Scope-3-Guidance-under-the-GHG-Protocol"
+        >
+          GHG Protocol allocation guidance
+        </a>.
+      </p>
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}

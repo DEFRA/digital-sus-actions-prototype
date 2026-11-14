@@ -1,0 +1,669 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+    <nav data-module="ga4-link-tracker" aria-label="Breadcrumb" class="gem-c-breadcrumbs govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" data-ga4-link-tracker-module-started="true">
+  <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;breadcrumb&quot;,&quot;index_link&quot;:&quot;1&quot;,&quot;index_total&quot;:&quot;2&quot;}" class="govuk-breadcrumbs__link" href="/digital-defra">Digital Defra</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Sustainability Measurement</li>
+  </ol>
+</nav>
+
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+<nav class="app-sub-navigation" aria-label="Pages in this section">
+  <p class="app-subnav__header">In this section</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/8/hardware.html" aria-current="page">
+        Measuring sustainability at the service level
+      </a>
+    </li>
+  </ul>
+    <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/8/8a.html">
+        Orders of impact</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/what-and-how.html">
+       Carbon estimate approaches</a>
+    </li>
+        <p class="app-subnav__header">General points</p>
+  <ul class="app-subnav__list">
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/Measurement/formula.html">
+        Calculation formula</a>
+    </li>
+    <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/boundary-and-unit.html">
+       Setting boundaries and functional unit</a>
+    </li>
+
+    <p class="app-subnav__header">Estimating carbon for services</p>
+  <ul class="app-subnav__list">
+        <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/cloud-carbon.html">
+       Cloud usage</a>
+    </li>
+           <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/measurement/onpremcarbon.html">
+       On-premises</a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+ <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">
+        Data availability, using proxies and direct measurement
+      </h1>
+
+      <h2 class="govuk-heading-l">
+        Measurement gap
+      </h2>
+
+      <p class="govuk-body">
+        A ‘measurement gap’ exists in digital sustainability, whereby there is
+        a disconnect between the fast-moving technology development (such as AI
+        and cloud computing) and the tools available to track its real
+        environmental and societal impacts.
+      </p>
+
+      <p class="govuk-body">
+        Lack of access to quality data, application of consistent boundaries,
+        methodologies and tooling mean that parts of digital systems are
+        invisible, and comparison between services and products can be
+        challenging.
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">
+                Issue
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Description
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Lack of access to quality data
+              </th>
+              <td class="govuk-table__cell">
+                Data is often not made available from suppliers across supply
+                chains, meaning parts of systems are often invisible. This
+                leads to fragmented metrics and heavy reliance on rough
+                estimates
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                No standard boundaries set for digital systems
+              </th>
+              <td class="govuk-table__cell">
+                Making comparison between calculations difficult.
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Tooling
+              </th>
+              <td class="govuk-table__cell">
+                Tooling to enable teams to make calculations is often not
+                available
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Lack of industry-wide standard methodologies
+              </th>
+              <td class="govuk-table__cell">
+                <p class="govuk-body">
+                  There is no one universally adopted framework for measurement
+                  of IT systems and services, making comparisons between
+                  systems and services challenges. This is especially the case
+                  for AI. Existing frameworks include:
+                </p>
+
+                <ul
+                  class="govuk-list govuk-list--bullet govuk-!-margin-bottom-0"
+                >
+                  <li>The Software Carbon Intensity (ISO Standard)</li>
+                  <li>OECD AI Footprint initiative</li>
+                  <li>
+                    <a
+                      class="govuk-link"
+                      href="https://www.google.com/search?q=ghg+product+standard&amp;oq=ghg+product&amp;gs_lcrp=EgRlZGdlKgoIABAAGIAEGPkHMgoIABAAGIAEGPkHMgYIARBFGDkyCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRDpBxj8VdIBCDI1OThqMGo3qAIAsAIA&amp;sourceid=chrome&amp;source=chrome.ob&amp;ie=UTF-8"
+                    >
+                      GHG product standard
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="govuk-link"
+                      href="https://ghgprotocol.org/sites/default/files/2023-03/GHGP-ICTSG%20-%20ALL%20Chapters.pdf"
+                    >
+                      GHG protocol ICT guidance
+                    </a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Top-Down vs. Bottom-Up Divergence
+              </th>
+              <td class="govuk-table__cell">
+                Macro or "top-down" estimates (extrapolating aggregate sectoral
+                energy use) frequently clash with "bottom-up" calculations
+                (summing individual device, component, and network footprints),
+                leading to wide margins of error
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Mandatory disclosure
+              </th>
+              <td class="govuk-table__cell">
+                Methods, boundaries and assumptions are often not disclosed,
+                making verification challenging
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Link to further reading on this topic - do this as a dropdown
+          </span>
+        </summary>
+
+        <div class="govuk-details__text">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              <a
+                class="govuk-link"
+                href="https://greensoftware.foundation/standards/sci-web/"
+              >
+                https://greensoftware.foundation/standards/sci-web/
+              </a>
+              this page for example discusses some of the measurement gap
+              challenges.
+            </li>
+
+            <li>
+              <a
+                class="govuk-link"
+                href="https://greensoftware.foundation/articles/tokens-and-greens-measuring-the-impacts-of-agentic-ai/"
+              >
+                https://greensoftware.foundation/articles/tokens-and-greens-measuring-the-impacts-of-agentic-ai/
+              </a>
+              GSF calling for ‘share responsibility’ and work still required?
+            </li>
+
+            <li>
+              <a
+                class="govuk-link"
+                href="https://oecd.ai/en/footprint"
+              >
+                https://oecd.ai/en/footprint
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="govuk-link"
+                href="https://www.cmu.edu/work-that-matters/energy-innovation/measuring-ais-energy-and-environmental-footprint"
+              >
+                https://www.cmu.edu/work-that-matters/energy-innovation/measuring-ais-energy-and-environmental-footprint
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="govuk-link"
+                href="https://research-information.bris.ac.uk/ws/portalfiles/portal/477196732/HAL_Augmenting_Methodologies_for_Net_Environmental_Impact_Assessments_for_AI.pdf"
+              >
+                https://research-information.bris.ac.uk/ws/portalfiles/portal/477196732/HAL_Augmenting_Methodologies_for_Net_Environmental_Impact_Assessments_for_AI.pdf
+              </a>
+              Beyond Counting Carbon: AI Environmental Assessments Struggle to
+              Inform Net Impact Decisions, Joseph Cook, Romain Jacob, Jo
+              Lindsay Walton, Adrien Berthelot, Asim Hussain, Daniel Schien
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <p class="govuk-body">
+        This means digital services may need to start with energy and carbon
+        emission measurement, and work towards other impacts as more data
+        becomes available and tooling and methodologies are agreed.
+      </p>
+
+      <p class="govuk-body">
+        <strong>
+          AND start with proxiy measures where direct meashrement is not
+          pssible?
+        </strong>
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Direct measurement vs proxies
+      </h2>
+
+      <p class="govuk-body">
+        A proxy is an indirect measure that stands in for an environmental or
+        social impact that cannot be measured directly. Changes to the proxy
+        measure can demonstrate whether sustainability actions are having the
+        intended effect, and support teams to prioritise their work. Project
+        and service teams will often need to use proxies to estimate
+        environmental impact, as direct measurement is not feasible.
+      </p>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          Note that proxy data can be misleading, as it misses important
+          differences.
+        </strong>
+      </div>
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Dropdown: volume of stored data as a proxy.
+          </span>
+        </summary>
+
+        <div class="govuk-details__text">
+          The volume of stored data, measured in gigabytes, can be used as a
+          proxy for environmental impact. A reduction in stored data would
+          indicate progress based on an assumption that less storage requires
+          fewer resources and therefore has a lower environmental footprint. In
+          this example, the proxy misses key distinctions such as the tier of
+          storage the data is in. A larger volume of data held in ‘cold storage’
+          may have a lower carbon footprint than a smaller volume held in ‘hot
+          storage’.
+        </div>
+      </details>
+
+      <p class="govuk-body">
+        Proxies are often combined with a conversion factor to generate an
+        estimate for energy, carbon or water usage. The formula for this is
+        below. Activity data is the measurable unit of work, and the emission
+        factor is a calculated consistent of the energy, CO2e or water is
+        consumed per activity of work.
+      </p>
+
+      <div class="govuk-inset-text">
+        Environmental Impact = Activity Data (proxy) x Emission Factor
+      </div>
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Dropdown: Carbon dioxide-equivalence as a proxy.
+          </span>
+        </summary>
+
+        <div class="govuk-details__text">
+          <p class="govuk-body">
+            The global warming impact of a range of greenhouse gases (such as
+            methane and nitrous oxide) are often converted into a figure of the
+            warming impact that an equivalent amount of carbon dioxide would
+            have. When we talk about ‘carbon’ emissions, this is carbon
+            dioxide-equivalence, which is already a proxy measure.
+          </p>
+
+          <p class="govuk-body">
+            <a
+              class="govuk-link"
+              href="https://www.theccc.org.uk/2012/05/16/getting-the-measure-of-ghg-emissions/"
+            >
+              https://www.theccc.org.uk/2012/05/16/getting-the-measure-of-ghg-emissions/
+            </a>
+          </p>
+        </div>
+      </details>
+
+      <p class="govuk-body">
+        For digital systems, proxies are normally split into:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Spend based proxies</li>
+        <li>Activity based proxies</li>
+      </ul>
+
+      <p class="govuk-body">
+        The proxy type selected will depend on what tooling and data is
+        available to measure environmental and social impacts, and the level of
+        accuracy required.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Spend based proxies
+      </h3>
+
+      <p class="govuk-body">
+        Spend-based proxies use monetary expenditure to measure environmental
+        impact. This can either be done:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Using an emission factor (e.g., kg carbon dioxide per unit of
+          currency) to estimate carbon emissions, or water or other
+          environmental impacts.
+        </li>
+        <li>
+          Using cost as a directional indicator for resource consumption. For
+          example, right sizing an over-provisioned resource or turning off
+          in-active environments will save both cost and carbon.
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        There are instances where spend can be misleading. For example, newer
+        and more efficient processers may cost more than older ones, while
+        delivering lower energy consumption. Price fluctuation of cloud
+        provider services can also occur independently to emissions making it
+        an unreliable marker over time.
+      </p>
+
+      <p class="govuk-body">
+        For cloud-based digital services, spend data is readily available
+        through cloud billing APIs and standard invoices.
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">
+                Pros
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Cons
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <p class="govuk-body">
+                  Fast, low-effort, and highly scalable.
+                </p>
+                <p class="govuk-body">
+                  Easily pulled directly from internal procurement and
+                  accounting records.
+                </p>
+                <p class="govuk-body govuk-!-margin-bottom-0">
+                  Ideal for initial carbon hot-spot identification and baseline
+                  inventories.
+                </p>
+              </td>
+
+              <td class="govuk-table__cell">
+                <p class="govuk-body">
+                  Low granularity and lower accuracy.
+                </p>
+                <p class="govuk-body">
+                  Cannot distinguish between high-carbon and low-carbon
+                  suppliers or green products with the same cost
+                </p>
+                <p class="govuk-body govuk-!-margin-bottom-0">
+                  Distorted by inflation, currency fluctuations, and
+                  profit-margin variations rather than actual physical changes
+                </p>
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td colspan="2" class="govuk-table__cell">
+                (Wording in this table needs to be re-written as come from AI
+                summary)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <details class="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            READ MORE on this topic dropdown
+          </span>
+        </summary>
+
+        <div class="govuk-details__text">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>
+              <a
+                class="govuk-link"
+                href="https://www.climatepartner.com/en/knowledge/blog/spend-based-vs-activity-based"
+              >
+                https://www.climatepartner.com/en/knowledge/blog/spend-based-vs-activity-based
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="govuk-link"
+                href="https://www.climatiq.io/blog/spend-based-vs-activity-based"
+              >
+                https://www.climatiq.io/blog/spend-based-vs-activity-based
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <h3 class="govuk-heading-m">
+        Activity based proxies
+      </h3>
+
+      <p class="govuk-body">
+        Activity proxies are quantifiable metric of digital usage or activity.
+        This could be:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>computing hours (vCPU hours)</li>
+        <li>data storage</li>
+        <li>data transferred</li>
+      </ul>
+
+      <p class="govuk-body">
+        [See DSA sections for software, architecture and data]
+      </p>
+
+      <p class="govuk-body">
+        Activity data can also include offline aspects of the service:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>distance travelled</li>
+        <li>fuel consumption</li>
+        <li>paper consumption</li>
+      </ul>
+
+      <p class="govuk-body">
+        [See DSAs section on journey and process design]
+      </p>
+
+      <p class="govuk-body">
+        Activity proxies can either be used as a stand in for environmental
+        metrics directly or combined with conversion factors to estimate energy
+        or carbon. Note that activity-based proxies may not capture important
+        variables that influence the actual environmental impact,
+      </p>
+
+      <p class="govuk-body">
+        For example, a reduction in the total volume of data transferred
+        (measured in GB) over time may be used as an indicator of reduced
+        environmental impact. Alternatively, data transfer volumes can be
+        converted into estimated energy consumption and associated emissions
+        using relevant conversion factors. What this wouldn’t capture is the
+        such as the energy efficiency of the underlying network infrastructure,
+        the efficiency of data transfer, or variations in local grid carbon
+        intensity.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Selecting between direct measurement, spend based and activity based
+      </h3>
+
+      <p class="govuk-body">
+        Selecting between proxies and direct measurement means a trade-off
+        between ease of calculation versus empirical accuracy.
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">
+                Category
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Data examples
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Likely Accuracy
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Data Collection Effort
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Energy measurement
+              </th>
+              <td class="govuk-table__cell">
+                Metering of energy use
+              </td>
+              <td class="govuk-table__cell">
+                <strong>High</strong>
+              </td>
+              <td class="govuk-table__cell">
+                High
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Activity-based Proxies
+              </th>
+              <td class="govuk-table__cell">
+                Data transfer, vCPU hours
+              </td>
+              <td class="govuk-table__cell">
+                <strong>Medium</strong>
+              </td>
+              <td class="govuk-table__cell">
+                Medium
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Spend-based Proxies
+              </th>
+              <td class="govuk-table__cell">
+                Financial spend (£/$/€)
+              </td>
+              <td class="govuk-table__cell">
+                <strong>Low</strong>
+              </td>
+              <td class="govuk-table__cell">
+                Low
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="govuk-body">
+        The purpose of any metrics used should be to guide practitioners
+        working on particular aspects of digital services or other projects to
+        assess the impacts of actions in each of the sections of the DSAs.
+      </p>
+
+
+    </div>
+
+      <div class="govuk-grid-column-full">
+       
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--invisible">
+    
+    <div class="govuk-grid-row">
+
+  </main>
+
+</div>
+
+<div class="govuk-width-container">
+
+      
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "name": "Service manual",
+        "@id": "https://www.gov.uk/service-manual"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "name": "Measuring success",
+        "@id": "https://www.gov.uk/service-manual/measuring-success"
+      }
+    }
+  ]
+}
+</script>
+
+  </div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+{% endblock %}
