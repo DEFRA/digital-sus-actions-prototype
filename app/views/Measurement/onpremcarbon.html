@@ -287,6 +287,52 @@
       </p>
 
 
+      <h2 class="govuk-heading-l">
+        Adding in data centre overhead to calculate the total energy use of AI models
+      </h2>
+
+      <p class="govuk-body">
+        If either the token method or direct metering are adopted to estimate
+        energy usage of models, then the ‘data centre overhead’ needs to be
+        factored in.
+      </p>
+
+      <p class="govuk-body">
+        This refers to all the energy consumed by the facility that doesn't
+        directly power the computing hardware.
+      </p>
+
+      <p class="govuk-body">
+        Power Usage Effectiveness (PUE) is the factor that accounts for data
+        centre overhead, which covers three main buckets:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Cooling Infrastructure: Chillers, cooling towers, computer room air
+          conditioners, liquid cooling pumps, and facility fans.
+        </li>
+        <li>
+          Power Distribution: Uninterruptible Power Supplies (UPS), generators,
+          transformers, and power distribution units (PDUs).
+        </li>
+        <li>
+          Other Systems: Facility lighting, security systems, network
+          switchgear, and building management systems.
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        To calculate the total AI energy use, multiply your core power estimates
+        by <strong>Power Usage Effectiveness (PUE)</strong>.
+      </p>
+
+      <div class="govuk-inset-text">
+        Total AI Energy Use= Core IT Energy times PUE
+      </div>
+
+
+
     </div>
 
       <div class="govuk-grid-column-full">

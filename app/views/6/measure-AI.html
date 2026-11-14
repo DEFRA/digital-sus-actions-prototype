@@ -66,605 +66,623 @@
   </div>
 
  <div class="govuk-grid-column-two-thirds">
-<main class="govuk-main-wrapper" id="main-content">
-  <div class="govuk-grid-row">
+
 
       <h1 class="govuk-heading-xl">
-        Measure the environmental impact of artificial intelligence
+        Estimating the energy use of AI models
       </h1>
 
-      <p class="govuk-body-l">
-        Measuring the environmental impact of artificial intelligence (AI) can
-        help you find impact hotspots and identify ways to reduce them.
-      </p>
-
       <p class="govuk-body">
-        You can include these measurements in a wider assessment of the
-        environmental impact of a digital service or project.
-      </p>
-
-      <h2 class="govuk-heading-l">Decide what to measure</h2>
-
-      <p class="govuk-body">
-        Start by measuring the energy used by the AI system. You can use this
-        figure to estimate greenhouse gas emissions and water consumption.
-      </p>
-
-      <p class="govuk-body">
-        A complete assessment should consider these stages of the AI lifecycle:
+        Measuring the environmental impacts of Artificial Intelligence can:
       </p>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li>preparing and storing data</li>
-        <li>training and fine-tuning the model</li>
-        <li>running the model to produce results, known as inference</li>
+        <li>
+          Provide insights to practitioners working with AI, such as training
+          models or integrating it into workflows, on the impact hotspots
+        </li>
+        <li>
+          Be integrated into broader whole-service measurement, alongside other
+          aspects of digital services or projects
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        Calculations for the energy use of AI can then be used to estimate
+        carbon and water usage.
+      </p>
+
+      <p class="govuk-body">
+        Covering the whole lifecycle of AI technologies would mean covering the
+        following three stages
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Data preparation</li>
+        <li>Training</li>
+        <li>Inference</li>
       </ul>
 
       <div class="govuk-inset-text">
-        Many measurement methods focus on inference or on training and
-        inference together. State which lifecycle stages your assessment
-        includes.
+        However, most measurements of energy use focus either just on
+        inference, or include training alongside inference.
       </div>
 
-      <h2 class="govuk-heading-l">Choose a measurement method</h2>
-
       <p class="govuk-body">
-        The method you use will depend on how you access and run the model.
+        WHAT ABOUT THESE??
       </p>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li>
-          Use hardware measurements or software instrumentation for
-          self-hosted models.
-        </li>
-        <li>
-          Use token records or supplier reports for models accessed through
-          public cloud services.
-        </li>
-        <li>
-          Ask the supplier for environmental data when AI is built into
-          other software.
-        </li>
+        <li>Per token (for Large Language Models)</li>
+        <li>Per image (for image generation)</li>
+        <li>Per workflow execution (for agentic AI)</li>
       </ul>
 
-      <h2 class="govuk-heading-l">Measure self-hosted AI models</h2>
+      <h2 class="govuk-heading-l">
+        Measuring AI model energy use
+      </h2>
 
       <p class="govuk-body">
-        A self-hosted model runs on hardware that your organisation owns,
-        rents or uses exclusively. This can include:
+        Different methodologies are appropriate for the measurement of the
+        energy use of AI technologies, depending on where models are running.
+        This can be
       </p>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li>desktop computers, laptops with graphics processing units (GPUs) and edge devices</li>
-        <li>servers in on-premises or externally managed data centres</li>
-        <li>virtual machines in a private cloud</li>
-        <li>dedicated, single-tenant cloud infrastructure</li>
+        <li>AI models accessed through public cloud</li>
+        <li>Local, self-hosted AI models</li>
+        <li>AI that is integrated into other software</li>
       </ul>
 
-      <p class="govuk-body">
-        Use a bottom-up method to estimate the energy used by a self-hosted
-        model. You can either measure the hardware directly or estimate
-        activity using a proxy such as token use.
-      </p>
-
-      <h3 class="govuk-heading-m">Measure hardware energy use directly</h3>
+      <h2 class="govuk-heading-l">
+        AI models accessed through public cloud
+      </h2>
 
       <p class="govuk-body">
-        Direct measurement records the power used by hardware while the model
-        is being trained or producing results.
+        AI that is consumed through APIs in the public cloud is generally paid
+        for through input and output tokens.
       </p>
 
       <p class="govuk-body">
-        You can collect this information from:
-      </p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>processor, GPU and AI accelerator telemetry</li>
-        <li>server or rack-level power distribution unit meters</li>
-        <li>physical power meters</li>
-        <li>software that records hardware use during a model run</li>
-      </ul>
-
-      <h3 class="govuk-heading-m">Use software instrumentation</h3>
-
-      <p class="govuk-body">
-        Software tools can record CPU, GPU and memory use during training or
-        inference. Some tools also estimate energy use and greenhouse gas
-        emissions.
+        Approaches can include:
       </p>
 
       <div class="govuk-table__container">
         <table class="govuk-table">
-          <caption class="govuk-table__caption govuk-table__caption--m">
-            Example measurement tools
-          </caption>
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Tool</th>
-              <th scope="col" class="govuk-table__header">What it measures or estimates</th>
+              <th scope="col" class="govuk-table__header">
+                Approach
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Description
+              </th>
             </tr>
           </thead>
+
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">EcolagM</th>
-              <td class="govuk-table__cell">
-                The environmental impact of generative AI during inference.
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">EcoLogits</th>
-              <td class="govuk-table__cell">
-                The energy and environmental impact of generative AI models
-                accessed through application programming interfaces (APIs).
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">CodeCarbon</th>
-              <td class="govuk-table__cell">
-                Power used by CPUs, GPUs and memory.
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Carbontracker</th>
-              <td class="govuk-table__cell">
-                Power used by hardware components during model training.
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">MIT EnergAIzer</th>
-              <td class="govuk-table__cell">
-                The expected electricity demand of an AI workload before it runs.
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">
-                Experiment Impact Tracker
+                Direct Model APIs
               </th>
               <td class="govuk-table__cell">
-                Hardware use, energy use and emissions during machine learning
-                training.
+                Call a provider’s proprietary API model (e.g., OpenAI,
+                Anthropic, Google AI Studio) and pay for the input and output
+                tokens consumed
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                AI Model as a Service (AIaaS / MaaS)
+              </th>
+              <td class="govuk-table__cell">
+                The delivery of raw or pretrained AI/ML models via cloud
+                infrastructure and standardized API endpoints, which can be
+                paid for by subscription or tokens
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Hyperscaler Managed AI Platforms
+              </th>
+              <td class="govuk-table__cell">
+                Comprehensive enterprise suites integrated into major cloud
+                ecosystems (e.g., Microsoft Azure AI Services, Amazon Bedrock,
+                Google Cloud Vertex AI, Oracle Cloud OCI Generative AI)
               </td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          Tools may use different system boundaries, assumptions and carbon
-          intensity data. Record the tool, version, configuration and date used.
-        </strong>
-      </div>
+      <p class="govuk-body">
+        Estimating the energy use of AI models through the public cloud can be
+        calculated through
+      </p>
 
-      <h3 class="govuk-heading-m">Use tokens as an activity-based estimate</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Using tokens to estimate energy consumption for the inference phase
+        </li>
+        <li>
+          Top-down methods utilising cloud provider billing for training and
+          inference
+        </li>
+      </ul>
+
+      <h3 class="govuk-heading-m">
+        Using tokens to estimate energy use
+      </h3>
 
       <p class="govuk-body">
-        You can use token records to estimate the energy used during inference
-        when direct measurements are not available.
+        Energy usage for generative AI models in the inference phase is
+        sometimes reported ‘per query’. However, queries can range greatly in
+        length and complexity, while tokens usages serves to count how much
+        work an AI model is actually doing.
       </p>
 
       <p class="govuk-body">
-        A token is a unit of text processed or generated by a language model:
+        Tokens are divided into:
       </p>
 
       <dl class="govuk-summary-list">
         <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">Input tokens</dt>
+          <dt class="govuk-summary-list__key">
+            Input Tokens
+          </dt>
           <dd class="govuk-summary-list__value">
-            Content sent to the model, including prompts, system instructions,
-            conversation history, documents, code and other context.
+            Everything you feed into the model before it generates an answer.
+            This can include your prompt, system instructions, chat history,
+            attached documents, code snippets, and background data.
           </dd>
         </div>
+
         <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">Output tokens</dt>
+          <dt class="govuk-summary-list__key">
+            Output tokens
+          </dt>
           <dd class="govuk-summary-list__value">
-            Content generated by the model, such as answers, summaries, tables
-            and code.
+            The response or content the model generates for you. This includes
+            the final answer, summary, table, code output, as well as hidden
+            "reasoning" (thinking) tokens.
           </dd>
         </div>
       </dl>
 
       <p class="govuk-body">
-        Record input and output tokens separately. Generating output will
-        usually use more energy than processing the same number of input tokens.
+        Energy consumption scales directly with the number of tokens processed,
+        and generating an output token takes significantly more energy than
+        processing an input token.
       </p>
 
       <p class="govuk-body">
-        Multiply the number of tokens by an energy-per-token factor for the
-        model and hardware:
-      </p>
-
-      <p class="govuk-body">
-        <strong>
-          Estimated energy use = token count × energy-per-token factor
-        </strong>
-      </p>
-
-      <p class="govuk-body">
-        The factor may also be affected by model size, hardware, batching,
-        caching, response length and the number of generation steps.
-      </p>
-
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          Do not apply a generic token factor without checking the model,
-          hardware, workload and system boundary it represents.
-        </strong>
-      </div>
-
-      <h3 class="govuk-heading-m">Use published estimates carefully</h3>
-
-      <p class="govuk-body">
-        Published estimates can help when model-specific measurements are not
-        available. They should not replace measured data.
-      </p>
-
-      <p class="govuk-body">
-        The source document includes these indicative estimates:
+        Token usage data should be available through provider dashboards and
+        billing reports, and there are a number of tools we can use to estimate
+        the energy use of input and output tokens.
       </p>
 
       <div class="govuk-table__container">
         <table class="govuk-table">
-          <caption class="govuk-table__caption govuk-table__caption--m">
-            Indicative energy estimates per million tokens
-          </caption>
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Activity</th>
-              <th scope="col" class="govuk-table__header govuk-table__header--numeric">
-                Indicative energy use
+              <th scope="col" class="govuk-table__header">
+                Tool
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Description
               </th>
             </tr>
           </thead>
+
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Input tokens</th>
-              <td class="govuk-table__cell govuk-table__cell--numeric">390 Wh</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Output tokens</th>
-              <td class="govuk-table__cell govuk-table__cell--numeric">1,950 Wh</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Cache creation</th>
-              <td class="govuk-table__cell govuk-table__cell--numeric">490 Wh</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Cache read</th>
-              <td class="govuk-table__cell govuk-table__cell--numeric">39 Wh</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          These figures need an authoritative source and a defined methodology
-          before they are used in published reporting.
-        </strong>
-      </div>
-
-      <h3 class="govuk-heading-m">Add data centre overhead</h3>
-
-      <p class="govuk-body">
-        Hardware measurements may not include the energy used by the data
-        centre's supporting infrastructure. This can include:
-      </p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>cooling systems, pumps and fans</li>
-        <li>power supplies, transformers and distribution equipment</li>
-        <li>lighting, security and building management systems</li>
-      </ul>
-
-      <p class="govuk-body">
-        Use the data centre's Power Usage Effectiveness (PUE) value to estimate
-        this overhead:
-      </p>
-
-      <p class="govuk-body">
-        <strong>Total energy use = core IT energy × PUE</strong>
-      </p>
-
-      <p class="govuk-body">
-        Check whether the original measurement already includes facility
-        energy before applying PUE. This will help you avoid double counting.
-      </p>
-
-      <h2 class="govuk-heading-l">Measure AI accessed through public cloud services</h2>
-
-      <p class="govuk-body">
-        Public cloud AI services may charge for input and output tokens,
-        subscriptions or dedicated computing capacity.
-      </p>
-
-      <div class="govuk-table__container">
-        <table class="govuk-table">
-          <caption class="govuk-table__caption govuk-table__caption--m">
-            Common ways to access cloud AI
-          </caption>
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Approach</th>
-              <th scope="col" class="govuk-table__header">Description</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">Direct model API</th>
-              <td class="govuk-table__cell">
-                Access a provider's model through an API and pay for the input
-                and output tokens used.
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">
-                Model as a service
+                CLEER Dashboard
               </th>
               <td class="govuk-table__cell">
-                Access a pretrained model through cloud infrastructure and
-                standard API endpoints.
+                A public tool created by the Sustainable AI Group that models
+                and estimates the per-token energy consumption for both
+                proprietary and open source models
               </td>
             </tr>
+
             <tr class="govuk-table__row">
               <th scope="row" class="govuk-table__header">
-                Managed AI platform
+                ML.Energy Dashboard
               </th>
               <td class="govuk-table__cell">
-                Use models and supporting services within an enterprise cloud
-                platform.
+                A benchmarking and tracking tool that measures, analyses, and
+                exposes the energy and resource consumption of modern machine
+                learning and generative AI models, including electricity
+                consumption per generated token or chain-of-thought step
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-
-      <p class="govuk-body">
-        You can estimate energy use with token records, provider reports or a
-        top-down allocation method.
-      </p>
-
-      <h3 class="govuk-heading-m">Use a top-down allocation method</h3>
-
-      <p class="govuk-body">
-        A top-down method starts with the energy use or emissions of a cloud
-        environment or data centre. It then allocates a proportion to the AI
-        workload.
-      </p>
-
-      <p class="govuk-body">
-        For example, you could allocate the total according to the proportion
-        of GPU or tensor processing unit hours used by the AI workload.
-      </p>
-
-      <div class="govuk-inset-text">
-        Record the allocation method and explain why it represents the
-        workload. Do not present an allocated figure as a direct measurement.
-      </div>
-
-      <h2 class="govuk-heading-l">Measure AI built into other software</h2>
-
-      <p class="govuk-body">
-        You may not have access to token records or hardware data when AI is
-        part of a software-as-a-service product. Ask the supplier for evidence.
-      </p>
-
-      <h3 class="govuk-heading-m">Ask for an energy efficiency benchmark</h3>
-
-      <p class="govuk-body">
-        Ask the supplier for an AI Energy Score or an equivalent benchmark for
-        the models used by the service.
-      </p>
-
-      <h3 class="govuk-heading-m">Ask for measured energy data</h3>
-
-      <p class="govuk-body">
-        Ask the supplier to report the energy used by training and inference.
-        The report should define its units, hardware, locations, dates and
-        system boundaries.
-      </p>
-
-      <h3 class="govuk-heading-m">Ask for a lifecycle assessment</h3>
-
-      <p class="govuk-body">
-        Ask for an attributional lifecycle assessment that follows ISO 14040
-        and ISO 14044.
-      </p>
-
-      <p class="govuk-body">The assessment should cover:</p>
-
-      <ol class="govuk-list govuk-list--number">
-        <li>
-          acquiring raw materials
-        </li>
-        <li>
-          manufacturing and assembling devices and supporting equipment
-        </li>
-        <li>
-          preparing and storing training data
-        </li>
-        <li>
-          research, training, fine-tuning and retraining
-        </li>
-        <li>
-          inference, networking, idle tasks, storage and cooling
-        </li>
-        <li>
-          reuse, disassembly, recycling and disposal
-        </li>
-      </ol>
-
-      <p class="govuk-body">
-        The assessment should report at least:
-      </p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>energy consumption in watt-hours or kilowatt-hours</li>
-        <li>greenhouse gas emissions in grams or kilograms of carbon dioxide equivalent</li>
-        <li>water consumption in litres or cubic metres</li>
-        <li>abiotic resource depletion in kilograms of antimony equivalent</li>
-      </ul>
 
       <h3 class="govuk-heading-m">
-        If the supplier does not have a lifecycle assessment
+        Published estimates of per-token energy use
       </h3>
 
       <p class="govuk-body">
-        Ask for measured data or verified estimates covering:
-      </p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>the acquisition, processing and storage of training data</li>
-        <li>research, training, fine-tuning and retraining for the current model</li>
-        <li>inference on a defined set of hardware</li>
-        <li>the manufacture, transport and end-of-life treatment of the hardware</li>
-      </ul>
-
-      <p class="govuk-body">
-        Ask the supplier to report inference as a median value per token. If
-        the model is not token-based, ask for a value per inference or another
-        clearly defined functional unit.
-      </p>
-
-      <h2 class="govuk-heading-l">Compare models before deployment</h2>
-
-      <p class="govuk-body">
-        Compare models before choosing one. Use the smallest model that meets
-        the service's accuracy, safety and performance requirements.
-      </p>
-
-      <div class="govuk-table__container">
-        <table class="govuk-table">
-          <caption class="govuk-table__caption govuk-table__caption--m">
-            Example model comparison tools
-          </caption>
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">Tool</th>
-              <th scope="col" class="govuk-table__header">Purpose</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">AI Energy Score</th>
-              <td class="govuk-table__cell">
-                Rates the energy efficiency of models during inference.
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">ML.Energy Leaderboard</th>
-              <td class="govuk-table__cell">
-                Compares the energy use and performance of open-weight language
-                models.
-              </td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">whatmodel.sh</th>
-              <td class="govuk-table__cell">
-                Compares model performance, hardware requirements, resources
-                and price.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h2 class="govuk-heading-l">
-        Convert energy use into environmental impacts
-      </h2>
-
-      <h3 class="govuk-heading-m">Calculate greenhouse gas emissions</h3>
-
-      <p class="govuk-body">
-        Multiply the energy used by the appropriate electricity carbon
-        intensity:
-      </p>
-
-      <p class="govuk-body">
-        <strong>
-          Emissions = energy use × electricity carbon intensity
-        </strong>
-      </p>
-
-      <p class="govuk-body">
-        Use a carbon intensity value for the location and reporting period in
-        which the energy was consumed.
-      </p>
-
-      <p class="govuk-body">
-        The
-        <a class="govuk-link" href="https://greensoftware.foundation/standards/sci-ai/">
-          Software Carbon Intensity for AI specification
-        </a>
-        provides methods for assessing emissions from AI training and
-        inference.
-      </p>
-
-      <div class="govuk-inset-text">
-        The Software Carbon Intensity for AI specification is evolving. Record
-        the version used and explain any assumptions.
-      </div>
-
-      <h3 class="govuk-heading-m">Calculate water consumption</h3>
-
-      <p class="govuk-body">
-        Water use can include water consumed directly by data centre cooling
-        and water used indirectly to generate electricity.
-      </p>
-
-      <p class="govuk-body">
-        Use the data centre's Water Usage Effectiveness (WUE) value to estimate
-        water used for cooling:
-      </p>
-
-      <p class="govuk-body">
-        <strong>
-          Cooling water consumption = IT energy use × WUE
-        </strong>
-      </p>
-
-      <p class="govuk-body">
-        Report direct and indirect water consumption separately. State the
-        location, period, factor and system boundary used.
+        Published research from the IEA and Epoch AI, combined with GPU
+        inference cost analysis, puts a large frontier model somewhere around
+        3 to 4 watt-hours per thousand tokens.
       </p>
 
       <div class="govuk-warning-text">
         <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
         <strong class="govuk-warning-text__text">
           <span class="govuk-visually-hidden">Warning</span>
-          Online calculators provide estimates. Do not use them as a substitute
-          for measured data or verified supplier information.
+          NEED TO CHECK WHERE THESE COME FROM!!! Source??
         </strong>
       </div>
 
-      <h2 class="govuk-heading-l">Record and report your method</h2>
-
-      <p class="govuk-body">Record:</p>
+      <p class="govuk-body">
+        <strong>General Benchmarks (per million tokens):</strong>
+      </p>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li>the model and version</li>
-        <li>the hardware and data centre region</li>
-        <li>the lifecycle stages included</li>
-        <li>the measurement period</li>
-        <li>input and output token totals, where applicable</li>
-        <li>the energy, PUE, carbon intensity and WUE factors used</li>
-        <li>assumptions, exclusions and sources of uncertainty</li>
+        <li>Input tokens: ~390 Wh</li>
+        <li>Output tokens: ~1,950 Wh</li>
+        <li>Cache creation: ~490 Wh | Cache reads: ~39 Wh</li>
+      </ul>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          Note: These figures need an authoritative source and a defined
+          methodology before they are used in published reporting.
+        </strong>
+      </div>
+
+      <h3 class="govuk-heading-m">
+        Top-down estimates of AI energy use using billing data
+      </h3>
+
+      <p class="govuk-body">
+        Cloud provider metrics and reporting can then be utilised to estimate
+        the consumption of an AI model where the share of AI workloads versus
+        other cloud computing can be determined.
+      </p>
+
+      <p class="govuk-body">
+        <strong>
+          SEE measurement guidance on architecture link for guidance on this
+          approach
+        </strong>
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Self-hosted AI models
+      </h2>
+
+      <p class="govuk-body">
+        Self-hosting an AI model means running it on hardware that the
+        organisation owns or rents, or as dedicated instances on exclusive
+        single-tenant infrastructure. This could be:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          local machines such as personal computers, high-end laptops with
+          GPUs, or other edge devices
+        </li>
+        <li>a server rack in on- and off-premises data centres</li>
+        <li>virtual machines on private cloud instances</li>
       </ul>
 
       <p class="govuk-body">
-        Report enough information for another practitioner to repeat the
-        calculation and understand its limitations.
+        The AI models that are self-hosted will generally be open-weight.
       </p>
 
-    </div>
-  </div>
-</main>
+      <p class="govuk-body">
+        Measurement of the energy use of self-hosted models generally requires
+        a bottom-up approach. The two main approaches to bottom-up model-level
+        estimation are:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Direct measurement of energy use via telemetry</li>
+        <li>Hardware profiling</li>
+        <li>Token usage to estimate energy consumption</li>
+      </ul>
+
+      <p class="govuk-body">
+        Direct measurement of the energy use of AI models can occur through
+        tracking real-time power draw on hardware and use of software frameworks
+        to track and calculate energy consumed during tasks like model training
+        or local inference.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Direct measurement of energy use via telemetry (for training and
+        inference phases)
+      </h3>
+
+      <p class="govuk-body">
+        Modern processors, GPUs, and AI accelerators feature hardware
+        performance counters that track operational events, which can be mapped
+        to energy consumption. At a higher scale, physical hardware probes or
+        Power Distribution Unit (PDU) meters measure power at the rack or server
+        level.
+      </p>
+
+      <p class="govuk-body">
+        <strong>
+          See page for on- and -off premises measurement for more detail on
+          these approaches
+        </strong>
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Use of software instrumentation
+      </h3>
+
+      <p class="govuk-body">
+        There are a number of software frameworks can be used to track hardware
+        usage logs during training or inference runs to log energy consumption.
+        Some examples of software tools that can be used for AI are:
+      </p>
+
+      <div class="govuk-table__container">
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">
+                Software tool
+              </th>
+              <th scope="col" class="govuk-table__header">
+                Description
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                EcolagM
+              </th>
+              <td class="govuk-table__cell">
+                Estimate and track the environmental footprint of Generative Al
+                models at inference
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                EcoLogits
+              </th>
+              <td class="govuk-table__cell">
+                An open-source Python library that tracks and calculates the
+                environmental and energy impacts of generative AI models in
+                real time when accessed through APIs
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                CodeCarbon
+              </th>
+              <td class="govuk-table__cell">
+                Can monitor power consumption across the CPU, GPU, and RAM.
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Carbontracker
+              </th>
+              <td class="govuk-table__cell">
+                Can be used to track power usage across specific hardware
+                components such as Graphical Processor Units (GPUs), Central
+                Processing Units (CPUs) and RAM.
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                MIT's EnergAIzer
+              </th>
+              <td class="govuk-table__cell">
+                EnergAIzer uses predictive modeling to forecast how much
+                electricity an AI workload will draw. It analyzes the specific
+                parameters of an AI task (such as training or inference jobs
+                running on GPUs) and estimates power demands beforehand.
+              </td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">
+                Experiment Impact Tracker
+              </th>
+              <td class="govuk-table__cell">
+                The
+                <a
+                  class="govuk-link"
+                  href="https://oecd.ai/en/catalogue/tools/experiment-impact-tracker"
+                >
+                  Experiment Impact Tracker
+                </a>
+                is a Python library designed to measure real-time energy use,
+                hardware resource usage, and carbon emissions during machine
+                learning training
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          NOTE: Tools may use different system boundaries, assumptions and
+          carbon intensity data. Record the tool, version, configuration and
+          date used.
+        </strong>
+      </div>
+
+      <h2 class="govuk-heading-l">
+        AI that is integrated into other software
+      </h2>
+
+      <p class="govuk-body">
+        AI capabilities can be built directly into user-facing software
+        applications like CRM, customer support, or productivity suites.
+      </p>
+
+      <p class="govuk-body">
+        For AI that is integrated into broader software solutions and hosted in
+        cloud services or software-as-a-service (SaaS), estimating the energy
+        use of AI models requires that reporting be made available by suppliers.
+        This could include:
+      </p>
+
+      <h3 class="govuk-heading-m">
+        AI Energy Score (or other benchmark)
+      </h3>
+
+      <p class="govuk-body">
+        The supplier provides the
+        <a
+          class="govuk-link"
+          href="https://huggingface.github.io/AIEnergyScore/"
+        >
+          AI Energy Score
+        </a>
+        (or an equivalent industry-standard energy efficiency benchmark) for
+        the proposed AI model(s).
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Energy use
+      </h3>
+
+      <p class="govuk-body">
+        The supplier reports on the energy use of AI models.
+      </p>
+
+      <h3 class="govuk-heading-m">
+        Lifecycle analysis (LCA)
+      </h3>
+
+      <p class="govuk-body">
+        The supplier provides an attributional LCA for the end-to-end lifecycle
+        of the proposed AI model(s) verified in accordance with ISO 14040 and
+        14044.
+      </p>
+
+      <p class="govuk-body">
+        The functional unit for this LCA should include the proposed AI model(s)
+        and the associated data, hardware, networking and infrastructure assets
+        over any development, training and deployment phases.
+      </p>
+
+      <p class="govuk-body">
+        The LCA should include in its scope:
+      </p>
+
+      <h3 class="govuk-heading-m">
+        A - Raw material acquisition
+      </h3>
+
+      <h3 class="govuk-heading-m">
+        B - Production Devices
+      </h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>production and assembly</li>
+        <li>manufacturer support activities</li>
+        <li>production of support equipment</li>
+        <li>ICT-specific site construction</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">
+        C - Use
+      </h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>training data acquisition, processing and storage</li>
+        <li>
+          model training, including R&amp;D compute, retraining and finetuning
+        </li>
+        <li>
+          model inference service, including active compute, networking, idle
+          tasks, storage and cooling
+        </li>
+        <li>
+          network transfer of requests to inference and the end user
+        </li>
+        <li>use of support equipment</li>
+        <li>operator support activities</li>
+        <li>service provider support activities</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">
+        D - End of life
+      </h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>preparation of ICT goods for reuse</li>
+        <li>storage / disassembly / dismantling / crushing</li>
+      </ul>
+
+      <p class="govuk-body">
+        The LCA should, at minimum, provide metrics on:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>energy consumption (Wh)</li>
+        <li>greenhouse gas emissions (gCO2-e)</li>
+        <li>water consumption (L or m3)</li>
+        <li>abiotic resource depletion (kgSb-e)</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">
+        In the absence of lifecycle analysis
+      </h3>
+
+      <p class="govuk-body">
+        In the absence of a lifecycle analysis, the supplier provides real
+        metrics, or verified estimates, for the sustainability of the following
+        phases of the AI lifecycle for the proposed AI model(s):
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          the acquisition, processing and storage of training data
+        </li>
+        <li>
+          the training phase, including R&amp;D compute, retraining and
+          finetuning required for the current model version
+        </li>
+        <li>
+          the inference service on a defined set of hardware, measured as a
+          median per token (or per inference if the model is not tokenised)
+        </li>
+        <li>
+          the embodied impacts from sourcing, manufacturing, transportation
+          and end-of-life of hardware used for the above
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        Metrics offered include, but are not limited to:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>energy consumed (Wh)</li>
+        <li>greenhouse gas emissions (gCO2-e)</li>
+        <li>water consumed (L or m3)</li>
+        <li>
+          abiotic resource depletion for minerals and metals (kgSb-e)
+        </li>
+      </ul>
 
 
     </div>

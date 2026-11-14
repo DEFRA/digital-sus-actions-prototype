@@ -200,117 +200,12 @@
       </ul>
 
       <p class="govuk-body">
-        In these cases, follow the guidance on the ‘on-prem’ Measurement page.
+        In these cases, follow the guidance on the estimating energy use Measurement page. LINK LINK LINK
       </p>
+
 
       <h2 class="govuk-heading-l">
-        2. Direct measurement of software power consumption
-      </h2>
-
-      <p class="govuk-body">
-        When software runs on hardware such as server or laptops, this means
-        there is access underlying electrical and processor interfaces to
-        capture power consumption. Controlled experiments can be run to directly
-        measure the power-draw of software in real time as it runs.
-      </p>
-
-      <p class="govuk-body">
-        Approaches can involve:
-      </p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          Hardware power meters: Devices placed at the wall socket or via
-          current clamps measure total physical power drawn by hardware such as
-          servers and laptops
-        </li>
-        <li>
-          <strong>Power Distribution Units (PDU):</strong> In a data centre,
-          Intelligent rack power distribution units distribute power to
-          multiple servers, and can be used to track energy used by each.
-        </li>
-        <li>
-          <strong>Hardware power sensors:</strong> Integrated internal circuits
-          and components that track energy consumption for processors (Core
-          Processing and Graphical Processing Units), cores, and Dynamic
-          Random-Access Memory (DRAM).
-        </li>
-      </ul>
-
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          Direct measurement methods require that a machine’s total energy usage
-          is apportioned between the workloads running on it at a given time.
-        </strong>
-      </div>
-
-      <h2 class="govuk-heading-l">
-        3. Hardware utilisation models
-      </h2>
-
-      <p class="govuk-body">
-        Hardware utilisation models maps system usage metrics to energy
-        consumption without needing physical power meters to measure it
-        directly.
-      </p>
-
-      <p class="govuk-body">
-        Metrics to track resource usage can include:
-      </p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>Core Processing Unit (CPU) utilisation or time</li>
-        <li>Graphical Processing Unit (GPU) utilisation</li>
-        <li>Memory use</li>
-        <li>Disk Input/Output (I/O)</li>
-        <li>Network activity</li>
-      </ul>
-
-      <div class="govuk-inset-text">
-        <strong>
-          While resource utilisation and electrical power are not perfectly
-          proportional, hardware utilisation approaches can help guide
-          decisions on software development, testing and continuous monitoring.
-        </strong>
-      </div>
-
-      <p class="govuk-body">
-        <strong>
-          There are a number of open-source software profilers and frameworks
-          that can be used to automate hardware monitoring. Two examples are:
-        </strong>
-      </p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          CodeCarbon: <strong>A tool that periodically samples power consumption
-          (in Watts or kWh) from underlying hardware components</strong>
-        </li>
-        <li>
-          <strong>PowerAPI</strong>: A software-defined power meter toolkit
-          designed to measure application-level power consumption
-        </li>
-      </ul>
-
-      <p class="govuk-body">
-        To convert hardware utilisation into energy use,
-        <strong>power draw over time must be estimated.</strong>
-      </p>
-
-      <p class="govuk-body">
-        A simple CPU model might approximate power as:
-      </p>
-
-      <div class="govuk-inset-text">
-        <strong>
-          Power ≈ idle power + utilisation × (maximum power − idle power)
-        </strong>
-      </div>
-
-      <h2 class="govuk-heading-l">
-        Software-as-a-Service and other managed software
+        3. Software-as-a-Service and other managed software
       </h2>
 
       <p class="govuk-body">
