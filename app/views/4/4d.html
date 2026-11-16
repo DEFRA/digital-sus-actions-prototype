@@ -33,7 +33,7 @@
   <ul class="app-subnav__list">
     <li class="app-subnav__item">
        <a class="app-subnav__link" href="/4/4a.html">
-        4a. Take a lean approach to data collection
+        4a. Take a lean approach to data collection & management
       </a>
     </li>
     <li class="app-subnav__item">
@@ -48,7 +48,14 @@
     </li>
           <li class="app-subnav__item">
       <a class="app-subnav__link app-subnav__link--current" href="/4/4d.html" aria-current="page">
-        4d. Balance data security and sustainability
+        4d. Balance data backup, security and sustainability
+      </a>
+    </li>
+
+        <p class="app-subnav__header">Measuring progress</p>
+         <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/4/measure-data.html">
+        Measuring the impact of data
       </a>
     </li>
   </ul>
@@ -57,20 +64,14 @@
 
  <div class="govuk-grid-column-two-thirds">
 
-  <h1 class="govuk-heading-xl">4d. Balance data security and sustainability</h1>
+  <h1 class="govuk-heading-xl">4d. Balance data backup, security and sustainability</h1>
 
-  <p>Apply security measures proportionate to data sensitivity and risk, avoiding unnecessary resource use.</p>
-  
-  <details class="govuk-details" data-module="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      Read more
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    <p>https://www.security.gov.uk/policy-and-guidance/secure-by-design/principles/</p>
-</details>
+  <p class="govuk-body-l">Apply security and backup measures proportionate to data sensitivity and risk, avoiding unnecessary resource use.</p>
 
+  <p><b>Lead role families: </b><strong class="govuk-tag govuk-tag--green">Data</strong> <strong class="govuk-tag govuk-tag--green">Security</strong></p>
+
+
+    <div class="govuk-inset-text">Services and other projects in UK Govermment should follow the <a href="https://www.security.gov.uk/policy-and-guidance/secure-by-design/principles/" class="govuk-link">Secure by Design</a> security principles.</div>
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
@@ -85,7 +86,11 @@
 
 <p>Encryption is a security method that takes data from a readable format and translates it into a code (or ciphertext) that can only be read via a 'key'.</p>
 <p>Encryption can be a resource-intense process, and can increase data storage volumes as well as the energy consumed through encrypting and decrypting the data.</p>
-<p>Take a risk-based approach by considering the sensitivity of data when determining whether encryption is really required.</p>
+
+     <div class="govuk-inset-text">
+        Decisions on data encryption are likely to occur at the level of the enterprise, rather than individual services or other digital projects. Where a project is involved in decisions about encryption, then a risk-based approach should be taken, considering the sensitivity of data
+      </div>
+
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -95,13 +100,11 @@
   </summary>
   <div class="govuk-details__text">
     <ul class="govuk-list govuk-list--bullet">
-    
       <li><a href="https://patterns.greensoftware.foundation/requirements/encrypt-what-is-necessary/" class="govuk-link">Encrypt what is necessary</a> Green Software Foundation</li>
       <li><a href="https://www.security.gov.uk/policy-and-guidance/government-cyber-security-policy-handbook/principle-b3-data-security/" class="govuk-link">Principle: B3 Data Security</a> Government Security</li>
       <li><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/encryption/encryption-and-data-protection/" class="govuk-link">Encryption and data protection</a> Information Commissioner's Office</li>
       <li><a href="https://www.gov.uk/government/publications/lrs-help-and-support/data-encryption-and-passphrase-guidance/" class="govuk-link">Data encryption and passphrase guidance</a> Department for Education</li>
       <li><a href="https://www.ncsc.gov.uk/collection/device-security-principles-for-manufacturers/protect-data-at-rest-and-in-transit/" class="govuk-link">Protect data at rest and in transit</a> National Cyber Security Centre</li>
-
 </details>
 
 
@@ -110,46 +113,86 @@
 
 
 
-<h2 class="govuk-heading-m">(ii) Choose appropriate cryptographic algorithms</h2>
+<h2 class="govuk-heading-m">(ii) Optimise backups and redundancies</h2>
 
-<p>Cryptographic algorithms are formulas that encrypt and decrypt data. Their energy consumption varies depending on factors like their complexity, application, and computing environment or platform.</p>
-<p>Where possible, choose cryptographic algorithms that provide the necessary level of security whilst using no more energy than necessary. </p>
+<p>A backup is a point-in-time copy of your digital data stored separately so you can restore it after a loss, deletion, or cyberattack, while redundancy maintains live, duplicate copies or systems in real time to prevent a single point of failure.</p>
 
+<p>Digital backups and redundancy can create additional data processing and transfer and energy consumption.</p>
 
-
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-
-
-
-<h2 class="govuk-heading-m">(iii) Optimise backups and redundancies</h2>
-
-<p>A backup is a point-in-time copy of your digital data stored separately so you can restore it after a loss, deletion, or cyberattack, while redundancy maintains live, duplicate copies or systems in real time to prevent a single point of failure</p>
-<p>Digital backups and redundancy can create additional </p>
-<p>Reduces storage requirements by avoiding unnecessary duplication of backups → lower energy consumption and cost  
-
-* Minimises processing and data transfer associated with creating and managing backups</p>
-<p>ight-sizing of resilience measures based on actual recovery needs</p>
 <p>Consider:</p>
 
-<ul>
+<ul class="govuk-list govuk-list--bullet">
   <li>The necessity of duplicates and storage</li>
-  <li>where necessary, if shortening retention times is possible</li>
+  <li>Where necessary, if shortening retention times is possible</li>
 </ul>
+
+<p>Design backup and redundancy approaches that meet resilience and recovery needs without excessive duplication, storage, or retention.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://learn.microsoft.com/en-us/azure/reliability/concept-redundancy-replication-backup/" class="govuk-link">What are redundancy, replication, and backup?,</a> Microsoft</li>
+      <li><a href="https://www.security.gov.uk/policy-and-guidance/government-cyber-security-policy-handbook/principle-b3-data-security/" class="govuk-link">What is storage optimization and why does it matter?,</a> IBM</li>
+</details>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, optimising backups and redundancies brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+       <li>Cost: Reduced network usage can lead to cost savings</li>
+    </ul>
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+    <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Recovery: Shorter retention periods may limit the ability to recover older data or investigate historical issues</li>
+    </ul>
+      </div>
+</details>
 
 
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
+<h2 class="govuk-heading-m">(iii) Consider timing of security scans and updates</h2>
 
-<h2 class="govuk-heading-m">(iv) Consider timing of security scans and updates</h2>
+<p>Security scans identify vulnerabilities and other risks, while security updates fix known issues to keep digital services secure.</p>
 
-<p>Reduces carbon emissions by shifting compute-heavy tasks to periods of lower grid carbon intensity.</p>
 <p>Schedule intensive security scans and updates during off-peak hours to take advantage of lower-carbon electricity.</p>
 
-<p></p>
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, scheduling security scans and updates during off-peak hours brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+       <li>Cost: This approach can optimise operational costs where off-peak pricing applies</li>
+    </ul>
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+    <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Suitability: Scheduling security scans during off-peak hours is not suitable for critical security updates or real-time threat response</li>
+    </ul>
+      </div>
+</details>
+
+<p>See also: <a href="/5/5c.html" class="govuk-link">5c. Shift cloud demand to match the availability of low carbon electricity</a></p>
+
 
     </div>
 

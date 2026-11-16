@@ -33,7 +33,7 @@
   <ul class="app-subnav__list">
     <li class="app-subnav__item">
        <a class="app-subnav__link" href="/4/4a.html">
-        4a. Take a lean approach to data collection
+        4a. Take a lean approach to data collection & management
       </a>
     </li>
     <li class="app-subnav__item">
@@ -48,7 +48,15 @@
     </li>
           <li class="app-subnav__item">
       <a class="app-subnav__link" href="/4/4d.html">
-        4d. Balance data security and sustainability
+        4d. Balance data backup, security and sustainability
+      </a>
+    </li>
+
+        <p class="app-subnav__header">Measuring progress</p>
+
+         <li class="app-subnav__item">
+      <a class="app-subnav__link" href="/4/measure-data.html">
+        Measuring the impact of data
       </a>
     </li>
   </ul>
@@ -67,7 +75,6 @@
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
-
 <h2 class="govuk-heading-m">(i) Compress data for transit</h2>
 
 <p>Compressing data for transit means reducing the file size or bit-rate of digital information before sending it across a network.</p>
@@ -83,7 +90,6 @@
     <ul class="govuk-list govuk-list--bullet">
       <li><a href="https://patterns.greensoftware.foundation/development/data-handling/compress-transmitted-data/" class="govuk-link">Compress transmitted data,</a> Green Software Foundation</li>
 </details>
-
 
 <details class="govuk-details" data-module="govuk-details">
   <summary class="govuk-details__summary">
@@ -115,7 +121,32 @@
 <h2 class="govuk-heading-m">(ii) Enable consumption of data from primary source</h2>
 
 <p>Consuming data from its primary source means accessing data from where it was first generated.</p>
+
 <p>This approach means we can access the most up-to-date information without the need for any intermediary processing or transformation, in turn reducing energy use from data processing, duplicate data storage and replication, and network transmission.</p>
+
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Co-benefits and trade-offs
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <h3 class="govuk-heading-s">Co-benefits</h3>
+    <p class="govuk-body">Alongside sustainability impact, compressing data for transit brings co-benefits in terms of:</p>
+    <ul class="govuk-list govuk-list--bullet">
+       <li>Efficiency: Ensures access to up-to-date data without maintaining multiple copies</li>
+    </ul>
+
+      <h3 class="govuk-heading-s">Trade-offs</h3>
+    <p class="govuk-body">Potential trade-offs may include:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Performance: Enabling consumption from primary source may conflict with performance optimisation patterns (e.g. caching, CDNs, edge computing), which intentionally duplicate data closer to user</li>
+      <li>Dependencies: Consumption from primary sources may introduce dependency on availability and performance of upstream systems</li>
+    </ul>
+      </div>
+</details>
+
 
 <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
@@ -124,6 +155,18 @@
 
 <p>A network protocol is a set of rules that define how data is exchanged between devices on a network.</p>
 <p>Using efficient protocols like UDP based HTTP3 or QUIC can help reduce retransmissions.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Read more about implementing this point
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="https://www.cloudflare.com/learning/network-layer/what-is-a-protocol/" class="govuk-link">What is a protocol?,</a> Cloudflare</li>
+</details>
+
 
     </div>
 

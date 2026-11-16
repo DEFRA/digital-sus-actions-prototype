@@ -33,7 +33,7 @@
   <ul class="app-subnav__list">
     <li class="app-subnav__item">
        <a class="app-subnav__link" href="/4/4a.html">
-        4a. Take a lean approach to data collection
+        4a. Take a lean approach to data collection & management
       </a>
     </li>
     <li class="app-subnav__item">
@@ -47,16 +47,16 @@
       </a>
     </li>
           <li class="app-subnav__item">
-      <a class="app-subnav__link app-subnav__link--current" href="/4/4d.html" aria-current="page">
-        4d. Balance data security and sustainability
+      <a class="app-subnav__link" href="/4/4d.html">
+        4d. Balance data backup, security and sustainability
       </a>
     </li>
-  </ul>
-      <p class="app-subnav__header">Measure progress for this theme</p>
-  <ul class="app-subnav__list">
-    <li class="app-subnav__item">
-       <a class="app-subnav__link" href="/4/measure-data.html">
-        Measure data energy use
+
+        <p class="app-subnav__header">Measuring progress</p>
+
+         <li class="app-subnav__item">
+      <a class="app-subnav__link app-subnav__link--current" href="/4/measure-data.html" aria-current="page">
+        Measuring the impact of data
       </a>
     </li>
   </ul>
@@ -67,7 +67,7 @@
 
 
       <h1 class="govuk-heading-xl">
-        Measurement for Data
+        Measuring the impact of data
       </h1>
 
       <p class="govuk-body">
@@ -76,13 +76,11 @@
 
       <ul class="govuk-list govuk-list--bullet">
         <li>
-          Provide insights to practitioners working with data insights on the
-          impact hotspots and help to reduce these
+          Provide insight that can guide practitioners working on this aspect
+          of digital services towards identifying how reductions can be made
         </li>
         <li>
-          Be integrated into broader whole-service measurement, alongside other
-          aspects of digital services or projects [Link to whole service
-          measurement page]
+          Feed into estimates of the environmental impacts of a <a href="/Measurement/measurement.html" class="govuk-link">whole service or project</a>
         </li>
       </ul>
 
@@ -226,13 +224,8 @@
       </div>
 
       <h2 class="govuk-heading-l">
-        Measuring the energy use of digital data storage
+        Different tiers of digital data storage
       </h2>
-
-      <p class="govuk-body">
-        Data storage makes up one part of data centre energy consumption. The
-        other part is data transfer
-      </p>
 
       <p class="govuk-body">
         Estimating energy use for stored data means understanding which tiers
@@ -320,80 +313,40 @@
               </td>
             </tr>
 
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">
-                Examples
-              </th>
-              <td class="govuk-table__cell">
-                Active databases and apps, real-time analytics
-              </td>
-              <td class="govuk-table__cell"></td>
-              <td class="govuk-table__cell">
-                Historical compliance records, massive data lakes, disaster
-                recovery
-              </td>
-            </tr>
           </tbody>
         </table>
-      </div>
-
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          There are very significant cost differences between tiers, as well
-          as security considerations. See DSAs for data. A trade-off between
-          resource efficiency, access latency, and reliability when considering
-          these storage tiers.
-        </strong>
       </div>
 
       <details class="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
-            [Read more on storage tiers from major cloud providers]
+            Read more on storage tiers from major cloud providers
           </span>
         </summary>
 
         <div class="govuk-details__text">
           <ul class="govuk-list govuk-list--bullet">
-            <li>
-              <a
-                class="govuk-link"
-                href="https://aws.amazon.com/blogs/architecture/optimizing-your-aws-infrastructure-for-sustainability-part-ii-storage/"
-              >
-                https://aws.amazon.com/blogs/architecture/optimizing-your-aws-infrastructure-for-sustainability-part-ii-storage/
-              </a>
-              AWS storage tiers
-            </li>
-            <li>
-              <a
-                class="govuk-link"
-                href="https://docs.cloud.google.com/storage/docs/storage-classes"
-              >
-                https://docs.cloud.google.com/storage/docs/storage-classes
-              </a>
-              Google Cloud
-            </li>
-            <li>
-              <a
-                class="govuk-link"
-                href="https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview"
-              >
-                https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview
-              </a>
-              Azure
-            </li>
-            <li>
-              <a
-                class="govuk-link"
-                href="https://docs.oracle.com/en/cloud/paas/ociov/oci_storage.html"
-              >
-                https://docs.oracle.com/en/cloud/paas/ociov/oci_storage.html
-              </a>
-              Oracle
-            </li>
-          </ul>
+  <li>
+    <a href="https://aws.amazon.com/blogs/architecture/optimizing-your-aws-infrastructure-for-sustainability-part-ii-storage/">
+      AWS storage tiers
+    </a>
+  </li>
+  <li>
+    <a href="https://docs.cloud.google.com/storage/docs/storage-classes">
+      Google Cloud storage classes
+    </a>
+  </li>
+  <li>
+    <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview">
+      Azure Blob Storage access tiers
+    </a>
+  </li>
+  <li>
+    <a href="https://docs.oracle.com/en/cloud/paas/ociov/oci_storage.html">
+      Oracle Cloud Infrastructure storage
+    </a>
+  </li>
+</ul>
         </div>
       </details>
 
@@ -434,9 +387,7 @@
 
       <p class="govuk-body">
         This section will focus on the energy use and carbon coming from data
-        that is stored and transferred. For Cloud Compute see the ‘Architecture’
-        section of the DSAs.
-      </p>
+        that is stored and transferred. For cloud compute see the  <a href="/5/architecture-measurement.html">Architecture</a> measurement page.</p>
 
       <h3 class="govuk-heading-m">
         Applying industry benchmark factors
@@ -452,8 +403,11 @@
       </p>
 
       <p class="govuk-body">
-        The ‘Impact of Growth of Data Centres on Energy Consumption’ report
-        (2025) uses the following estimates for energy use per annum:
+        The <a
+          class="govuk-link"
+          href="https://assets.publishing.service.gov.uk/media/689d9dc487bf475940723f6c/impact-of-growth-of-data-centres.pdf">
+          Impact of Growth of Data Centres on Energy Consumption Report (2025)</a> supported by the Department for Energy Security and Net Zero
+        used the following estimates for energy use per annum:
       </p>
 
       <div class="govuk-table__container">
@@ -497,26 +451,13 @@
         </table>
       </div>
 
-      <p class="govuk-body">
-        [Read More
-        <a
-          class="govuk-link"
-          href="https://assets.publishing.service.gov.uk/media/689d9dc487bf475940723f6c/impact-of-growth-of-data-centres.pdf"
-        >
-          Impact of Growth of Data Centres on Energy Consumption Report
-        </a>
-        prepared by Europe Economics This project has been supported by the
-        Department for Energy Security &amp; Net Zero, 2025, p.15]
-      </p>
 
       <h3 class="govuk-heading-m">
         Using open-source tooling to apply factors
       </h3>
 
       <p class="govuk-body">
-        Energy use factors can also be applied through open-source tooling.Tools
-        available include:
-      </p>
+        Energy use factors can also be applied through open-source tooling. Tools available include:</p>
 
       <ul class="govuk-list govuk-list--bullet">
         <li>
@@ -540,7 +481,7 @@
       <div class="govuk-inset-text">
         In Defra,Cloudability is now available as a tool that maps items in the
         Cost and Usage Report (CUR) to its corresponding physical hardware to
-        estimate electricity consumption, water consumption and carbon and
+        estimate electricity consumption, water consumption and carbon
         emissions. Users can drill down into services to view metrics associated
         with data storage and transfer.
       </div>
@@ -595,7 +536,7 @@
 
       <p class="govuk-body">
         For services with data stored in hardware that is located in on- and
-        off-premises data centres, a <strong>bottom-up model</strong> can be used
+        off-premises data centres, a bottom-up model can be used
         to estimate the energy being used. The metrics required will depend on
         the measurement approach used.
       </p>
@@ -647,9 +588,9 @@
         </li>
       </ul>
 
-      <h3 class="govuk-heading-m">
+      <h4 class="govuk-heading-m">
         Adding data centre overhead
-      </h3>
+      </h4>
 
       <p class="govuk-body">
         As for Cloud services, when data is stored in on- or off-premises data
@@ -736,22 +677,7 @@
       </p>
 
       <p class="govuk-body">
-        See measurement section for guidance on this.
-      </p>
-
-      <h2 class="govuk-heading-l">
-        More reading
-      </h2>
-
-      <p class="govuk-body">
-        <a
-          class="govuk-link"
-          href="https://www.techcarbonstandard.org/technology-categories/data"
-        >
-          https://www.techcarbonstandard.org/technology-categories/data
-        </a>
-        this is good as well! Has estimates for the embodied emissions of data
-        storage equipment, as well operational for on-premises and on the cloud
+        See the <a href="/Measurement/measurement.html">measurement section</a> for guidance on this.
       </p>
 
 
