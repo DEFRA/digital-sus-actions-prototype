@@ -18,13 +18,13 @@
 
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
-
+    <a class="app-subnav__link" href="/3/software.html"></a>
       <div class="govuk-grid-column-one-third">
 <nav class="app-sub-navigation" aria-label="Pages in this section">
   <p class="app-subnav__header">In this section</p>
   <ul class="app-subnav__list">
     <li class="app-subnav__item">
-      <a class="app-subnav__link app-subnav__link--current" href="/3/software.html" aria-current="page">
+      
         3. Software
       </a>
     </li>
@@ -51,6 +51,15 @@
         3d. Factor sustainability into DevOps practices
       </a>
     </li>
+
+        <p class="app-subnav__header">Measuring progress</p>
+
+           <li class="app-subnav__item">
+        <a class="app-subnav__link app-subnav__link--current" href="/3/software-measurement.html" aria-current="page">
+        Measuring the impact of software
+      </a>
+    </li>
+
   </ul>
 </nav>
   </div>
@@ -59,7 +68,7 @@
 
 
       <h1 class="govuk-heading-xl">
-        Measuring software energy use
+        Measuring the impact of software
       </h1>
 
       <p class="govuk-body">
@@ -72,8 +81,7 @@
           of digital services towards identifying how reductions can be made
         </li>
         <li>
-          Feed into estimates of the environmental impacts of the digital
-          service or <u>project as a whole</u>
+          Feed into estimates of the environmental impacts of a <a href="/Measurement/measurement.html" class="govuk-link">whole service or project</a>
         </li>
       </ul>
 
@@ -84,7 +92,7 @@
       </p>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li>Software is running in the cloud</li>
+        <li>Software runs in the cloud</li>
         <li>Software runs on hardware that we can access</li>
         <li>Software is consumed 'as a service'</li>
       </ul>
@@ -98,39 +106,35 @@
 
         <div class="govuk-details__text">
           <ul class="govuk-list govuk-list--bullet">
-                  <li><a href="https://greensoftware.foundation/articles/how-to-accurately-measure-the-energy-consumption-of-application-software/" class="govuk-link">Understanding sustainable software testing</a></li>
-                  <li><a href="https://greensoftware.foundation/standards/sei/" class="govuk-link">Understanding sustainable software testing</a></li>
-                  <li><a href="https://www.microsoft.com/en-gb/microsoft-cloud/blog/technetuk/2021/10/12/how-to-measure-and-reduce-the-carbon-footprint-of-your-application/" class="govuk-link">Understanding sustainable software testing</a></li>
+                  <li><a href="https://greensoftware.foundation/articles/how-to-accurately-measure-the-energy-consumption-of-application-software/" class="govuk-link">How to accurately measure the energy consumption of application software,</a> Green Software Foundation</li>
+                  <li><a href="https://greensoftware.foundation/standards/sei/" class="govuk-link">Software Energy Intensity (SEI),</a> Green Software Foundation</li>
+                  <li><a href="https://www.microsoft.com/en-gb/microsoft-cloud/blog/technetuk/2021/10/12/how-to-measure-and-reduce-the-carbon-footprint-of-your-application/" class="govuk-link">How to measure and reduce the carbon footprint of your application,</a> Microsoft</li>
           </ul>
         </div>
       </details>
 
-      <h2 class="govuk-heading-l">Estimating the energy of software running in the cloud</h2>
+            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+      <h2 class="govuk-heading-l">Software running in the cloud</h2>
 
       <p class="govuk-body">
-        Software applications built in the cloud do not have access to power
-        meters, sensors or usage metrics that can be directly used to measure
+        When software applications run in the public cloud, we  do not have access to power
+        meters or sensors that can be used to directly measure
         energy use. Instead, assumptions must be used about the shared hardware
         it runs on and the rate at which that hardware is utilised.
       </p>
 
       <p class="govuk-body">
-        For cloud software, estimate energy from the resources provisioned or
-        consumed, for example:
+        The page on approaching measuring the <a href="/Measurement/cloud-carbon.html" class="govuk-link">carbon for cloud computing</a> details approaches that can be taken
+        to converting cloud usage metrics from supplier reporting and dashboards into energy use estimates.
       </p>
 
-      <div class="govuk-inset-text">
-        instance type × runtime × estimated server power × utilisation
-      </div>
+            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
-      <p class="govuk-body">
-        The <u>Measurement page</u> [LINK] details approaches that can be taken
-        to converting Cloud usage metrics from supplier reporting and
-        dashboards into energy-use estimates.
-      </p>
 
       <h2 class="govuk-heading-l">
-        Measuring energy use from hardware activity
+        Software running on visible hardware
       </h2>
 
       <p class="govuk-body">
@@ -138,14 +142,18 @@
         This could be a laptop, or a server in an on-premises data centre.
       </p>
 
+      <p>In these cases, measuring energy use can occur by:</p>
+
       <ul class="govuk-list govuk-list--bullet">
-        <li>direct measurement of hardware power</li>
-        <li>hardware modelling</li>
+        <li>Direct measurement of hardware power draw</li>
+        <li>Modelling of energy use through hardware utisilisation</li>
       </ul>
 
       <p class="govuk-body">
-        In these cases, follow the guidance on the estimating energy use Measurement page. LINK LINK LINK
+       Guidance on taking these approaches can be found on the <a href="/Measurement/energy-use.html" class="govuk-link">energy use</a> page in the measurement section.
       </p>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
 
       <h2 class="govuk-heading-l">Software-as-a-Service and other managed software</h2>
@@ -153,15 +161,9 @@
       <p class="govuk-body">
         Software is often consumed ‘as a service’, through Software-as-a-Service
         or Managed Software-as-a-Service models. In these circumstances the
-        hosting and maintenance of software will be managed by the supplier and
+        hosting and maintenance of software will be managed by a supplier and
         are outside of the direct control of teams working to design and develop government services.
       </p>
-
-      <p class="govuk-body">
-        Services using a software-as-a-service, but not involved in its
-        procurement, may still be able to get sustainability data for the
-        software. This may be available from the supplier, or through internal
-        measurement capability within the organisation.</p>
         
         <p>Where a service team
         has contact with the supplier, request the following metrics:
@@ -176,30 +178,30 @@
         </li>
         <li>Hosting location</li>
         <li>
-          Data centre Power Usage Effectiveness (if not accounted for in energy
+          Data centre Power Usage Effectiveness (PUE, if not accounted for in energy
           consumption)
         </li>
         <li>Hardware embodied carbon</li>
         <li>Hardware expected lifespan</li>
       </ul>
 
-      <p class="govuk-body">
-        These metrics can then be combined with the GHG conversion factors for
-        electricity and an appropriate functional unit to calculate the
-        software carbon intensity. For complex software, it may be appropriate
-        calculate SCI scores at component level as a more granular assessment
-        can highlight opportunities for targeted optimisation. See the section
-        on SCI in the main measurement section for more details.
-      </p>
-
-      <p class="govuk-body">
-        Collecting these metrics is still valuable, as although services cannot
+            <p class="govuk-body">
+        Collecting these metrics is valuable, as although services cannot directly
         influence the hosting infrastructure, teams may be able to influence
         how the software is configured, used and managed. For example, services
         may be able to set data retention policies, storage configuration and
         usage configurations which impact the environmental footprint.
       </p>
 
+      <p class="govuk-body">
+       Metrics provided by suppliers can then be combined with the Greenhouse Gas (GHG) conversion factors for
+        electricity and an appropriate functional unit to calculate the
+        <a href="/Measurement/formula.html" class="govuk-link">Software Carbon Intensity</a>.</p>
+        
+        <p>For complex software, it may be appropriate to
+        calculate SCI scores at component level as a more granular assessment
+        can highlight opportunities for targeted optimisation.</p>
+      
 
 
     </div>
