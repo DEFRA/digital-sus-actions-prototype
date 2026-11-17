@@ -79,11 +79,11 @@
         There are a few methods to measure the energy consumption of a service. These are:</p>
 
       <h2 class="govuk-heading-l">
-        Direct measurement of energy:
+        Direct measurement of energy used by hardware
       </h2>
 
       <p class="govuk-body">
-        When software and services run on hardware, such as servers and laptops,
+        When software and services run on hardware we have visibility of, such as servers and laptops,
         controlled experiments can be run to directly measure the power draw of
         the service. This can be done through:
       </p>
@@ -108,13 +108,6 @@
         </li>
       </ul>
 
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          ALLOCATION!!!
-        </strong>
-      </div>
 
       <p class="govuk-body">
         Where multiple services share the same underlying hardware, an
@@ -125,10 +118,8 @@
         available.
       </p>
 
-      <p class="govuk-body">.</p>
-
       <h2 class="govuk-heading-l">
-        Performance engineering techniques and hardware utilization models:
+        Performance engineering techniques and hardware utilization models
       </h2>
 
       <p class="govuk-body">
@@ -159,7 +150,7 @@
 
       <p class="govuk-body">
         There are a number of open-source software profilers and frameworks
-        that can be used to automate hardware monitoring. Two examples are:
+        that can be used to automate hardware monitoring. Some examples are:
       </p>
 
       <ul class="govuk-list govuk-list--bullet">
@@ -192,9 +183,9 @@
         memory, based on location and resource utilisation
       </p>
 
-      <h2 class="govuk-heading-l">
+      <h3 class="govuk-heading-m">
         Other estimation models
-      </h2>
+      </h3>
 
       <p class="govuk-body">
         Where direct measurement or detailed hardware utilisation data is not
@@ -222,56 +213,6 @@
 
       <div class="govuk-inset-text">
         Total Energy = PUE x IT Hardware energy
-      </div>
-
-      <p class="govuk-body">
-        The pros and cons of directly measuring energy use:
-      </p>
-
-      <div class="govuk-table__container">
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">
-                Pros
-              </th>
-              <th scope="col" class="govuk-table__header">
-                Cons
-              </th>
-            </tr>
-          </thead>
-
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                <p class="govuk-body">
-                  High Precision:
-                </p>
-
-                <p class="govuk-body govuk-!-margin-bottom-0">
-                  Actionable Granularity: Lets engineers see the exact impact
-                  of algorithmic changes, inefficient loops, or database
-                  queries on power draw.
-                </p>
-              </td>
-
-              <td class="govuk-table__cell">
-                <p class="govuk-body">
-                  Attribution Complexity: In shared cloud or multi-tenant
-                  environments, isolating which software process triggered a
-                  specific fraction of a server's power state is notoriously
-                  difficult.
-                </p>
-
-                <p class="govuk-body govuk-!-margin-bottom-0">
-                  • Implementation Overhead: Requires specialized
-                  instrumentation, runtime hooks, and cross-referencing live
-                  grid-intensity APIs
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </div>
 
 

@@ -68,23 +68,23 @@
         Data availability, using proxies and direct measurement
       </h1>
 
-      <h2 class="govuk-heading-l">
-        Measurement gap
+      <h2 class="govuk-heading-m">
+        The 'measurement gap'
       </h2>
 
       <p class="govuk-body">
-        A ‘measurement gap’ exists in digital sustainability, whereby there is
-        a disconnect between the fast-moving technology development (such as AI
-        and cloud computing) and the tools available to track its real
-        environmental and societal impacts.
-      </p>
+        It is often said that a ‘measurement gap’ exists in digital sustainability, whereby there is
+        a disconnect between the fast-moving development of technology (such as AI
+        and cloud computing) and the tools available to track its real environmental and societal impacts.</p>
 
       <p class="govuk-body">
-        Lack of access to quality data, application of consistent boundaries,
-        methodologies and tooling mean that parts of digital systems are
+        Lack of access to quality data, application of consistent boundaries and 
+        methodologies and tooling mean that often parts of digital systems are
         invisible, and comparison between services and products can be
         challenging.
       </p>
+
+      <p>Some of the main issues include:</p>
 
       <div class="govuk-table__container">
         <table class="govuk-table">
@@ -196,7 +196,7 @@
       <details class="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
-            Link to further reading on this topic - do this as a dropdown
+            Link to further reading on this topic
           </span>
         </summary>
 
@@ -257,44 +257,30 @@
       </details>
 
       <p class="govuk-body">
-        This means digital services may need to start with energy and carbon
-        emission measurement, and work towards other impacts as more data
-        becomes available and tooling and methodologies are agreed.
+        Because of the 'measurement gap' and the challenges around measuring sustainability, we often need to look to 'proxy' metrics.
       </p>
 
-      <p class="govuk-body">
-        <strong>
-          AND start with proxiy measures where direct meashrement is not
-          pssible?
-        </strong>
-      </p>
 
-      <h2 class="govuk-heading-l">
-        Direct measurement vs proxies
+      <h2 class="govuk-heading-m">
+        Usy proxies to estimate environemntal impacts
       </h2>
 
       <p class="govuk-body">
         A proxy is an indirect measure that stands in for an environmental or
-        social impact that cannot be measured directly. Changes to the proxy
-        measure can demonstrate whether sustainability actions are having the
-        intended effect, and support teams to prioritise their work. Project
+        social impact that cannot be measured directly. Project
         and service teams will often need to use proxies to estimate
-        environmental impact, as direct measurement is not feasible.
+        environmental impact, as direct measurement is not feasible.</p>
+        
+        <p>If appropriate proxies are chosen, they can act as a 'directional indocator, and changes to the proxy
+        measure can demonstrate whether sustainability actions are having the
+        intended effect, and support teams to prioritise their work. 
       </p>
 
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          Note that proxy data can be misleading, as it misses important
-          differences.
-        </strong>
-      </div>
 
       <details class="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
-            Dropdown: volume of stored data as a proxy.
+            Proxy example: volume of stored data as a proxy.
           </span>
         </summary>
 
@@ -310,22 +296,10 @@
         </div>
       </details>
 
-      <p class="govuk-body">
-        Proxies are often combined with a conversion factor to generate an
-        estimate for energy, carbon or water usage. The formula for this is
-        below. Activity data is the measurable unit of work, and the emission
-        factor is a calculated consistent of the energy, CO2e or water is
-        consumed per activity of work.
-      </p>
-
-      <div class="govuk-inset-text">
-        Environmental Impact = Activity Data (proxy) x Emission Factor
-      </div>
-
-      <details class="govuk-details">
+            <details class="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
-            Dropdown: Carbon dioxide-equivalence as a proxy.
+            Proxy example: Carbon dioxide-equivalence as a proxy for all greenhouse gases
           </span>
         </summary>
 
@@ -350,12 +324,25 @@
       </details>
 
       <p class="govuk-body">
+        Proxies are often combined with a conversion factor to generate an
+        estimate for energy, carbon or water usage. The formula for this is
+        below. The proxy can represent a measurable unit of work, and the emission
+        factor is a calculated consistent of the energy, carbon dioxide-equivalence (CO2e) or water is
+        consumed per activity of work.
+      </p>
+
+      <div class="govuk-inset-text">
+        Environmental Impact = Proxy x Emission Factor
+      </div>
+
+
+      <p class="govuk-body">
         For digital systems, proxies are normally split into:
       </p>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li>Spend based proxies</li>
-        <li>Activity based proxies</li>
+        <li>Spend-based proxies</li>
+        <li>Activity-based proxies</li>
       </ul>
 
       <p class="govuk-body">
@@ -365,7 +352,7 @@
       </p>
 
       <h3 class="govuk-heading-m">
-        Spend based proxies
+        Spend-based proxies
       </h3>
 
       <p class="govuk-body">
@@ -386,12 +373,20 @@
         </li>
       </ul>
 
-      <p class="govuk-body">
-        There are instances where spend can be misleading. For example, newer
+           <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          Note: There are instances where spend can be misleading. For example, newer
         and more efficient processers may cost more than older ones, while
         delivering lower energy consumption. Price fluctuation of cloud
         provider services can also occur independently to emissions making it
         an unreliable marker over time.
+        </strong>
+      </div>
+
+      <p class="govuk-body">
+        
       </p>
 
       <p class="govuk-body">
@@ -399,64 +394,11 @@
         through cloud billing APIs and standard invoices.
       </p>
 
-      <div class="govuk-table__container">
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">
-                Pros
-              </th>
-              <th scope="col" class="govuk-table__header">
-                Cons
-              </th>
-            </tr>
-          </thead>
-
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <td class="govuk-table__cell">
-                <p class="govuk-body">
-                  Fast, low-effort, and highly scalable.
-                </p>
-                <p class="govuk-body">
-                  Easily pulled directly from internal procurement and
-                  accounting records.
-                </p>
-                <p class="govuk-body govuk-!-margin-bottom-0">
-                  Ideal for initial carbon hot-spot identification and baseline
-                  inventories.
-                </p>
-              </td>
-
-              <td class="govuk-table__cell">
-                <p class="govuk-body">
-                  Low granularity and lower accuracy.
-                </p>
-                <p class="govuk-body">
-                  Cannot distinguish between high-carbon and low-carbon
-                  suppliers or green products with the same cost
-                </p>
-                <p class="govuk-body govuk-!-margin-bottom-0">
-                  Distorted by inflation, currency fluctuations, and
-                  profit-margin variations rather than actual physical changes
-                </p>
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <td colspan="2" class="govuk-table__cell">
-                (Wording in this table needs to be re-written as come from AI
-                summary)
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
 
       <details class="govuk-details">
         <summary class="govuk-details__summary">
           <span class="govuk-details__summary-text">
-            READ MORE on this topic dropdown
+            Read more on spend- and activity-based proxies
           </span>
         </summary>
 
@@ -484,7 +426,7 @@
       </details>
 
       <h3 class="govuk-heading-m">
-        Activity based proxies
+        Activity-based proxies
       </h3>
 
       <p class="govuk-body">
@@ -498,9 +440,6 @@
         <li>data transferred</li>
       </ul>
 
-      <p class="govuk-body">
-        [See DSA sections for software, architecture and data]
-      </p>
 
       <p class="govuk-body">
         Activity data can also include offline aspects of the service:
@@ -512,19 +451,19 @@
         <li>paper consumption</li>
       </ul>
 
-      <p class="govuk-body">
-        [See DSAs section on journey and process design]
-      </p>
 
       <p class="govuk-body">
         Activity proxies can either be used as a stand in for environmental
         metrics directly or combined with conversion factors to estimate energy
-        or carbon. Note that activity-based proxies may not capture important
-        variables that influence the actual environmental impact,
-      </p>
+        or carbon. 
 
-      <p class="govuk-body">
-        For example, a reduction in the total volume of data transferred
+
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-visually-hidden">Warning</span>
+          Note: Note that activity-based proxies may not capture important
+        variables that influence the actual environmental impact. For example, a reduction in the total volume of data transferred
         (measured in GB) over time may be used as an indicator of reduced
         environmental impact. Alternatively, data transfer volumes can be
         converted into estimated energy consumption and associated emissions
@@ -532,90 +471,21 @@
         such as the energy efficiency of the underlying network infrastructure,
         the efficiency of data transfer, or variations in local grid carbon
         intensity.
-      </p>
+        </strong>
+      </div>
+
 
       <h3 class="govuk-heading-m">
         Selecting between direct measurement, spend based and activity based
       </h3>
 
       <p class="govuk-body">
-        Selecting between proxies and direct measurement means a trade-off
-        between ease of calculation versus empirical accuracy.
-      </p>
-
-      <div class="govuk-table__container">
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header">
-                Category
-              </th>
-              <th scope="col" class="govuk-table__header">
-                Data examples
-              </th>
-              <th scope="col" class="govuk-table__header">
-                Likely Accuracy
-              </th>
-              <th scope="col" class="govuk-table__header">
-                Data Collection Effort
-              </th>
-            </tr>
-          </thead>
-
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">
-                Energy measurement
-              </th>
-              <td class="govuk-table__cell">
-                Metering of energy use
-              </td>
-              <td class="govuk-table__cell">
-                <strong>High</strong>
-              </td>
-              <td class="govuk-table__cell">
-                High
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">
-                Activity-based Proxies
-              </th>
-              <td class="govuk-table__cell">
-                Data transfer, vCPU hours
-              </td>
-              <td class="govuk-table__cell">
-                <strong>Medium</strong>
-              </td>
-              <td class="govuk-table__cell">
-                Medium
-              </td>
-            </tr>
-
-            <tr class="govuk-table__row">
-              <th scope="row" class="govuk-table__header">
-                Spend-based Proxies
-              </th>
-              <td class="govuk-table__cell">
-                Financial spend (£/$/€)
-              </td>
-              <td class="govuk-table__cell">
-                <strong>Low</strong>
-              </td>
-              <td class="govuk-table__cell">
-                Low
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="govuk-body">
         The purpose of any metrics used should be to guide practitioners
         working on particular aspects of digital services or other projects to
-        assess the impacts of actions in each of the sections of the DSAs.
+        assess the impacts of actions.
       </p>
+
+      <p>Where possible, direct measurement should be preferred, followed by activity-based proxies and then spend-based proxies are last choice.</p>
 
 
     </div>
