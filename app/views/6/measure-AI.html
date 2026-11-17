@@ -77,41 +77,29 @@
         Measuring the environmental impacts of Artificial Intelligence can:
       </p>
 
-      <ul class="govuk-list govuk-list--bullet">
+     <ul class="govuk-list govuk-list--bullet">
         <li>
-          Provide insights to practitioners working with AI, such as training
-          models or integrating it into workflows, on the impact hotspots
+          Provide insight that can guide practitioners working on this aspect
+          of digital services towards identifying how reductions can be made
         </li>
         <li>
-          Be integrated into broader whole-service measurement, alongside other
-          aspects of digital services or projects
+          Feed into estimates of the environmental impacts of a <a href="/Measurement/measurement.html" class="govuk-link">whole service or project</a>
         </li>
       </ul>
 
-      <p class="govuk-body">
-        Calculations for the energy use of AI can then be used to estimate
-        carbon and water usage.
-      </p>
-
-      <p class="govuk-body">
-        Covering the whole lifecycle of AI technologies would mean covering the
-        following three stages
-      </p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>Data preparation</li>
-        <li>Training</li>
-        <li>Inference</li>
-      </ul>
 
       <div class="govuk-inset-text">
-        However, most measurements of energy use focus either just on
-        inference, or include training alongside inference.
+        Measuring the environmental impacts of the whole lifecycle of AI technologies would mean covering:
+
+          <ul class="govuk-list govuk-list--bullet">
+        <li>Data preparation</li>
+        <li>Training</li>
+        <li>Inference (when AI is used)</li>
+      </ul>
+
+        However, most approaches focs on training and inference.
       </div>
 
-      <p class="govuk-body">
-        WHAT ABOUT THESE??
-      </p>
 
       <ul class="govuk-list govuk-list--bullet">
         <li>Per token (for Large Language Models)</li>
@@ -125,8 +113,7 @@
 
       <p class="govuk-body">
         Different methodologies are appropriate for the measurement of the
-        energy use of AI technologies, depending on where models are running.
-        This can be
+        energy use of AI technologies, depending on where models are running. Approaches can include:
       </p>
 
       <ul class="govuk-list govuk-list--bullet">
@@ -178,7 +165,7 @@
                 AI Model as a Service (AIaaS / MaaS)
               </th>
               <td class="govuk-table__cell">
-                The delivery of raw or pretrained AI/ML models via cloud
+                The delivery of raw or pretrained Artificial Intelligence or Machine Learning models via cloud
                 infrastructure and standardized API endpoints, which can be
                 paid for by subscription or tokens
               </td>
@@ -200,7 +187,7 @@
 
       <p class="govuk-body">
         Estimating the energy use of AI models through the public cloud can be
-        calculated through
+        calculated through:
       </p>
 
       <ul class="govuk-list govuk-list--bullet">
@@ -214,7 +201,7 @@
       </ul>
 
       <h3 class="govuk-heading-m">
-        Using tokens to estimate energy use
+        (i) Using tokens to estimate energy use
       </h3>
 
       <p class="govuk-body">
@@ -304,45 +291,10 @@
         </table>
       </div>
 
-      <h3 class="govuk-heading-m">
-        Published estimates of per-token energy use
-      </h3>
-
-      <p class="govuk-body">
-        Published research from the IEA and Epoch AI, combined with GPU
-        inference cost analysis, puts a large frontier model somewhere around
-        3 to 4 watt-hours per thousand tokens.
-      </p>
-
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          NEED TO CHECK WHERE THESE COME FROM!!! Source??
-        </strong>
-      </div>
-
-      <p class="govuk-body">
-        <strong>General Benchmarks (per million tokens):</strong>
-      </p>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li>Input tokens: ~390 Wh</li>
-        <li>Output tokens: ~1,950 Wh</li>
-        <li>Cache creation: ~490 Wh | Cache reads: ~39 Wh</li>
-      </ul>
-
-      <div class="govuk-warning-text">
-        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-        <strong class="govuk-warning-text__text">
-          <span class="govuk-visually-hidden">Warning</span>
-          Note: These figures need an authoritative source and a defined
-          methodology before they are used in published reporting.
-        </strong>
-      </div>
+  
 
       <h3 class="govuk-heading-m">
-        Top-down estimates of AI energy use using billing data
+        (ii) Top-down estimates of AI energy use using billing data
       </h3>
 
       <p class="govuk-body">
@@ -351,12 +303,9 @@
         other cloud computing can be determined.
       </p>
 
-      <p class="govuk-body">
-        <strong>
-          SEE measurement guidance on architecture link for guidance on this
-          approach
-        </strong>
-      </p>
+      <p>For guidance on using cloud provider usage data to estimate energy use and carbon, see the <a href="/Measurement/cloud-carbon.html">Measuring cloud carbon</a> page.</p>
+
+
 
       <h2 class="govuk-heading-l">
         Self-hosted AI models
@@ -370,39 +319,29 @@
 
       <ul class="govuk-list govuk-list--bullet">
         <li>
-          local machines such as personal computers, high-end laptops with
-          GPUs, or other edge devices
+          Local machines such as personal computers, high-end laptops with
+          Graphical Processing Units (GPUs), or other edge devices
         </li>
-        <li>a server rack in on- and off-premises data centres</li>
-        <li>virtual machines on private cloud instances</li>
+        <li>A server rack in on- and off-premises data centres</li>
+        <li>Virtual machines running on private cloud instances</li>
       </ul>
 
       <p class="govuk-body">
-        The AI models that are self-hosted will generally be open-weight.
-      </p>
-
-      <p class="govuk-body">
         Measurement of the energy use of self-hosted models generally requires
-        a bottom-up approach. The two main approaches to bottom-up model-level
+        a bottom-up approach. The main approaches to bottom-up model-level
         estimation are:
       </p>
 
       <ul class="govuk-list govuk-list--bullet">
         <li>Direct measurement of energy use via telemetry</li>
-        <li>Hardware profiling</li>
+        <li>Hardware profiling to model energy use</li>
         <li>Token usage to estimate energy consumption</li>
       </ul>
 
-      <p class="govuk-body">
-        Direct measurement of the energy use of AI models can occur through
-        tracking real-time power draw on hardware and use of software frameworks
-        to track and calculate energy consumed during tasks like model training
-        or local inference.
-      </p>
+      <p>Direct energy measurement and hardware profiling can be used to produce energy estimates for both training and inference phases.</p>
 
       <h3 class="govuk-heading-m">
-        Direct measurement of energy use via telemetry (for training and
-        inference phases)
+        (i) Direct measurement of energy use via telemetry
       </h3>
 
       <p class="govuk-body">
@@ -413,15 +352,12 @@
         level.
       </p>
 
-      <p class="govuk-body">
-        <strong>
-          See page for on- and -off premises measurement for more detail on
-          these approaches
-        </strong>
-      </p>
+      <p>For guidance on this approach, see the <a href="/Measurement/onpremcarbon.html">Measuring on-premises carbon</a> page.</p>
+
+
 
       <h3 class="govuk-heading-m">
-        Use of software instrumentation
+        (ii) Use of hardware profiling and software instrumentation
       </h3>
 
       <p class="govuk-body">
@@ -522,7 +458,7 @@
         <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
         <strong class="govuk-warning-text__text">
           <span class="govuk-visually-hidden">Warning</span>
-          NOTE: Tools may use different system boundaries, assumptions and
+          Note: Tools may use different system boundaries, assumptions and
           carbon intensity data. Record the tool, version, configuration and
           date used.
         </strong>
@@ -534,7 +470,7 @@
 
       <p class="govuk-body">
         AI capabilities can be built directly into user-facing software
-        applications like CRM, customer support, or productivity suites.
+        applications like Customer Relationship Management (CRM), customer support, or productivity suites.
       </p>
 
       <p class="govuk-body">
@@ -545,10 +481,10 @@
       </p>
 
       <h3 class="govuk-heading-m">
-        AI Energy Score (or other benchmark)
+        (i) Energy use
       </h3>
 
-      <p class="govuk-body">
+          <p class="govuk-body">
         The supplier provides the
         <a
           class="govuk-link"
@@ -557,19 +493,12 @@
           AI Energy Score
         </a>
         (or an equivalent industry-standard energy efficiency benchmark) for
-        the proposed AI model(s).
+        the proposed AI model(s), and reports on the energy consumption.
       </p>
 
-      <h3 class="govuk-heading-m">
-        Energy use
-      </h3>
-
-      <p class="govuk-body">
-        The supplier reports on the energy use of AI models.
-      </p>
 
       <h3 class="govuk-heading-m">
-        Lifecycle analysis (LCA)
+        (ii) Lifecycle analysis (LCA)
       </h3>
 
       <p class="govuk-body">
@@ -588,12 +517,19 @@
         The LCA should include in its scope:
       </p>
 
-      <h3 class="govuk-heading-m">
+      <h4 class="govuk-heading-s">
         A - Raw material acquisition
       </h3>
 
-      <h3 class="govuk-heading-m">
-        B - Production Devices
+      <ul class="govuk-list govuk-list--bullet">
+  <li>mining lithium, cobalt, nickel, copper and rare-earth elements</li>
+  <li>extracting raw materials used to make aluminium, steel, plastics and glass</li>
+  <li>processing and refining these materials into forms suitable for manufacturing</li>
+  <li>energy, water and other resources consumed during extraction and processing</li>
+</ul>
+
+      <h4 class="govuk-heading-s">
+        B - Production of devices
       </h3>
 
       <ul class="govuk-list govuk-list--bullet">
@@ -603,7 +539,7 @@
         <li>ICT-specific site construction</li>
       </ul>
 
-      <h3 class="govuk-heading-m">
+         <h4 class="govuk-heading-s">
         C - Use
       </h3>
 
@@ -624,7 +560,7 @@
         <li>service provider support activities</li>
       </ul>
 
-      <h3 class="govuk-heading-m">
+         <h4 class="govuk-heading-s">
         D - End of life
       </h3>
 
@@ -644,7 +580,7 @@
         <li>abiotic resource depletion (kgSb-e)</li>
       </ul>
 
-      <h3 class="govuk-heading-m">
+         <h3 class="govuk-heading-m">
         In the absence of lifecycle analysis
       </h3>
 
